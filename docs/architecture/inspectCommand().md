@@ -15,6 +15,6 @@ tags:
 - [[branch-guard.js]] - `contains` [EXTRACTED]
 - [[getCurrentGitBranch()]] - `calls` [EXTRACTED]
 - [[isProtectedBranch()]] - `calls` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_6

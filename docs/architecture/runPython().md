@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[graphify-cli.js]] - `contains` [EXTRACTED]
-- [[main()_3]] - `calls` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_11

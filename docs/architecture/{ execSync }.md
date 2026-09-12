@@ -1,17 +1,17 @@
 ---
-source_file: ".antigravity/scripts/branch-guard.js"
+source_file: ".antigravity/scripts/lint-enforcer.js"
 type: "code"
-community: "Community 6"
-location: "L11"
+community: "Community 4"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_4
 ---
 
 # { execSync }
 
 ## Connections
-- [[branch-guard.js]] - `contains` [EXTRACTED]
+- [[lint-enforcer.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_4

@@ -16,9 +16,9 @@ members: 9
 - [[getCurrentGitBranch()]] - code - .antigravity/scripts/branch-guard.js
 - [[inspectCommand()]] - code - .antigravity/scripts/branch-guard.js
 - [[isProtectedBranch()]] - code - .antigravity/scripts/branch-guard.js
-- [[main()]] - code - .antigravity/scripts/branch-guard.js
-- [[path]] - code - .antigravity/scripts/branch-guard.js
-- [[{ execSync }]] - code - .antigravity/scripts/branch-guard.js
+- [[main()_6]] - code - .antigravity/scripts/branch-guard.js
+- [[path_7]] - code - .antigravity/scripts/branch-guard.js
+- [[{ execSync }_3]] - code - .antigravity/scripts/branch-guard.js
 
 ## Live Query (requires Dataview plugin)
 

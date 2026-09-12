@@ -14,8 +14,8 @@ members: 7
 - [[BLOCKED_COMMAND_PATTERNS]] - code - .antigravity/scripts/shell-sandbox.js
 - [[evaluateCommand()]] - code - .antigravity/scripts/shell-sandbox.js
 - [[isPathWithinWorkspace()]] - code - .antigravity/scripts/shell-sandbox.js
-- [[main()_2]] - code - .antigravity/scripts/shell-sandbox.js
-- [[path_2]] - code - .antigravity/scripts/shell-sandbox.js
+- [[main()_1]] - code - .antigravity/scripts/shell-sandbox.js
+- [[path_1]] - code - .antigravity/scripts/shell-sandbox.js
 - [[shell-sandbox.js]] - code - .antigravity/scripts/shell-sandbox.js
 
 ## Live Query (requires Dataview plugin)

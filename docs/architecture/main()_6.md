@@ -1,20 +1,18 @@
 ---
-source_file: ".antigravity/scripts/parse-coderabbit-review.js"
+source_file: ".antigravity/scripts/branch-guard.js"
 type: "code"
-community: "Community 0"
-location: "L159"
+community: "Community 6"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_6
 ---
 
 # main()
 
 ## Connections
-- [[fetchGithubPrComments()]] - `calls` [EXTRACTED]
-- [[parse-coderabbit-review.js]] - `contains` [EXTRACTED]
-- [[parseReviewComments()]] - `calls` [EXTRACTED]
-- [[updatePrdWithRemediations()]] - `calls` [EXTRACTED]
+- [[branch-guard.js]] - `contains` [EXTRACTED]
+- [[inspectCommand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_6

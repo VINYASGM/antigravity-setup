@@ -1,17 +1,17 @@
 ---
-source_file: "tests/test-hooks.js"
+source_file: ".antigravity/scripts/branch-guard.js"
 type: "code"
-community: "Community 0"
-location: "L7"
+community: "Community 6"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_6
 ---
 
 # path
 
 ## Connections
-- [[test-hooks.js]] - `contains` [EXTRACTED]
+- [[branch-guard.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Community_6

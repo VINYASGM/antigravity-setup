@@ -1,17 +1,17 @@
 ---
-source_file: ".antigravity/scripts/open-pr-on-goal.js"
+source_file: ".antigravity/scripts/parse-coderabbit-review.js"
 type: "code"
-community: "Community 7"
-location: "L11"
+community: "Community 0"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_0
 ---
 
 # { execSync }
 
 ## Connections
-- [[open-pr-on-goal.js]] - `contains` [EXTRACTED]
+- [[parse-coderabbit-review.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_0

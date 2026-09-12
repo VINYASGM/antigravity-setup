@@ -4,96 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "branch-guard.js",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "branch-guard.js",
-      "id": "antigravity_scripts_branch_guard"
-    },
-    {
-      "label": "{ execSync }",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "{ execsync }",
-      "id": "antigravity_scripts_branch_guard_execsync"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "path",
-      "id": "antigravity_scripts_branch_guard_path"
-    },
-    {
-      "label": "PROTECTED_BRANCHES",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "protected_branches",
-      "id": "antigravity_scripts_branch_guard_protected_branches"
-    },
-    {
-      "label": "PROTECTED_REGEX",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "protected_regex",
-      "id": "antigravity_scripts_branch_guard_protected_regex"
-    },
-    {
-      "label": "isProtectedBranch()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "isprotectedbranch()",
-      "id": "antigravity_scripts_branch_guard_isprotectedbranch"
-    },
-    {
-      "label": "getCurrentGitBranch()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "getcurrentgitbranch()",
-      "id": "antigravity_scripts_branch_guard_getcurrentgitbranch"
-    },
-    {
-      "label": "inspectCommand()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "inspectcommand()",
-      "id": "antigravity_scripts_branch_guard_inspectcommand"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L153",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "main()",
-      "id": "antigravity_scripts_branch_guard_main"
-    },
-    {
       "label": "lint-enforcer.js",
       "file_type": "code",
       "source_file": ".antigravity/scripts/lint-enforcer.js",
@@ -669,9 +579,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "agents_settings",
       "community": 2,
-      "norm_label": ".agents/settings.json"
+      "norm_label": ".agents/settings.json",
+      "id": "agents_settings"
     },
     {
       "label": "$schema",
@@ -679,9 +589,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "agents_settings_schema",
       "community": 2,
-      "norm_label": "$schema"
+      "norm_label": "$schema",
+      "id": "agents_settings_schema"
     },
     {
       "label": "name",
@@ -689,9 +599,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "agents_settings_name",
       "community": 2,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "agents_settings_name"
     },
     {
       "label": "version",
@@ -699,9 +609,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "agents_settings_version",
       "community": 2,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "agents_settings_version"
     },
     {
       "label": "knowledgeSources",
@@ -709,9 +619,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "agents_settings_knowledgesources",
       "community": 2,
-      "norm_label": "knowledgesources"
+      "norm_label": "knowledgesources",
+      "id": "agents_settings_knowledgesources"
     },
     {
       "label": "planningPolicy",
@@ -719,9 +629,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy",
       "community": 2,
-      "norm_label": "planningpolicy"
+      "norm_label": "planningpolicy",
+      "id": "agents_settings_planningpolicy"
     },
     {
       "label": "requireGraphTopologyQuery",
@@ -729,9 +639,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy_requiregraphtopologyquery",
       "community": 2,
-      "norm_label": "requiregraphtopologyquery"
+      "norm_label": "requiregraphtopologyquery",
+      "id": "agents_settings_planningpolicy_requiregraphtopologyquery"
     },
     {
       "label": "disallowHallucinatedDependencies",
@@ -739,9 +649,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy_disallowhallucinateddependencies",
       "community": 2,
-      "norm_label": "disallowhallucinateddependencies"
+      "norm_label": "disallowhallucinateddependencies",
+      "id": "agents_settings_planningpolicy_disallowhallucinateddependencies"
     },
     {
       "label": "primaryContextSource",
@@ -749,9 +659,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy_primarycontextsource",
       "community": 2,
-      "norm_label": "primarycontextsource"
+      "norm_label": "primarycontextsource",
+      "id": "agents_settings_planningpolicy_primarycontextsource"
     },
     {
       "label": "secondaryContextSource",
@@ -759,9 +669,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy_secondarycontextsource",
       "community": 2,
-      "norm_label": "secondarycontextsource"
+      "norm_label": "secondarycontextsource",
+      "id": "agents_settings_planningpolicy_secondarycontextsource"
     },
     {
       "label": "instructions",
@@ -769,9 +679,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "agents_settings_planningpolicy_instructions",
       "community": 2,
-      "norm_label": "instructions"
+      "norm_label": "instructions",
+      "id": "agents_settings_planningpolicy_instructions"
     },
     {
       "label": "goalPolicy",
@@ -779,9 +689,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "agents_settings_goalpolicy",
       "community": 2,
-      "norm_label": "goalpolicy"
+      "norm_label": "goalpolicy",
+      "id": "agents_settings_goalpolicy"
     },
     {
       "label": "openPrOnExhaustion",
@@ -789,9 +699,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "agents_settings_goalpolicy_openpronexhaustion",
       "community": 2,
-      "norm_label": "openpronexhaustion"
+      "norm_label": "openpronexhaustion",
+      "id": "agents_settings_goalpolicy_openpronexhaustion"
     },
     {
       "label": "baseBranch",
@@ -799,9 +709,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "agents_settings_goalpolicy_basebranch",
       "community": 2,
-      "norm_label": "basebranch"
+      "norm_label": "basebranch",
+      "id": "agents_settings_goalpolicy_basebranch"
     },
     {
       "label": "automatedReviewer",
@@ -809,9 +719,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "agents_settings_goalpolicy_automatedreviewer",
       "community": 2,
-      "norm_label": "automatedreviewer"
+      "norm_label": "automatedreviewer",
+      "id": "agents_settings_goalpolicy_automatedreviewer"
     },
     {
       "label": "instructions",
@@ -819,9 +729,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "agents_settings_goalpolicy_instructions",
       "community": 2,
-      "norm_label": "instructions"
+      "norm_label": "instructions",
+      "id": "agents_settings_goalpolicy_instructions"
     },
     {
       "label": "reviewGate",
@@ -829,9 +739,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "agents_settings_reviewgate",
       "community": 5,
-      "norm_label": "reviewgate"
+      "norm_label": "reviewgate",
+      "id": "agents_settings_reviewgate"
     },
     {
       "label": "automatedReviewEngine",
@@ -839,9 +749,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L48",
       "_origin": "ast",
-      "id": "agents_settings_reviewgate_automatedreviewengine",
       "community": 5,
-      "norm_label": "automatedreviewengine"
+      "norm_label": "automatedreviewengine",
+      "id": "agents_settings_reviewgate_automatedreviewengine"
     },
     {
       "label": "configPath",
@@ -849,9 +759,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "agents_settings_reviewgate_configpath",
       "community": 5,
-      "norm_label": "configpath"
+      "norm_label": "configpath",
+      "id": "agents_settings_reviewgate_configpath"
     },
     {
       "label": "autoRemediation",
@@ -859,9 +769,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "agents_settings_reviewgate_autoremediation",
       "community": 5,
-      "norm_label": "autoremediation"
+      "norm_label": "autoremediation",
+      "id": "agents_settings_reviewgate_autoremediation"
     },
     {
       "label": "enabled",
@@ -869,9 +779,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L51",
       "_origin": "ast",
-      "id": "agents_settings_autoremediation_enabled",
       "community": 5,
-      "norm_label": "enabled"
+      "norm_label": "enabled",
+      "id": "agents_settings_autoremediation_enabled"
     },
     {
       "label": "parserScript",
@@ -879,9 +789,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L52",
       "_origin": "ast",
-      "id": "agents_settings_autoremediation_parserscript",
       "community": 5,
-      "norm_label": "parserscript"
+      "norm_label": "parserscript",
+      "id": "agents_settings_autoremediation_parserscript"
     },
     {
       "label": "taskPrefix",
@@ -889,9 +799,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L53",
       "_origin": "ast",
-      "id": "agents_settings_autoremediation_taskprefix",
       "community": 5,
-      "norm_label": "taskprefix"
+      "norm_label": "taskprefix",
+      "id": "agents_settings_autoremediation_taskprefix"
     },
     {
       "label": "enforceTdd",
@@ -899,9 +809,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L54",
       "_origin": "ast",
-      "id": "agents_settings_autoremediation_enforcetdd",
       "community": 5,
-      "norm_label": "enforcetdd"
+      "norm_label": "enforcetdd",
+      "id": "agents_settings_autoremediation_enforcetdd"
     },
     {
       "label": "enforceSurgicalEdits",
@@ -909,9 +819,9 @@
       "source_file": ".agents/settings.json",
       "source_location": "L55",
       "_origin": "ast",
-      "id": "agents_settings_autoremediation_enforcesurgicaledits",
       "community": 5,
-      "norm_label": "enforcesurgicaledits"
+      "norm_label": "enforcesurgicaledits",
+      "id": "agents_settings_autoremediation_enforcesurgicaledits"
     },
     {
       "label": "open-pr-on-goal.js",
@@ -919,9 +829,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal",
       "community": 7,
-      "norm_label": "open-pr-on-goal.js"
+      "norm_label": "open-pr-on-goal.js",
+      "id": "antigravity_scripts_open_pr_on_goal"
     },
     {
       "label": "{ execSync }",
@@ -929,9 +839,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_execsync",
       "community": 7,
-      "norm_label": "{ execsync }"
+      "norm_label": "{ execsync }",
+      "id": "antigravity_scripts_open_pr_on_goal_execsync"
     },
     {
       "label": "fs",
@@ -939,9 +849,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_fs",
       "community": 7,
-      "norm_label": "fs"
+      "norm_label": "fs",
+      "id": "antigravity_scripts_open_pr_on_goal_fs"
     },
     {
       "label": "path",
@@ -949,9 +859,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_path",
       "community": 7,
-      "norm_label": "path"
+      "norm_label": "path",
+      "id": "antigravity_scripts_open_pr_on_goal_path"
     },
     {
       "label": "getGitBranch()",
@@ -959,9 +869,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_getgitbranch",
       "community": 7,
-      "norm_label": "getgitbranch()"
+      "norm_label": "getgitbranch()",
+      "id": "antigravity_scripts_open_pr_on_goal_getgitbranch"
     },
     {
       "label": "hasUnpushedCommits()",
@@ -969,9 +879,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
       "community": 7,
-      "norm_label": "hasunpushedcommits()"
+      "norm_label": "hasunpushedcommits()",
+      "id": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
     },
     {
       "label": "getLatestCommitMessage()",
@@ -979,9 +889,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
       "community": 7,
-      "norm_label": "getlatestcommitmessage()"
+      "norm_label": "getlatestcommitmessage()",
+      "id": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
     },
     {
       "label": "checkGhCli()",
@@ -989,9 +899,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L57",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_checkghcli",
       "community": 7,
-      "norm_label": "checkghcli()"
+      "norm_label": "checkghcli()",
+      "id": "antigravity_scripts_open_pr_on_goal_checkghcli"
     },
     {
       "label": "main()",
@@ -999,9 +909,9 @@
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "antigravity_scripts_open_pr_on_goal_main",
       "community": 7,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "antigravity_scripts_open_pr_on_goal_main"
     },
     {
       "label": "parse-coderabbit-review.js",
@@ -1009,9 +919,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review",
       "community": 0,
-      "norm_label": "parse-coderabbit-review.js"
+      "norm_label": "parse-coderabbit-review.js",
+      "id": "antigravity_scripts_parse_coderabbit_review"
     },
     {
       "label": "fs",
@@ -1019,9 +929,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_fs",
       "community": 0,
-      "norm_label": "fs"
+      "norm_label": "fs",
+      "id": "antigravity_scripts_parse_coderabbit_review_fs"
     },
     {
       "label": "path",
@@ -1029,9 +939,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_path",
       "community": 0,
-      "norm_label": "path"
+      "norm_label": "path",
+      "id": "antigravity_scripts_parse_coderabbit_review_path"
     },
     {
       "label": "{ execSync }",
@@ -1039,9 +949,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_execsync",
       "community": 0,
-      "norm_label": "{ execsync }"
+      "norm_label": "{ execsync }",
+      "id": "antigravity_scripts_parse_coderabbit_review_execsync"
     },
     {
       "label": "parseReviewComments()",
@@ -1049,9 +959,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
       "community": 0,
-      "norm_label": "parsereviewcomments()"
+      "norm_label": "parsereviewcomments()",
+      "id": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments"
     },
     {
       "label": "updatePrdWithRemediations()",
@@ -1059,9 +969,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L88",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
       "community": 0,
-      "norm_label": "updateprdwithremediations()"
+      "norm_label": "updateprdwithremediations()",
+      "id": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations"
     },
     {
       "label": "fetchGithubPrComments()",
@@ -1069,9 +979,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L136",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
       "community": 0,
-      "norm_label": "fetchgithubprcomments()"
+      "norm_label": "fetchgithubprcomments()",
+      "id": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments"
     },
     {
       "label": "main()",
@@ -1079,9 +989,9 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L159",
       "_origin": "ast",
-      "id": "antigravity_scripts_parse_coderabbit_review_main",
       "community": 0,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "antigravity_scripts_parse_coderabbit_review_main"
     },
     {
       "label": ".antigravity/settings.json",
@@ -1089,9 +999,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "antigravity_settings",
       "community": 3,
-      "norm_label": ".antigravity/settings.json"
+      "norm_label": ".antigravity/settings.json",
+      "id": "antigravity_settings"
     },
     {
       "label": "$schema",
@@ -1099,9 +1009,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "antigravity_settings_schema",
       "community": 3,
-      "norm_label": "$schema"
+      "norm_label": "$schema",
+      "id": "antigravity_settings_schema"
     },
     {
       "label": "name",
@@ -1109,9 +1019,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "antigravity_settings_name",
       "community": 3,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "antigravity_settings_name"
     },
     {
       "label": "version",
@@ -1119,9 +1029,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "antigravity_settings_version",
       "community": 3,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "antigravity_settings_version"
     },
     {
       "label": "knowledgeSources",
@@ -1129,9 +1039,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "antigravity_settings_knowledgesources",
       "community": 3,
-      "norm_label": "knowledgesources"
+      "norm_label": "knowledgesources",
+      "id": "antigravity_settings_knowledgesources"
     },
     {
       "label": "planningPolicy",
@@ -1139,9 +1049,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy",
       "community": 3,
-      "norm_label": "planningpolicy"
+      "norm_label": "planningpolicy",
+      "id": "antigravity_settings_planningpolicy"
     },
     {
       "label": "requireGraphTopologyQuery",
@@ -1149,9 +1059,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy_requiregraphtopologyquery",
       "community": 3,
-      "norm_label": "requiregraphtopologyquery"
+      "norm_label": "requiregraphtopologyquery",
+      "id": "antigravity_settings_planningpolicy_requiregraphtopologyquery"
     },
     {
       "label": "disallowHallucinatedDependencies",
@@ -1159,9 +1069,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy_disallowhallucinateddependencies",
       "community": 3,
-      "norm_label": "disallowhallucinateddependencies"
+      "norm_label": "disallowhallucinateddependencies",
+      "id": "antigravity_settings_planningpolicy_disallowhallucinateddependencies"
     },
     {
       "label": "primaryContextSource",
@@ -1169,9 +1079,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy_primarycontextsource",
       "community": 3,
-      "norm_label": "primarycontextsource"
+      "norm_label": "primarycontextsource",
+      "id": "antigravity_settings_planningpolicy_primarycontextsource"
     },
     {
       "label": "secondaryContextSource",
@@ -1179,9 +1089,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy_secondarycontextsource",
       "community": 3,
-      "norm_label": "secondarycontextsource"
+      "norm_label": "secondarycontextsource",
+      "id": "antigravity_settings_planningpolicy_secondarycontextsource"
     },
     {
       "label": "instructions",
@@ -1189,9 +1099,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "antigravity_settings_planningpolicy_instructions",
       "community": 3,
-      "norm_label": "instructions"
+      "norm_label": "instructions",
+      "id": "antigravity_settings_planningpolicy_instructions"
     },
     {
       "label": "goalPolicy",
@@ -1199,9 +1109,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "antigravity_settings_goalpolicy",
       "community": 3,
-      "norm_label": "goalpolicy"
+      "norm_label": "goalpolicy",
+      "id": "antigravity_settings_goalpolicy"
     },
     {
       "label": "openPrOnExhaustion",
@@ -1209,9 +1119,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "antigravity_settings_goalpolicy_openpronexhaustion",
       "community": 3,
-      "norm_label": "openpronexhaustion"
+      "norm_label": "openpronexhaustion",
+      "id": "antigravity_settings_goalpolicy_openpronexhaustion"
     },
     {
       "label": "baseBranch",
@@ -1219,9 +1129,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "antigravity_settings_goalpolicy_basebranch",
       "community": 3,
-      "norm_label": "basebranch"
+      "norm_label": "basebranch",
+      "id": "antigravity_settings_goalpolicy_basebranch"
     },
     {
       "label": "automatedReviewer",
@@ -1229,9 +1139,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "antigravity_settings_goalpolicy_automatedreviewer",
       "community": 3,
-      "norm_label": "automatedreviewer"
+      "norm_label": "automatedreviewer",
+      "id": "antigravity_settings_goalpolicy_automatedreviewer"
     },
     {
       "label": "instructions",
@@ -1239,9 +1149,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L45",
       "_origin": "ast",
-      "id": "antigravity_settings_goalpolicy_instructions",
       "community": 3,
-      "norm_label": "instructions"
+      "norm_label": "instructions",
+      "id": "antigravity_settings_goalpolicy_instructions"
     },
     {
       "label": "reviewGate",
@@ -1249,9 +1159,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "antigravity_settings_reviewgate",
       "community": 8,
-      "norm_label": "reviewgate"
+      "norm_label": "reviewgate",
+      "id": "antigravity_settings_reviewgate"
     },
     {
       "label": "automatedReviewEngine",
@@ -1259,9 +1169,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L48",
       "_origin": "ast",
-      "id": "antigravity_settings_reviewgate_automatedreviewengine",
       "community": 8,
-      "norm_label": "automatedreviewengine"
+      "norm_label": "automatedreviewengine",
+      "id": "antigravity_settings_reviewgate_automatedreviewengine"
     },
     {
       "label": "configPath",
@@ -1269,9 +1179,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "antigravity_settings_reviewgate_configpath",
       "community": 8,
-      "norm_label": "configpath"
+      "norm_label": "configpath",
+      "id": "antigravity_settings_reviewgate_configpath"
     },
     {
       "label": "autoRemediation",
@@ -1279,9 +1189,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "antigravity_settings_reviewgate_autoremediation",
       "community": 8,
-      "norm_label": "autoremediation"
+      "norm_label": "autoremediation",
+      "id": "antigravity_settings_reviewgate_autoremediation"
     },
     {
       "label": "enabled",
@@ -1289,9 +1199,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L51",
       "_origin": "ast",
-      "id": "antigravity_settings_autoremediation_enabled",
       "community": 8,
-      "norm_label": "enabled"
+      "norm_label": "enabled",
+      "id": "antigravity_settings_autoremediation_enabled"
     },
     {
       "label": "parserScript",
@@ -1299,9 +1209,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L52",
       "_origin": "ast",
-      "id": "antigravity_settings_autoremediation_parserscript",
       "community": 8,
-      "norm_label": "parserscript"
+      "norm_label": "parserscript",
+      "id": "antigravity_settings_autoremediation_parserscript"
     },
     {
       "label": "taskPrefix",
@@ -1309,9 +1219,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L53",
       "_origin": "ast",
-      "id": "antigravity_settings_autoremediation_taskprefix",
       "community": 8,
-      "norm_label": "taskprefix"
+      "norm_label": "taskprefix",
+      "id": "antigravity_settings_autoremediation_taskprefix"
     },
     {
       "label": "enforceTdd",
@@ -1319,9 +1229,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L54",
       "_origin": "ast",
-      "id": "antigravity_settings_autoremediation_enforcetdd",
       "community": 8,
-      "norm_label": "enforcetdd"
+      "norm_label": "enforcetdd",
+      "id": "antigravity_settings_autoremediation_enforcetdd"
     },
     {
       "label": "enforceSurgicalEdits",
@@ -1329,9 +1239,9 @@
       "source_file": ".antigravity/settings.json",
       "source_location": "L55",
       "_origin": "ast",
-      "id": "antigravity_settings_autoremediation_enforcesurgicaledits",
       "community": 8,
-      "norm_label": "enforcesurgicaledits"
+      "norm_label": "enforcesurgicaledits",
+      "id": "antigravity_settings_autoremediation_enforcesurgicaledits"
     },
     {
       "label": "test-hooks.js",
@@ -1339,9 +1249,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tests_test_hooks",
       "community": 0,
-      "norm_label": "test-hooks.js"
+      "norm_label": "test-hooks.js",
+      "id": "tests_test_hooks"
     },
     {
       "label": "{ spawnSync }",
@@ -1349,9 +1259,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "tests_test_hooks_spawnsync",
       "community": 0,
-      "norm_label": "{ spawnsync }"
+      "norm_label": "{ spawnsync }",
+      "id": "tests_test_hooks_spawnsync"
     },
     {
       "label": "path",
@@ -1359,9 +1269,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "tests_test_hooks_path",
       "community": 0,
-      "norm_label": "path"
+      "norm_label": "path",
+      "id": "tests_test_hooks_path"
     },
     {
       "label": "fs",
@@ -1369,9 +1279,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "tests_test_hooks_fs",
       "community": 0,
-      "norm_label": "fs"
+      "norm_label": "fs",
+      "id": "tests_test_hooks_fs"
     },
     {
       "label": "SCRIPTS_DIR",
@@ -1379,9 +1289,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "tests_test_hooks_scripts_dir",
       "community": 0,
-      "norm_label": "scripts_dir"
+      "norm_label": "scripts_dir",
+      "id": "tests_test_hooks_scripts_dir"
     },
     {
       "label": "WORKSPACE_DIR",
@@ -1389,9 +1299,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "tests_test_hooks_workspace_dir",
       "community": 0,
-      "norm_label": "workspace_dir"
+      "norm_label": "workspace_dir",
+      "id": "tests_test_hooks_workspace_dir"
     },
     {
       "label": "runHook()",
@@ -1399,9 +1309,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "tests_test_hooks_runhook",
       "community": 0,
-      "norm_label": "runhook()"
+      "norm_label": "runhook()",
+      "id": "tests_test_hooks_runhook"
     },
     {
       "label": "assert()",
@@ -1409,9 +1319,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "tests_test_hooks_assert",
       "community": 0,
-      "norm_label": "assert()"
+      "norm_label": "assert()",
+      "id": "tests_test_hooks_assert"
     },
     {
       "label": "testTempDir",
@@ -1419,9 +1329,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L191",
       "_origin": "ast",
-      "id": "tests_test_hooks_testtempdir",
       "community": 0,
-      "norm_label": "testtempdir"
+      "norm_label": "testtempdir",
+      "id": "tests_test_hooks_testtempdir"
     },
     {
       "label": "ADR-0005",
@@ -1429,9 +1339,9 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L357",
       "_origin": "ast",
-      "id": "docref_adr_0005",
       "community": 0,
-      "norm_label": "adr-0005"
+      "norm_label": "adr-0005",
+      "id": "docref_adr_0005"
     },
     {
       "label": "ADR-0006",
@@ -1439,148 +1349,102 @@
       "source_file": "tests/test-hooks.js",
       "source_location": "L426",
       "_origin": "ast",
-      "id": "docref_adr_0006",
       "community": 0,
-      "norm_label": "adr-0006"
+      "norm_label": "adr-0006",
+      "id": "docref_adr_0006"
+    },
+    {
+      "label": "branch-guard.js",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard",
+      "community": 6,
+      "norm_label": "branch-guard.js"
+    },
+    {
+      "label": "{ execSync }",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_execsync",
+      "community": 6,
+      "norm_label": "{ execsync }"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_path",
+      "community": 6,
+      "norm_label": "path"
+    },
+    {
+      "label": "PROTECTED_BRANCHES",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_protected_branches",
+      "community": 6,
+      "norm_label": "protected_branches"
+    },
+    {
+      "label": "PROTECTED_REGEX",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_protected_regex",
+      "community": 6,
+      "norm_label": "protected_regex"
+    },
+    {
+      "label": "isProtectedBranch()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_isprotectedbranch",
+      "community": 6,
+      "norm_label": "isprotectedbranch()"
+    },
+    {
+      "label": "getCurrentGitBranch()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "community": 6,
+      "norm_label": "getcurrentgitbranch()"
+    },
+    {
+      "label": "inspectCommand()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_inspectcommand",
+      "community": 6,
+      "norm_label": "inspectcommand()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "antigravity_scripts_branch_guard_main",
+      "community": 6,
+      "norm_label": "main()"
     }
   ],
   "links": [
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_execsync"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L23",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_getcurrentgitbranch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_inspectcommand"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_isprotectedbranch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L153",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_protected_branches"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard",
-      "target": "antigravity_scripts_branch_guard_protected_regex"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "antigravity_scripts_branch_guard_isprotectedbranch",
-      "target": "antigravity_scripts_branch_guard_protected_branches"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard_inspectcommand",
-      "target": "antigravity_scripts_branch_guard_isprotectedbranch"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L95",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard_inspectcommand",
-      "target": "antigravity_scripts_branch_guard_getcurrentgitbranch"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/branch-guard.js",
-      "source_location": "L179",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_branch_guard_main",
-      "target": "antigravity_scripts_branch_guard_inspectcommand"
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2381,9 +2245,9 @@
       "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_goalpolicy",
-      "confidence_score": 1.0
+      "target": "agents_settings_goalpolicy"
     },
     {
       "relation": "contains",
@@ -2392,9 +2256,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_knowledgesources",
-      "confidence_score": 1.0
+      "target": "agents_settings_knowledgesources"
     },
     {
       "relation": "contains",
@@ -2403,9 +2267,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_name",
-      "confidence_score": 1.0
+      "target": "agents_settings_name"
     },
     {
       "relation": "contains",
@@ -2414,9 +2278,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_planningpolicy",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy"
     },
     {
       "relation": "contains",
@@ -2425,9 +2289,9 @@
       "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_reviewgate",
-      "confidence_score": 1.0
+      "target": "agents_settings_reviewgate"
     },
     {
       "relation": "contains",
@@ -2436,9 +2300,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_schema",
-      "confidence_score": 1.0
+      "target": "agents_settings_schema"
     },
     {
       "relation": "contains",
@@ -2447,9 +2311,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings",
-      "target": "agents_settings_version",
-      "confidence_score": 1.0
+      "target": "agents_settings_version"
     },
     {
       "relation": "contains",
@@ -2458,9 +2322,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_planningpolicy",
-      "target": "agents_settings_planningpolicy_disallowhallucinateddependencies",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy_disallowhallucinateddependencies"
     },
     {
       "relation": "contains",
@@ -2469,9 +2333,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_planningpolicy",
-      "target": "agents_settings_planningpolicy_instructions",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy_instructions"
     },
     {
       "relation": "contains",
@@ -2480,9 +2344,9 @@
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_planningpolicy",
-      "target": "agents_settings_planningpolicy_primarycontextsource",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy_primarycontextsource"
     },
     {
       "relation": "contains",
@@ -2491,9 +2355,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_planningpolicy",
-      "target": "agents_settings_planningpolicy_requiregraphtopologyquery",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy_requiregraphtopologyquery"
     },
     {
       "relation": "contains",
@@ -2502,9 +2366,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_planningpolicy",
-      "target": "agents_settings_planningpolicy_secondarycontextsource",
-      "confidence_score": 1.0
+      "target": "agents_settings_planningpolicy_secondarycontextsource"
     },
     {
       "relation": "contains",
@@ -2513,9 +2377,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_goalpolicy",
-      "target": "agents_settings_goalpolicy_automatedreviewer",
-      "confidence_score": 1.0
+      "target": "agents_settings_goalpolicy_automatedreviewer"
     },
     {
       "relation": "contains",
@@ -2524,9 +2388,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_goalpolicy",
-      "target": "agents_settings_goalpolicy_basebranch",
-      "confidence_score": 1.0
+      "target": "agents_settings_goalpolicy_basebranch"
     },
     {
       "relation": "contains",
@@ -2535,9 +2399,9 @@
       "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_goalpolicy",
-      "target": "agents_settings_goalpolicy_instructions",
-      "confidence_score": 1.0
+      "target": "agents_settings_goalpolicy_instructions"
     },
     {
       "relation": "contains",
@@ -2546,9 +2410,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_goalpolicy",
-      "target": "agents_settings_goalpolicy_openpronexhaustion",
-      "confidence_score": 1.0
+      "target": "agents_settings_goalpolicy_openpronexhaustion"
     },
     {
       "relation": "contains",
@@ -2557,9 +2421,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate",
-      "target": "agents_settings_reviewgate_automatedreviewengine",
-      "confidence_score": 1.0
+      "target": "agents_settings_reviewgate_automatedreviewengine"
     },
     {
       "relation": "contains",
@@ -2568,9 +2432,9 @@
       "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate",
-      "target": "agents_settings_reviewgate_autoremediation",
-      "confidence_score": 1.0
+      "target": "agents_settings_reviewgate_autoremediation"
     },
     {
       "relation": "contains",
@@ -2579,9 +2443,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate",
-      "target": "agents_settings_reviewgate_configpath",
-      "confidence_score": 1.0
+      "target": "agents_settings_reviewgate_configpath"
     },
     {
       "relation": "contains",
@@ -2590,9 +2454,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate_autoremediation",
-      "target": "agents_settings_autoremediation_enabled",
-      "confidence_score": 1.0
+      "target": "agents_settings_autoremediation_enabled"
     },
     {
       "relation": "contains",
@@ -2601,9 +2465,9 @@
       "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate_autoremediation",
-      "target": "agents_settings_autoremediation_enforcesurgicaledits",
-      "confidence_score": 1.0
+      "target": "agents_settings_autoremediation_enforcesurgicaledits"
     },
     {
       "relation": "contains",
@@ -2612,9 +2476,9 @@
       "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate_autoremediation",
-      "target": "agents_settings_autoremediation_enforcetdd",
-      "confidence_score": 1.0
+      "target": "agents_settings_autoremediation_enforcetdd"
     },
     {
       "relation": "contains",
@@ -2623,9 +2487,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate_autoremediation",
-      "target": "agents_settings_autoremediation_parserscript",
-      "confidence_score": 1.0
+      "target": "agents_settings_autoremediation_parserscript"
     },
     {
       "relation": "contains",
@@ -2634,9 +2498,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "agents_settings_reviewgate_autoremediation",
-      "target": "agents_settings_autoremediation_taskprefix",
-      "confidence_score": 1.0
+      "target": "agents_settings_autoremediation_taskprefix"
     },
     {
       "relation": "contains",
@@ -2645,9 +2509,9 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_checkghcli",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_checkghcli"
     },
     {
       "relation": "contains",
@@ -2656,9 +2520,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_execsync",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_execsync"
     },
     {
       "relation": "contains",
@@ -2667,9 +2531,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_fs",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_fs"
     },
     {
       "relation": "contains",
@@ -2678,9 +2542,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_getgitbranch",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_getgitbranch"
     },
     {
       "relation": "contains",
@@ -2689,9 +2553,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
     },
     {
       "relation": "contains",
@@ -2700,9 +2564,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
     },
     {
       "relation": "contains",
@@ -2711,9 +2575,9 @@
       "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_main",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_main"
     },
     {
       "relation": "contains",
@@ -2722,9 +2586,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
-      "target": "antigravity_scripts_open_pr_on_goal_path",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_path"
     },
     {
       "relation": "calls",
@@ -2734,9 +2598,9 @@
       "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_getgitbranch",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_getgitbranch"
     },
     {
       "relation": "calls",
@@ -2746,9 +2610,9 @@
       "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
     },
     {
       "relation": "calls",
@@ -2758,9 +2622,9 @@
       "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
     },
     {
       "relation": "calls",
@@ -2770,9 +2634,9 @@
       "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_checkghcli",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_open_pr_on_goal_checkghcli"
     },
     {
       "relation": "contains",
@@ -2781,9 +2645,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_execsync",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_execsync"
     },
     {
       "relation": "contains",
@@ -2792,9 +2656,9 @@
       "source_location": "L136",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments"
     },
     {
       "relation": "contains",
@@ -2803,9 +2667,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_fs",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_fs"
     },
     {
       "relation": "contains",
@@ -2814,9 +2678,9 @@
       "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_main",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_main"
     },
     {
       "relation": "indirect_call",
@@ -2826,9 +2690,9 @@
       "weight": 1.0,
       "_origin": "ast",
       "context": "collection",
+      "confidence_score": 0.5,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
-      "confidence_score": 0.5
+      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments"
     },
     {
       "relation": "contains",
@@ -2837,9 +2701,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_path",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_path"
     },
     {
       "relation": "indirect_call",
@@ -2849,9 +2713,9 @@
       "weight": 1.0,
       "_origin": "ast",
       "context": "collection",
+      "confidence_score": 0.5,
       "source": "antigravity_scripts_parse_coderabbit_review",
-      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
-      "confidence_score": 0.5
+      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations"
     },
     {
       "relation": "imports_from",
@@ -2861,9 +2725,9 @@
       "source_location": "L409",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "antigravity_scripts_parse_coderabbit_review",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review"
     },
     {
       "relation": "calls",
@@ -2873,9 +2737,9 @@
       "source_location": "L194",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review_main",
-      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments"
     },
     {
       "relation": "imports",
@@ -2885,9 +2749,9 @@
       "source_location": "L409",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments"
     },
     {
       "relation": "calls",
@@ -2897,9 +2761,9 @@
       "source_location": "L206",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review_main",
-      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations"
     },
     {
       "relation": "imports",
@@ -2909,9 +2773,9 @@
       "source_location": "L409",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations"
     },
     {
       "relation": "calls",
@@ -2921,9 +2785,9 @@
       "source_location": "L186",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_scripts_parse_coderabbit_review_main",
-      "target": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
-      "confidence_score": 1.0
+      "target": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments"
     },
     {
       "relation": "contains",
@@ -2932,9 +2796,9 @@
       "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_goalpolicy",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_goalpolicy"
     },
     {
       "relation": "contains",
@@ -2943,9 +2807,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_knowledgesources",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_knowledgesources"
     },
     {
       "relation": "contains",
@@ -2954,9 +2818,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_name",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_name"
     },
     {
       "relation": "contains",
@@ -2965,9 +2829,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_planningpolicy",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy"
     },
     {
       "relation": "contains",
@@ -2976,9 +2840,9 @@
       "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_reviewgate",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_reviewgate"
     },
     {
       "relation": "contains",
@@ -2987,9 +2851,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_schema",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_schema"
     },
     {
       "relation": "contains",
@@ -2998,9 +2862,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings",
-      "target": "antigravity_settings_version",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_version"
     },
     {
       "relation": "contains",
@@ -3009,9 +2873,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_planningpolicy",
-      "target": "antigravity_settings_planningpolicy_disallowhallucinateddependencies",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy_disallowhallucinateddependencies"
     },
     {
       "relation": "contains",
@@ -3020,9 +2884,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_planningpolicy",
-      "target": "antigravity_settings_planningpolicy_instructions",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy_instructions"
     },
     {
       "relation": "contains",
@@ -3031,9 +2895,9 @@
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_planningpolicy",
-      "target": "antigravity_settings_planningpolicy_primarycontextsource",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy_primarycontextsource"
     },
     {
       "relation": "contains",
@@ -3042,9 +2906,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_planningpolicy",
-      "target": "antigravity_settings_planningpolicy_requiregraphtopologyquery",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy_requiregraphtopologyquery"
     },
     {
       "relation": "contains",
@@ -3053,9 +2917,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_planningpolicy",
-      "target": "antigravity_settings_planningpolicy_secondarycontextsource",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_planningpolicy_secondarycontextsource"
     },
     {
       "relation": "contains",
@@ -3064,9 +2928,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_goalpolicy",
-      "target": "antigravity_settings_goalpolicy_automatedreviewer",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_goalpolicy_automatedreviewer"
     },
     {
       "relation": "contains",
@@ -3075,9 +2939,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_goalpolicy",
-      "target": "antigravity_settings_goalpolicy_basebranch",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_goalpolicy_basebranch"
     },
     {
       "relation": "contains",
@@ -3086,9 +2950,9 @@
       "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_goalpolicy",
-      "target": "antigravity_settings_goalpolicy_instructions",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_goalpolicy_instructions"
     },
     {
       "relation": "contains",
@@ -3097,9 +2961,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_goalpolicy",
-      "target": "antigravity_settings_goalpolicy_openpronexhaustion",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_goalpolicy_openpronexhaustion"
     },
     {
       "relation": "contains",
@@ -3108,9 +2972,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate",
-      "target": "antigravity_settings_reviewgate_automatedreviewengine",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_reviewgate_automatedreviewengine"
     },
     {
       "relation": "contains",
@@ -3119,9 +2983,9 @@
       "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate",
-      "target": "antigravity_settings_reviewgate_autoremediation",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_reviewgate_autoremediation"
     },
     {
       "relation": "contains",
@@ -3130,9 +2994,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate",
-      "target": "antigravity_settings_reviewgate_configpath",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_reviewgate_configpath"
     },
     {
       "relation": "contains",
@@ -3141,9 +3005,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate_autoremediation",
-      "target": "antigravity_settings_autoremediation_enabled",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_autoremediation_enabled"
     },
     {
       "relation": "contains",
@@ -3152,9 +3016,9 @@
       "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate_autoremediation",
-      "target": "antigravity_settings_autoremediation_enforcesurgicaledits",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_autoremediation_enforcesurgicaledits"
     },
     {
       "relation": "contains",
@@ -3163,9 +3027,9 @@
       "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate_autoremediation",
-      "target": "antigravity_settings_autoremediation_enforcetdd",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_autoremediation_enforcetdd"
     },
     {
       "relation": "contains",
@@ -3174,9 +3038,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate_autoremediation",
-      "target": "antigravity_settings_autoremediation_parserscript",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_autoremediation_parserscript"
     },
     {
       "relation": "contains",
@@ -3185,9 +3049,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "antigravity_settings_reviewgate_autoremediation",
-      "target": "antigravity_settings_autoremediation_taskprefix",
-      "confidence_score": 1.0
+      "target": "antigravity_settings_autoremediation_taskprefix"
     },
     {
       "relation": "cites",
@@ -3196,9 +3060,9 @@
       "source_location": "L357",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "docref_adr_0005",
-      "confidence_score": 1.0
+      "target": "docref_adr_0005"
     },
     {
       "relation": "cites",
@@ -3207,9 +3071,9 @@
       "source_location": "L426",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "docref_adr_0006",
-      "confidence_score": 1.0
+      "target": "docref_adr_0006"
     },
     {
       "relation": "contains",
@@ -3218,9 +3082,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_assert",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_assert"
     },
     {
       "relation": "contains",
@@ -3229,9 +3093,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_fs",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_fs"
     },
     {
       "relation": "contains",
@@ -3240,9 +3104,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_path",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_path"
     },
     {
       "relation": "contains",
@@ -3251,9 +3115,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_runhook",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_runhook"
     },
     {
       "relation": "contains",
@@ -3262,9 +3126,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_scripts_dir",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_scripts_dir"
     },
     {
       "relation": "contains",
@@ -3273,9 +3137,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_spawnsync",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_spawnsync"
     },
     {
       "relation": "contains",
@@ -3284,9 +3148,9 @@
       "source_location": "L191",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_testtempdir",
-      "confidence_score": 1.0
+      "target": "tests_test_hooks_testtempdir"
     },
     {
       "relation": "contains",
@@ -3295,10 +3159,147 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "tests_test_hooks",
-      "target": "tests_test_hooks_workspace_dir",
+      "target": "tests_test_hooks_workspace_dir"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_execsync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_inspectcommand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_isprotectedbranch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_protected_branches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard",
+      "target": "antigravity_scripts_branch_guard_protected_regex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard_isprotectedbranch",
+      "target": "antigravity_scripts_branch_guard_protected_branches"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard_inspectcommand",
+      "target": "antigravity_scripts_branch_guard_isprotectedbranch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard_inspectcommand",
+      "target": "antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/branch-guard.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "antigravity_scripts_branch_guard_main",
+      "target": "antigravity_scripts_branch_guard_inspectcommand",
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "e1d3ec84a17269425744431c534893838f38b246"
 }

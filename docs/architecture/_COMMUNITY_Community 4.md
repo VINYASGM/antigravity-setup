@@ -19,12 +19,12 @@ members: 15
 - [[handleStop()]] - code - .antigravity/scripts/lint-enforcer.js
 - [[lint-enforcer.js]] - code - .antigravity/scripts/lint-enforcer.js
 - [[loadCache()]] - code - .antigravity/scripts/lint-enforcer.js
-- [[main()_1]] - code - .antigravity/scripts/lint-enforcer.js
-- [[path_1]] - code - .antigravity/scripts/lint-enforcer.js
+- [[main()]] - code - .antigravity/scripts/lint-enforcer.js
+- [[path]] - code - .antigravity/scripts/lint-enforcer.js
 - [[runProjectLinter()]] - code - .antigravity/scripts/lint-enforcer.js
 - [[saveCache()]] - code - .antigravity/scripts/lint-enforcer.js
 - [[validateFileSyntax()]] - code - .antigravity/scripts/lint-enforcer.js
-- [[{ execSync }_1]] - code - .antigravity/scripts/lint-enforcer.js
+- [[{ execSync }]] - code - .antigravity/scripts/lint-enforcer.js
 
 ## Live Query (requires Dataview plugin)
 

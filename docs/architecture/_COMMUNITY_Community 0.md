@@ -18,16 +18,16 @@ members: 19
 - [[fetchGithubPrComments()]] - code - .antigravity/scripts/parse-coderabbit-review.js
 - [[fs_4]] - code - .antigravity/scripts/parse-coderabbit-review.js
 - [[fs_5]] - code - tests/test-hooks.js
-- [[main()_6]] - code - .antigravity/scripts/parse-coderabbit-review.js
+- [[main()_5]] - code - .antigravity/scripts/parse-coderabbit-review.js
 - [[parse-coderabbit-review.js]] - code - .antigravity/scripts/parse-coderabbit-review.js
 - [[parseReviewComments()]] - code - .antigravity/scripts/parse-coderabbit-review.js
-- [[path_6]] - code - .antigravity/scripts/parse-coderabbit-review.js
-- [[path_7]] - code - tests/test-hooks.js
+- [[path_5]] - code - .antigravity/scripts/parse-coderabbit-review.js
+- [[path_6]] - code - tests/test-hooks.js
 - [[runHook()]] - code - tests/test-hooks.js
 - [[test-hooks.js]] - code - tests/test-hooks.js
 - [[testTempDir]] - code - tests/test-hooks.js
 - [[updatePrdWithRemediations()]] - code - .antigravity/scripts/parse-coderabbit-review.js
-- [[{ execSync }_3]] - code - .antigravity/scripts/parse-coderabbit-review.js
+- [[{ execSync }_2]] - code - .antigravity/scripts/parse-coderabbit-review.js
 - [[{ spawnSync }_1]] - code - tests/test-hooks.js
 
 ## Live Query (requires Dataview plugin)

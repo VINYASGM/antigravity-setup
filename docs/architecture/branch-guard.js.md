@@ -17,8 +17,8 @@ tags:
 - [[getCurrentGitBranch()]] - `contains` [EXTRACTED]
 - [[inspectCommand()]] - `contains` [EXTRACTED]
 - [[isProtectedBranch()]] - `contains` [EXTRACTED]
-- [[main()]] - `contains` [EXTRACTED]
-- [[path]] - `contains` [EXTRACTED]
-- [[{ execSync }]] - `contains` [EXTRACTED]
+- [[main()_6]] - `contains` [EXTRACTED]
+- [[path_7]] - `contains` [EXTRACTED]
+- [[{ execSync }_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_6

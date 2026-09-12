@@ -12,7 +12,7 @@ tags:
 # fetchGithubPrComments()
 
 ## Connections
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 - [[parse-coderabbit-review.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_0

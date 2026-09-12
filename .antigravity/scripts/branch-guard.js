@@ -91,13 +91,19 @@ function inspectCommand(commandLine, cwd) {
         }
       }
 
-      // If push has no branch specified, it pushes current branch
-      const currentBranch = getCurrentGitBranch(cwd);
-      if (currentBranch && isProtectedBranch(currentBranch)) {
-        return {
-          allow: false,
-          reason: `Active branch is protected ('${currentBranch}'). Direct push is locked.`
-        };
+      // Check positional arguments: [remote] [refspec...]
+      const nonFlagArgs = args.filter(a => !a.startsWith('-'));
+      const hasExplicitRefspec = nonFlagArgs.length >= 2;
+
+      // If push has no explicit branch/refspec specified, it pushes the current active branch
+      if (!hasExplicitRefspec) {
+        const currentBranch = getCurrentGitBranch(cwd);
+        if (currentBranch && isProtectedBranch(currentBranch)) {
+          return {
+            allow: false,
+            reason: `Active branch is protected ('${currentBranch}'). Direct push is locked.`
+          };
+        }
       }
 
       if (isForce) {

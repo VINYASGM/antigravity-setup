@@ -12,7 +12,7 @@ tags:
 # hasUnpushedCommits()
 
 ## Connections
-- [[main()_5]] - `calls` [EXTRACTED]
+- [[main()_4]] - `calls` [EXTRACTED]
 - [[open-pr-on-goal.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_7

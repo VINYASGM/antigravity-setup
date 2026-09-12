@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[lint-enforcer.js]] - `contains` [EXTRACTED]
 - [[loadCache()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[saveCache()]] - `calls` [EXTRACTED]
 - [[validateFileSyntax()]] - `calls` [EXTRACTED]
 

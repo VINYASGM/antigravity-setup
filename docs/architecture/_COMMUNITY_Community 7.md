@@ -15,10 +15,10 @@ members: 9
 - [[getGitBranch()]] - code - .antigravity/scripts/open-pr-on-goal.js
 - [[getLatestCommitMessage()]] - code - .antigravity/scripts/open-pr-on-goal.js
 - [[hasUnpushedCommits()]] - code - .antigravity/scripts/open-pr-on-goal.js
-- [[main()_5]] - code - .antigravity/scripts/open-pr-on-goal.js
+- [[main()_4]] - code - .antigravity/scripts/open-pr-on-goal.js
 - [[open-pr-on-goal.js]] - code - .antigravity/scripts/open-pr-on-goal.js
-- [[path_5]] - code - .antigravity/scripts/open-pr-on-goal.js
-- [[{ execSync }_2]] - code - .antigravity/scripts/open-pr-on-goal.js
+- [[path_4]] - code - .antigravity/scripts/open-pr-on-goal.js
+- [[{ execSync }_1]] - code - .antigravity/scripts/open-pr-on-goal.js
 
 ## Live Query (requires Dataview plugin)
 

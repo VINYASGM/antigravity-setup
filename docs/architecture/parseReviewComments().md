@@ -12,7 +12,7 @@ tags:
 # parseReviewComments()
 
 ## Connections
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 - [[parse-coderabbit-review.js]] - `indirect_call` [INFERRED]
 - [[test-hooks.js]] - `imports` [EXTRACTED]
 

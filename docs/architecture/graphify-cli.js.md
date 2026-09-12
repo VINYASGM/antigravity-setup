@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[fs_1]] - `contains` [EXTRACTED]
-- [[main()_3]] - `contains` [EXTRACTED]
+- [[main()_2]] - `contains` [EXTRACTED]
 - [[parseArgs()]] - `contains` [EXTRACTED]
-- [[path_3]] - `contains` [EXTRACTED]
+- [[path_2]] - `contains` [EXTRACTED]
 - [[runPython()]] - `contains` [EXTRACTED]
 - [[{ spawnSync }]] - `contains` [EXTRACTED]
 

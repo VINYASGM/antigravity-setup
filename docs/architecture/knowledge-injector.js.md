@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[fs_2]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
-- [[path_4]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
+- [[path_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_12

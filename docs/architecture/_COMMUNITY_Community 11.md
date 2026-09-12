@@ -12,9 +12,9 @@ members: 7
 ## Members
 - [[fs_1]] - code - scripts/graphify-cli.js
 - [[graphify-cli.js]] - code - scripts/graphify-cli.js
-- [[main()_3]] - code - scripts/graphify-cli.js
+- [[main()_2]] - code - scripts/graphify-cli.js
 - [[parseArgs()]] - code - scripts/graphify-cli.js
-- [[path_3]] - code - scripts/graphify-cli.js
+- [[path_2]] - code - scripts/graphify-cli.js
 - [[runPython()]] - code - scripts/graphify-cli.js
 - [[{ spawnSync }]] - code - scripts/graphify-cli.js
 

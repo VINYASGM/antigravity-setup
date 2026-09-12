@@ -1,8 +1,8 @@
 ---
-source_file: ".antigravity/scripts/parse-coderabbit-review.js"
+source_file: "tests/test-hooks.js"
 type: "code"
 community: "Community 0"
-location: "L15"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # path
 
 ## Connections
-- [[parse-coderabbit-review.js]] - `contains` [EXTRACTED]
+- [[test-hooks.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_0

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[isPathWithinWorkspace()]] - `calls` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[shell-sandbox.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_9

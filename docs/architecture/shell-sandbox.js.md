@@ -16,7 +16,7 @@ tags:
 - [[BLOCKED_COMMAND_PATTERNS]] - `contains` [EXTRACTED]
 - [[evaluateCommand()]] - `contains` [EXTRACTED]
 - [[isPathWithinWorkspace()]] - `contains` [EXTRACTED]
-- [[main()_2]] - `contains` [EXTRACTED]
-- [[path_2]] - `contains` [EXTRACTED]
+- [[main()_1]] - `contains` [EXTRACTED]
+- [[path_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_9

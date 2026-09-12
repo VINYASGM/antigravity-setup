@@ -12,8 +12,8 @@ members: 4
 ## Members
 - [[fs_2]] - code - .antigravity/scripts/knowledge-injector.js
 - [[knowledge-injector.js]] - code - .antigravity/scripts/knowledge-injector.js
-- [[main()_4]] - code - .antigravity/scripts/knowledge-injector.js
-- [[path_4]] - code - .antigravity/scripts/knowledge-injector.js
+- [[main()_3]] - code - .antigravity/scripts/knowledge-injector.js
+- [[path_3]] - code - .antigravity/scripts/knowledge-injector.js
 
 ## Live Query (requires Dataview plugin)
 

@@ -20,11 +20,11 @@ tags:
 - [[handlePreTool()]] - `contains` [EXTRACTED]
 - [[handleStop()]] - `contains` [EXTRACTED]
 - [[loadCache()]] - `contains` [EXTRACTED]
-- [[main()_1]] - `contains` [EXTRACTED]
-- [[path_1]] - `contains` [EXTRACTED]
+- [[main()]] - `contains` [EXTRACTED]
+- [[path]] - `contains` [EXTRACTED]
 - [[runProjectLinter()]] - `contains` [EXTRACTED]
 - [[saveCache()]] - `contains` [EXTRACTED]
 - [[validateFileSyntax()]] - `contains` [EXTRACTED]
-- [[{ execSync }_1]] - `contains` [EXTRACTED]
+- [[{ execSync }]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_4

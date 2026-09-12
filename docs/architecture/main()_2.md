@@ -1,18 +1,19 @@
 ---
-source_file: ".antigravity/scripts/shell-sandbox.js"
+source_file: "scripts/graphify-cli.js"
 type: "code"
-community: "Community 9"
-location: "L99"
+community: "Community 11"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_11
 ---
 
 # main()
 
 ## Connections
-- [[evaluateCommand()]] - `calls` [EXTRACTED]
-- [[shell-sandbox.js]] - `contains` [EXTRACTED]
+- [[graphify-cli.js]] - `contains` [EXTRACTED]
+- [[parseArgs()]] - `calls` [EXTRACTED]
+- [[runPython()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Community_11

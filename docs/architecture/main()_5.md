@@ -1,21 +1,20 @@
 ---
-source_file: ".antigravity/scripts/open-pr-on-goal.js"
+source_file: ".antigravity/scripts/parse-coderabbit-review.js"
 type: "code"
-community: "Community 7"
-location: "L71"
+community: "Community 0"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_0
 ---
 
 # main()
 
 ## Connections
-- [[checkGhCli()]] - `calls` [EXTRACTED]
-- [[getGitBranch()]] - `calls` [EXTRACTED]
-- [[getLatestCommitMessage()]] - `calls` [EXTRACTED]
-- [[hasUnpushedCommits()]] - `calls` [EXTRACTED]
-- [[open-pr-on-goal.js]] - `contains` [EXTRACTED]
+- [[fetchGithubPrComments()]] - `calls` [EXTRACTED]
+- [[parse-coderabbit-review.js]] - `contains` [EXTRACTED]
+- [[parseReviewComments()]] - `calls` [EXTRACTED]
+- [[updatePrdWithRemediations()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_0

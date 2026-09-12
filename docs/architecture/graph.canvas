@@ -85,7 +85,7 @@
     {
       "id": "n_antigravity_scripts_parse_coderabbit_review_main",
       "type": "file",
-      "file": "main()_6.md",
+      "file": "main()_5.md",
       "x": 620,
       "y": 160,
       "width": 180,
@@ -112,7 +112,7 @@
     {
       "id": "n_antigravity_scripts_parse_coderabbit_review_path",
       "type": "file",
-      "file": "path_6.md",
+      "file": "path_5.md",
       "x": 220,
       "y": 240,
       "width": 180,
@@ -121,7 +121,7 @@
     {
       "id": "n_tests_test_hooks_path",
       "type": "file",
-      "file": "path_7.md",
+      "file": "path_6.md",
       "x": 420,
       "y": 240,
       "width": 180,
@@ -166,7 +166,7 @@
     {
       "id": "n_antigravity_scripts_parse_coderabbit_review_execsync",
       "type": "file",
-      "file": "{ execSync }_3.md",
+      "file": "{ execSync }_2.md",
       "x": 420,
       "y": 320,
       "width": 180,
@@ -746,7 +746,7 @@
     {
       "id": "n_antigravity_scripts_lint_enforcer_main",
       "type": "file",
-      "file": "main()_1.md",
+      "file": "main().md",
       "x": 220,
       "y": 840,
       "width": 180,
@@ -755,7 +755,7 @@
     {
       "id": "n_antigravity_scripts_lint_enforcer_path",
       "type": "file",
-      "file": "path_1.md",
+      "file": "path.md",
       "x": 420,
       "y": 840,
       "width": 180,
@@ -791,7 +791,7 @@
     {
       "id": "n_antigravity_scripts_lint_enforcer_execsync",
       "type": "file",
-      "file": "{ execSync }_1.md",
+      "file": "{ execSync }.md",
       "x": 420,
       "y": 920,
       "width": 180,
@@ -955,7 +955,7 @@
     {
       "id": "n_antigravity_scripts_branch_guard_main",
       "type": "file",
-      "file": "main().md",
+      "file": "main()_6.md",
       "x": 2380,
       "y": 840,
       "width": 180,
@@ -964,7 +964,7 @@
     {
       "id": "n_antigravity_scripts_branch_guard_path",
       "type": "file",
-      "file": "path.md",
+      "file": "path_7.md",
       "x": 2580,
       "y": 840,
       "width": 180,
@@ -973,7 +973,7 @@
     {
       "id": "n_antigravity_scripts_branch_guard_execsync",
       "type": "file",
-      "file": "{ execSync }.md",
+      "file": "{ execSync }_3.md",
       "x": 2780,
       "y": 840,
       "width": 180,
@@ -1037,7 +1037,7 @@
     {
       "id": "n_antigravity_scripts_open_pr_on_goal_main",
       "type": "file",
-      "file": "main()_5.md",
+      "file": "main()_4.md",
       "x": 3740,
       "y": 760,
       "width": 180,
@@ -1055,7 +1055,7 @@
     {
       "id": "n_antigravity_scripts_open_pr_on_goal_path",
       "type": "file",
-      "file": "path_5.md",
+      "file": "path_4.md",
       "x": 3540,
       "y": 840,
       "width": 180,
@@ -1064,7 +1064,7 @@
     {
       "id": "n_antigravity_scripts_open_pr_on_goal_execsync",
       "type": "file",
-      "file": "{ execSync }_2.md",
+      "file": "{ execSync }_1.md",
       "x": 3740,
       "y": 840,
       "width": 180,
@@ -1210,7 +1210,7 @@
     {
       "id": "n_antigravity_scripts_shell_sandbox_main",
       "type": "file",
-      "file": "main()_2.md",
+      "file": "main()_1.md",
       "x": 1400,
       "y": 1360,
       "width": 180,
@@ -1219,7 +1219,7 @@
     {
       "id": "n_antigravity_scripts_shell_sandbox_path",
       "type": "file",
-      "file": "path_2.md",
+      "file": "path_1.md",
       "x": 1600,
       "y": 1360,
       "width": 180,
@@ -1338,7 +1338,7 @@
     {
       "id": "n_scripts_graphify_cli_main",
       "type": "file",
-      "file": "main()_3.md",
+      "file": "main()_2.md",
       "x": 3740,
       "y": 1280,
       "width": 180,
@@ -1356,7 +1356,7 @@
     {
       "id": "n_scripts_graphify_cli_path",
       "type": "file",
-      "file": "path_3.md",
+      "file": "path_2.md",
       "x": 3540,
       "y": 1360,
       "width": 180,
@@ -1411,7 +1411,7 @@
     {
       "id": "n_antigravity_scripts_knowledge_injector_main",
       "type": "file",
-      "file": "main()_4.md",
+      "file": "main()_3.md",
       "x": 20,
       "y": 1860,
       "width": 180,
@@ -1420,7 +1420,7 @@
     {
       "id": "n_antigravity_scripts_knowledge_injector_path",
       "type": "file",
-      "file": "path_4.md",
+      "file": "path_3.md",
       "x": 220,
       "y": 1860,
       "width": 180,
@@ -1428,78 +1428,6 @@
     }
   ],
   "edges": [
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_execsync",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_execsync",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_getcurrentgitbranch",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_inspectcommand",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_isprotectedbranch",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_main",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_main",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_path",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_path",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_branches",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_protected_branches",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_regex",
-      "fromNode": "n_antigravity_scripts_branch_guard",
-      "toNode": "n_antigravity_scripts_branch_guard_protected_regex",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_protected_branches_antigravity_scripts_branch_guard_isprotectedbranch",
-      "fromNode": "n_antigravity_scripts_branch_guard_protected_branches",
-      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_isprotectedbranch_antigravity_scripts_branch_guard_inspectcommand",
-      "fromNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
-      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_getcurrentgitbranch_antigravity_scripts_branch_guard_inspectcommand",
-      "fromNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
-      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_antigravity_scripts_branch_guard_inspectcommand_antigravity_scripts_branch_guard_main",
-      "fromNode": "n_antigravity_scripts_branch_guard_inspectcommand",
-      "toNode": "n_antigravity_scripts_branch_guard_main",
-      "label": "calls [EXTRACTED]"
-    },
     {
       "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_cache_dir",
       "fromNode": "n_antigravity_scripts_lint_enforcer",
@@ -2417,6 +2345,78 @@
       "fromNode": "n_tests_test_hooks",
       "toNode": "n_tests_test_hooks_workspace_dir",
       "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_execsync",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_execsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_isprotectedbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_main",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_path",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_branches",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_protected_branches",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_regex",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_protected_regex",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_protected_branches_antigravity_scripts_branch_guard_isprotectedbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard_protected_branches",
+      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_isprotectedbranch_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_getcurrentgitbranch_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_inspectcommand_antigravity_scripts_branch_guard_main",
+      "fromNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "toNode": "n_antigravity_scripts_branch_guard_main",
+      "label": "calls [EXTRACTED]"
     }
   ]
 }

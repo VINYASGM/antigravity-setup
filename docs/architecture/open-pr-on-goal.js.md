@@ -17,8 +17,8 @@ tags:
 - [[getGitBranch()]] - `contains` [EXTRACTED]
 - [[getLatestCommitMessage()]] - `contains` [EXTRACTED]
 - [[hasUnpushedCommits()]] - `contains` [EXTRACTED]
-- [[main()_5]] - `contains` [EXTRACTED]
-- [[path_5]] - `contains` [EXTRACTED]
-- [[{ execSync }_2]] - `contains` [EXTRACTED]
+- [[main()_4]] - `contains` [EXTRACTED]
+- [[path_4]] - `contains` [EXTRACTED]
+- [[{ execSync }_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_7
