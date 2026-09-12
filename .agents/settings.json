@@ -1,0 +1,58 @@
+{
+  "$schema": "https://antigravity.google/schemas/project-settings.json",
+  "name": "start-workspace",
+  "version": "2.0",
+  "knowledgeSources": [
+    {
+      "id": "codebase-graph-topology",
+      "type": "graph",
+      "path": ".antigravity/graph.json",
+      "format": "networkx-node-link",
+      "description": "Codebase AST dependency topology containing symbols, calls, imports, and community clusters. Must be queried during feature planning to determine ground-truth dependency chains.",
+      "priority": 1,
+      "autoReload": true
+    },
+    {
+      "id": "architecture-decision-records",
+      "type": "directory",
+      "path": "docs/adr/",
+      "format": "obsidian-vault",
+      "description": "Architecture Decision Records (ADRs) establishing state management, database schemas, invariants, and guardrail policies.",
+      "priority": 2,
+      "autoReload": true
+    },
+    {
+      "id": "architecture-visual-vault",
+      "type": "directory",
+      "path": "docs/architecture/",
+      "format": "obsidian-vault",
+      "description": "Obsidian architecture notes and visual canvas (graph.canvas) reflecting the extracted AST topology.",
+      "priority": 3,
+      "autoReload": true
+    }
+  ],
+  "planningPolicy": {
+    "requireGraphTopologyQuery": true,
+    "disallowHallucinatedDependencies": true,
+    "primaryContextSource": ".antigravity/graph.json",
+    "secondaryContextSource": "docs/adr/",
+    "instructions": "When planning or implementing any feature, bugfix, or refactor, the agent must query .antigravity/graph.json to inspect real symbol nodes, caller references, and outbound dependency links before proposing changes."
+  },
+  "goalPolicy": {
+    "openPrOnExhaustion": true,
+    "baseBranch": "main",
+    "automatedReviewer": "@coderabbitai",
+    "instructions": "When a /goal queue is exhausted on a feature branch, open a Pull Request targeting main and trigger automated CodeRabbit review."
+  },
+  "reviewGate": {
+    "automatedReviewEngine": "CodeRabbit",
+    "configPath": ".coderabbit.yaml",
+    "autoRemediation": {
+      "enabled": true,
+      "parserScript": ".antigravity/scripts/parse-coderabbit-review.js",
+      "taskPrefix": "REMEDIATION-",
+      "enforceTdd": true,
+      "enforceSurgicalEdits": true
+    }
+  }
+}

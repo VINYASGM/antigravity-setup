@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+version: "2"
+language: "en-US"
+early_access: false
+
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"
+      - "master"
+
+  tools:
+    ast-grep:
+      enabled: true
+    shellcheck:
+      enabled: true
+    eslint:
+      enabled: true
+
+  # Targeted audit prompts for CodeRabbit AI
+  instructions: |
+    Perform a strict, production-grade review auditing specifically for:
+    
+    1. Cyclomatic Complexity:
+       - Flag any function, method, or handler with cyclomatic complexity > 10.
+       - Provide refactoring guidance to decompose complex branching into smaller, testable units.
+    
+    2. Security Vulnerabilities:
+       - Identify dangerous shell executions, unescaped command interpolations, and injection vectors.
+       - Detect unvalidated user inputs, unsafe file path traversals outside authorized workspace boundaries.
+       - Flag exposed tokens, keys, secrets, or insecure regex expressions prone to ReDoS.
+    
+    3. Logic Bugs & Edge Cases:
+       - Flag unhandled error states, missing promise rejections, or race conditions in asynchronous code.
+       - Detect potential null/undefined dereferences and off-by-one boundary conditions.
+    
+    4. Structured Comment Format:
+       - Tag every review comment with one of:
+         - [CRITICAL]: Security holes, severe logic bugs, or test failures. Requires fix before merge.
+         - [WARNING]: Cyclomatic complexity > 10, poor error handling, or performance bottlenecks.
+         - [SUGGESTION]: Code hygiene, readability improvements, or idiomatic refactorings.
+       - Always include a concrete code replacement suggestion (diff block) where applicable.
+
+chat:
+  auto_reply: true

@@ -1,0 +1,2422 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Community 0",
+      "x": 0,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "n_docref_adr_0005",
+      "type": "file",
+      "file": "ADR-0005.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docref_adr_0006",
+      "type": "file",
+      "file": "ADR-0006.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_scripts_dir",
+      "type": "file",
+      "file": "SCRIPTS_DIR.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_workspace_dir",
+      "type": "file",
+      "file": "WORKSPACE_DIR.md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_assert",
+      "type": "file",
+      "file": "assert().md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
+      "type": "file",
+      "file": "fetchGithubPrComments().md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_fs",
+      "type": "file",
+      "file": "fs_4.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_fs",
+      "type": "file",
+      "file": "fs_5.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_main",
+      "type": "file",
+      "file": "main()_6.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review",
+      "type": "file",
+      "file": "parse-coderabbit-review.js.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
+      "type": "file",
+      "file": "parseReviewComments().md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_path",
+      "type": "file",
+      "file": "path_6.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_path",
+      "type": "file",
+      "file": "path_7.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_runhook",
+      "type": "file",
+      "file": "runHook().md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks",
+      "type": "file",
+      "file": "test-hooks.js.md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_testtempdir",
+      "type": "file",
+      "file": "testTempDir.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
+      "type": "file",
+      "file": "updatePrdWithRemediations().md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_parse_coderabbit_review_execsync",
+      "type": "file",
+      "file": "{ execSync }_3.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_hooks_spawnsync",
+      "type": "file",
+      "file": "{ spawnSync }_1.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Community 1",
+      "x": 1180,
+      "y": 0,
+      "width": 1100,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "n_ref_antigravity",
+      "type": "file",
+      "file": "antigravity.md",
+      "x": 1200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_author",
+      "type": "file",
+      "file": "author.md",
+      "x": 1400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_bin",
+      "type": "file",
+      "file": "bin.md",
+      "x": 1600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_description",
+      "type": "file",
+      "file": "description.md",
+      "x": 1800,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_bin_graphify",
+      "type": "file",
+      "file": "graphify.md",
+      "x": 2000,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_graphify",
+      "type": "file",
+      "file": "graphify_1.md",
+      "x": 1200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_graphify",
+      "type": "file",
+      "file": "graphify_2.md",
+      "x": 1400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_guardrails",
+      "type": "file",
+      "file": "guardrails.md",
+      "x": 1600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_keywords",
+      "type": "file",
+      "file": "keywords.md",
+      "x": 1800,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_license",
+      "type": "file",
+      "file": "license.md",
+      "x": 2000,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_main",
+      "type": "file",
+      "file": "main.md",
+      "x": 1200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 1400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_obsidian",
+      "type": "file",
+      "file": "obsidian.md",
+      "x": 1600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 1800,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 2000,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_test",
+      "type": "file",
+      "file": "test.md",
+      "x": 1200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 1400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Community 2",
+      "x": 2360,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_agents_settings_schema",
+      "type": "file",
+      "file": "$schema.md",
+      "x": 2380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings",
+      "type": "file",
+      "file": ".agentssettings.json.md",
+      "x": 2580,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_goalpolicy_automatedreviewer",
+      "type": "file",
+      "file": "automatedReviewer.md",
+      "x": 2780,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_goalpolicy_basebranch",
+      "type": "file",
+      "file": "baseBranch.md",
+      "x": 2980,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy_disallowhallucinateddependencies",
+      "type": "file",
+      "file": "disallowHallucinatedDependencies.md",
+      "x": 2380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_goalpolicy",
+      "type": "file",
+      "file": "goalPolicy.md",
+      "x": 2580,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_goalpolicy_instructions",
+      "type": "file",
+      "file": "instructions_1.md",
+      "x": 2780,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy_instructions",
+      "type": "file",
+      "file": "instructions.md",
+      "x": 2980,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_knowledgesources",
+      "type": "file",
+      "file": "knowledgeSources.md",
+      "x": 2380,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_name",
+      "type": "file",
+      "file": "name_1.md",
+      "x": 2580,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_goalpolicy_openpronexhaustion",
+      "type": "file",
+      "file": "openPrOnExhaustion.md",
+      "x": 2780,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy",
+      "type": "file",
+      "file": "planningPolicy.md",
+      "x": 2980,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy_primarycontextsource",
+      "type": "file",
+      "file": "primaryContextSource.md",
+      "x": 2380,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy_requiregraphtopologyquery",
+      "type": "file",
+      "file": "requireGraphTopologyQuery.md",
+      "x": 2580,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_planningpolicy_secondarycontextsource",
+      "type": "file",
+      "file": "secondaryContextSource.md",
+      "x": 2780,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_version",
+      "type": "file",
+      "file": "version_1.md",
+      "x": 2980,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Community 3",
+      "x": 3320,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_antigravity_settings_schema",
+      "type": "file",
+      "file": "$schema_1.md",
+      "x": 3340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings",
+      "type": "file",
+      "file": ".antigravitysettings.json.md",
+      "x": 3540,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_goalpolicy_automatedreviewer",
+      "type": "file",
+      "file": "automatedReviewer_1.md",
+      "x": 3740,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_goalpolicy_basebranch",
+      "type": "file",
+      "file": "baseBranch_1.md",
+      "x": 3940,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy_disallowhallucinateddependencies",
+      "type": "file",
+      "file": "disallowHallucinatedDependencies_1.md",
+      "x": 3340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_goalpolicy",
+      "type": "file",
+      "file": "goalPolicy_1.md",
+      "x": 3540,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_goalpolicy_instructions",
+      "type": "file",
+      "file": "instructions_3.md",
+      "x": 3740,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy_instructions",
+      "type": "file",
+      "file": "instructions_2.md",
+      "x": 3940,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_knowledgesources",
+      "type": "file",
+      "file": "knowledgeSources_1.md",
+      "x": 3340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_name",
+      "type": "file",
+      "file": "name_2.md",
+      "x": 3540,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_goalpolicy_openpronexhaustion",
+      "type": "file",
+      "file": "openPrOnExhaustion_1.md",
+      "x": 3740,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy",
+      "type": "file",
+      "file": "planningPolicy_1.md",
+      "x": 3940,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy_primarycontextsource",
+      "type": "file",
+      "file": "primaryContextSource_1.md",
+      "x": 3340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy_requiregraphtopologyquery",
+      "type": "file",
+      "file": "requireGraphTopologyQuery_1.md",
+      "x": 3540,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_planningpolicy_secondarycontextsource",
+      "type": "file",
+      "file": "secondaryContextSource_1.md",
+      "x": 3740,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_version",
+      "type": "file",
+      "file": "version_2.md",
+      "x": 3940,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Community 4",
+      "x": 0,
+      "y": 600,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_cache_dir",
+      "type": "file",
+      "file": "CACHE_DIR.md",
+      "x": 20,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_cache_file",
+      "type": "file",
+      "file": "CACHE_FILE.md",
+      "x": 220,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_ensurecachedir",
+      "type": "file",
+      "file": "ensureCacheDir().md",
+      "x": 420,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_fs",
+      "type": "file",
+      "file": "fs.md",
+      "x": 620,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "type": "file",
+      "file": "handlePostTool().md",
+      "x": 20,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "type": "file",
+      "file": "handlePreTool().md",
+      "x": 220,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "type": "file",
+      "file": "handleStop().md",
+      "x": 420,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer",
+      "type": "file",
+      "file": "lint-enforcer.js.md",
+      "x": 620,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "type": "file",
+      "file": "loadCache().md",
+      "x": 20,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_main",
+      "type": "file",
+      "file": "main()_1.md",
+      "x": 220,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_path",
+      "type": "file",
+      "file": "path_1.md",
+      "x": 420,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_runprojectlinter",
+      "type": "file",
+      "file": "runProjectLinter().md",
+      "x": 620,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_savecache",
+      "type": "file",
+      "file": "saveCache().md",
+      "x": 20,
+      "y": 920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "type": "file",
+      "file": "validateFileSyntax().md",
+      "x": 220,
+      "y": 920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_lint_enforcer_execsync",
+      "type": "file",
+      "file": "{ execSync }_1.md",
+      "x": 420,
+      "y": 920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Community 5",
+      "x": 1180,
+      "y": 600,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_agents_settings_reviewgate_autoremediation",
+      "type": "file",
+      "file": "autoRemediation.md",
+      "x": 1200,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_reviewgate_automatedreviewengine",
+      "type": "file",
+      "file": "automatedReviewEngine.md",
+      "x": 1400,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_reviewgate_configpath",
+      "type": "file",
+      "file": "configPath.md",
+      "x": 1600,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_autoremediation_enabled",
+      "type": "file",
+      "file": "enabled.md",
+      "x": 1200,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_autoremediation_enforcesurgicaledits",
+      "type": "file",
+      "file": "enforceSurgicalEdits.md",
+      "x": 1400,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_autoremediation_enforcetdd",
+      "type": "file",
+      "file": "enforceTdd.md",
+      "x": 1600,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_autoremediation_parserscript",
+      "type": "file",
+      "file": "parserScript.md",
+      "x": 1200,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_reviewgate",
+      "type": "file",
+      "file": "reviewGate.md",
+      "x": 1400,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_settings_autoremediation_taskprefix",
+      "type": "file",
+      "file": "taskPrefix.md",
+      "x": 1600,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Community 6",
+      "x": 2360,
+      "y": 600,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_protected_branches",
+      "type": "file",
+      "file": "PROTECTED_BRANCHES.md",
+      "x": 2380,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_protected_regex",
+      "type": "file",
+      "file": "PROTECTED_REGEX.md",
+      "x": 2580,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard",
+      "type": "file",
+      "file": "branch-guard.js.md",
+      "x": 2780,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "type": "file",
+      "file": "getCurrentGitBranch().md",
+      "x": 2380,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "type": "file",
+      "file": "inspectCommand().md",
+      "x": 2580,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "type": "file",
+      "file": "isProtectedBranch().md",
+      "x": 2780,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_main",
+      "type": "file",
+      "file": "main().md",
+      "x": 2380,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_path",
+      "type": "file",
+      "file": "path.md",
+      "x": 2580,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_branch_guard_execsync",
+      "type": "file",
+      "file": "{ execSync }.md",
+      "x": 2780,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Community 7",
+      "x": 3320,
+      "y": 600,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_checkghcli",
+      "type": "file",
+      "file": "checkGhCli().md",
+      "x": 3340,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_fs",
+      "type": "file",
+      "file": "fs_3.md",
+      "x": 3540,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_getgitbranch",
+      "type": "file",
+      "file": "getGitBranch().md",
+      "x": 3740,
+      "y": 680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
+      "type": "file",
+      "file": "getLatestCommitMessage().md",
+      "x": 3340,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
+      "type": "file",
+      "file": "hasUnpushedCommits().md",
+      "x": 3540,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_main",
+      "type": "file",
+      "file": "main()_5.md",
+      "x": 3740,
+      "y": 760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal",
+      "type": "file",
+      "file": "open-pr-on-goal.js.md",
+      "x": 3340,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_path",
+      "type": "file",
+      "file": "path_5.md",
+      "x": 3540,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_open_pr_on_goal_execsync",
+      "type": "file",
+      "file": "{ execSync }_2.md",
+      "x": 3740,
+      "y": 840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Community 8",
+      "x": 0,
+      "y": 1200,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_antigravity_settings_reviewgate_autoremediation",
+      "type": "file",
+      "file": "autoRemediation_1.md",
+      "x": 20,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_reviewgate_automatedreviewengine",
+      "type": "file",
+      "file": "automatedReviewEngine_1.md",
+      "x": 220,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_reviewgate_configpath",
+      "type": "file",
+      "file": "configPath_1.md",
+      "x": 420,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_autoremediation_enabled",
+      "type": "file",
+      "file": "enabled_1.md",
+      "x": 20,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_autoremediation_enforcesurgicaledits",
+      "type": "file",
+      "file": "enforceSurgicalEdits_1.md",
+      "x": 220,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_autoremediation_enforcetdd",
+      "type": "file",
+      "file": "enforceTdd_1.md",
+      "x": 420,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_autoremediation_parserscript",
+      "type": "file",
+      "file": "parserScript_1.md",
+      "x": 20,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_reviewgate",
+      "type": "file",
+      "file": "reviewGate_1.md",
+      "x": 220,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_settings_autoremediation_taskprefix",
+      "type": "file",
+      "file": "taskPrefix_1.md",
+      "x": 420,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Community 9",
+      "x": 1180,
+      "y": 1200,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_ask_confirmation_patterns",
+      "type": "file",
+      "file": "ASK_CONFIRMATION_PATTERNS.md",
+      "x": 1200,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_blocked_command_patterns",
+      "type": "file",
+      "file": "BLOCKED_COMMAND_PATTERNS.md",
+      "x": 1400,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "type": "file",
+      "file": "evaluateCommand().md",
+      "x": 1600,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_ispathwithinworkspace",
+      "type": "file",
+      "file": "isPathWithinWorkspace().md",
+      "x": 1200,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_main",
+      "type": "file",
+      "file": "main()_2.md",
+      "x": 1400,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox_path",
+      "type": "file",
+      "file": "path_2.md",
+      "x": 1600,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_shell_sandbox",
+      "type": "file",
+      "file": "shell-sandbox.js.md",
+      "x": 1200,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Community 10",
+      "x": 2360,
+      "y": 1200,
+      "width": 660,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_docs_adr_obsidian_app",
+      "type": "file",
+      "file": "app.json.md",
+      "x": 2380,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_attachmentfolderpath",
+      "type": "file",
+      "file": "attachmentFolderPath.md",
+      "x": 2580,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_livepreview",
+      "type": "file",
+      "file": "livePreview.md",
+      "x": 2780,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_newfilelocation",
+      "type": "file",
+      "file": "newFileLocation.md",
+      "x": 2380,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_promptdelete",
+      "type": "file",
+      "file": "promptDelete.md",
+      "x": 2580,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_showlinenumber",
+      "type": "file",
+      "file": "showLineNumber.md",
+      "x": 2780,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_adr_obsidian_app_usemarkdownlinks",
+      "type": "file",
+      "file": "useMarkdownLinks.md",
+      "x": 2380,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Community 11",
+      "x": 3320,
+      "y": 1200,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_scripts_graphify_cli_fs",
+      "type": "file",
+      "file": "fs_1.md",
+      "x": 3340,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli",
+      "type": "file",
+      "file": "graphify-cli.js.md",
+      "x": 3540,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli_main",
+      "type": "file",
+      "file": "main()_3.md",
+      "x": 3740,
+      "y": 1280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli_parseargs",
+      "type": "file",
+      "file": "parseArgs().md",
+      "x": 3340,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli_path",
+      "type": "file",
+      "file": "path_3.md",
+      "x": 3540,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli_runpython",
+      "type": "file",
+      "file": "runPython().md",
+      "x": 3740,
+      "y": 1360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_graphify_cli_spawnsync",
+      "type": "file",
+      "file": "{ spawnSync }.md",
+      "x": 3340,
+      "y": 1440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Community 12",
+      "x": 0,
+      "y": 1700,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_antigravity_scripts_knowledge_injector_fs",
+      "type": "file",
+      "file": "fs_2.md",
+      "x": 20,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_knowledge_injector",
+      "type": "file",
+      "file": "knowledge-injector.js.md",
+      "x": 220,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_knowledge_injector_main",
+      "type": "file",
+      "file": "main()_4.md",
+      "x": 20,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_antigravity_scripts_knowledge_injector_path",
+      "type": "file",
+      "file": "path_4.md",
+      "x": 220,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_execsync",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_execsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_isprotectedbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_main",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_path",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_branches",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_protected_branches",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_antigravity_scripts_branch_guard_protected_regex",
+      "fromNode": "n_antigravity_scripts_branch_guard",
+      "toNode": "n_antigravity_scripts_branch_guard_protected_regex",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_protected_branches_antigravity_scripts_branch_guard_isprotectedbranch",
+      "fromNode": "n_antigravity_scripts_branch_guard_protected_branches",
+      "toNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_isprotectedbranch_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard_isprotectedbranch",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_getcurrentgitbranch_antigravity_scripts_branch_guard_inspectcommand",
+      "fromNode": "n_antigravity_scripts_branch_guard_getcurrentgitbranch",
+      "toNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_branch_guard_inspectcommand_antigravity_scripts_branch_guard_main",
+      "fromNode": "n_antigravity_scripts_branch_guard_inspectcommand",
+      "toNode": "n_antigravity_scripts_branch_guard_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_cache_dir",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_cache_dir",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_cache_file",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_cache_file",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_ensurecachedir",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_ensurecachedir",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_execsync",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_execsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_fs",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_handleposttool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_handlepretool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_handlestop",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_loadcache",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_main",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_path",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_runprojectlinter",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_runprojectlinter",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_savecache",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_savecache",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "fromNode": "n_antigravity_scripts_lint_enforcer",
+      "toNode": "n_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_ensurecachedir_antigravity_scripts_lint_enforcer_loadcache",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_ensurecachedir",
+      "toNode": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_ensurecachedir_antigravity_scripts_lint_enforcer_savecache",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_ensurecachedir",
+      "toNode": "n_antigravity_scripts_lint_enforcer_savecache",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_loadcache_antigravity_scripts_lint_enforcer_handleposttool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_loadcache_antigravity_scripts_lint_enforcer_handlepretool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_loadcache_antigravity_scripts_lint_enforcer_handlestop",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_loadcache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_savecache_antigravity_scripts_lint_enforcer_handleposttool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_savecache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_savecache_antigravity_scripts_lint_enforcer_handlepretool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_savecache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_savecache_antigravity_scripts_lint_enforcer_handlestop",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_savecache",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_validatefilesyntax_antigravity_scripts_lint_enforcer_handleposttool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_validatefilesyntax_antigravity_scripts_lint_enforcer_handlepretool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_validatefilesyntax_antigravity_scripts_lint_enforcer_handlestop",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_validatefilesyntax",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_runprojectlinter_antigravity_scripts_lint_enforcer_handlepretool",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_runprojectlinter",
+      "toNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_handleposttool_antigravity_scripts_lint_enforcer_main",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_handleposttool",
+      "toNode": "n_antigravity_scripts_lint_enforcer_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_handlepretool_antigravity_scripts_lint_enforcer_main",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_handlepretool",
+      "toNode": "n_antigravity_scripts_lint_enforcer_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_lint_enforcer_handlestop_antigravity_scripts_lint_enforcer_main",
+      "fromNode": "n_antigravity_scripts_lint_enforcer_handlestop",
+      "toNode": "n_antigravity_scripts_lint_enforcer_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_ask_confirmation_patterns",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_ask_confirmation_patterns",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_blocked_command_patterns",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_blocked_command_patterns",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_ispathwithinworkspace",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_ispathwithinworkspace",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_main",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_antigravity_scripts_shell_sandbox_path",
+      "fromNode": "n_antigravity_scripts_shell_sandbox",
+      "toNode": "n_antigravity_scripts_shell_sandbox_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_ispathwithinworkspace_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "fromNode": "n_antigravity_scripts_shell_sandbox_ispathwithinworkspace",
+      "toNode": "n_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_shell_sandbox_evaluatecommand_antigravity_scripts_shell_sandbox_main",
+      "fromNode": "n_antigravity_scripts_shell_sandbox_evaluatecommand",
+      "toNode": "n_antigravity_scripts_shell_sandbox_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_attachmentfolderpath",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_attachmentfolderpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_livepreview",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_livepreview",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_newfilelocation",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_newfilelocation",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_promptdelete",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_promptdelete",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_showlinenumber",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_showlinenumber",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_docs_adr_obsidian_app_docs_adr_obsidian_app_usemarkdownlinks",
+      "fromNode": "n_docs_adr_obsidian_app",
+      "toNode": "n_docs_adr_obsidian_app_usemarkdownlinks",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_author",
+      "fromNode": "n_package",
+      "toNode": "n_package_author",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_bin",
+      "fromNode": "n_package",
+      "toNode": "n_package_bin",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_description",
+      "fromNode": "n_package",
+      "toNode": "n_package_description",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_keywords",
+      "fromNode": "n_package",
+      "toNode": "n_package_keywords",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_license",
+      "fromNode": "n_package",
+      "toNode": "n_package_license",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_main",
+      "fromNode": "n_package",
+      "toNode": "n_package_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_name",
+      "fromNode": "n_package",
+      "toNode": "n_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_scripts",
+      "fromNode": "n_package",
+      "toNode": "n_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_version",
+      "fromNode": "n_package",
+      "toNode": "n_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_bin_package_bin_graphify",
+      "fromNode": "n_package_bin",
+      "toNode": "n_package_bin_graphify",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_graphify",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_graphify",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_test",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_test",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_keywords_ref_antigravity",
+      "fromNode": "n_package_keywords",
+      "toNode": "n_ref_antigravity",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_package_keywords_ref_graphify",
+      "fromNode": "n_package_keywords",
+      "toNode": "n_ref_graphify",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_package_keywords_ref_guardrails",
+      "fromNode": "n_package_keywords",
+      "toNode": "n_ref_guardrails",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_package_keywords_ref_obsidian",
+      "fromNode": "n_package_keywords",
+      "toNode": "n_ref_obsidian",
+      "label": "extends [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_fs",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_main",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_parseargs",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_parseargs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_path",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_runpython",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_runpython",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_scripts_graphify_cli_spawnsync",
+      "fromNode": "n_scripts_graphify_cli",
+      "toNode": "n_scripts_graphify_cli_spawnsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_parseargs_scripts_graphify_cli_main",
+      "fromNode": "n_scripts_graphify_cli_parseargs",
+      "toNode": "n_scripts_graphify_cli_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_graphify_cli_runpython_scripts_graphify_cli_main",
+      "fromNode": "n_scripts_graphify_cli_runpython",
+      "toNode": "n_scripts_graphify_cli_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_knowledge_injector_antigravity_scripts_knowledge_injector_fs",
+      "fromNode": "n_antigravity_scripts_knowledge_injector",
+      "toNode": "n_antigravity_scripts_knowledge_injector_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_knowledge_injector_antigravity_scripts_knowledge_injector_main",
+      "fromNode": "n_antigravity_scripts_knowledge_injector",
+      "toNode": "n_antigravity_scripts_knowledge_injector_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_knowledge_injector_antigravity_scripts_knowledge_injector_path",
+      "fromNode": "n_antigravity_scripts_knowledge_injector",
+      "toNode": "n_antigravity_scripts_knowledge_injector_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_goalpolicy",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_goalpolicy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_knowledgesources",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_knowledgesources",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_name",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_planningpolicy",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_planningpolicy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_reviewgate",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_reviewgate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_schema",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_schema",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_agents_settings_version",
+      "fromNode": "n_agents_settings",
+      "toNode": "n_agents_settings_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_planningpolicy_agents_settings_planningpolicy_disallowhallucinateddependencies",
+      "fromNode": "n_agents_settings_planningpolicy",
+      "toNode": "n_agents_settings_planningpolicy_disallowhallucinateddependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_planningpolicy_agents_settings_planningpolicy_instructions",
+      "fromNode": "n_agents_settings_planningpolicy",
+      "toNode": "n_agents_settings_planningpolicy_instructions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_planningpolicy_agents_settings_planningpolicy_primarycontextsource",
+      "fromNode": "n_agents_settings_planningpolicy",
+      "toNode": "n_agents_settings_planningpolicy_primarycontextsource",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_planningpolicy_agents_settings_planningpolicy_requiregraphtopologyquery",
+      "fromNode": "n_agents_settings_planningpolicy",
+      "toNode": "n_agents_settings_planningpolicy_requiregraphtopologyquery",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_planningpolicy_agents_settings_planningpolicy_secondarycontextsource",
+      "fromNode": "n_agents_settings_planningpolicy",
+      "toNode": "n_agents_settings_planningpolicy_secondarycontextsource",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_goalpolicy_agents_settings_goalpolicy_automatedreviewer",
+      "fromNode": "n_agents_settings_goalpolicy",
+      "toNode": "n_agents_settings_goalpolicy_automatedreviewer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_goalpolicy_agents_settings_goalpolicy_basebranch",
+      "fromNode": "n_agents_settings_goalpolicy",
+      "toNode": "n_agents_settings_goalpolicy_basebranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_goalpolicy_agents_settings_goalpolicy_instructions",
+      "fromNode": "n_agents_settings_goalpolicy",
+      "toNode": "n_agents_settings_goalpolicy_instructions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_goalpolicy_agents_settings_goalpolicy_openpronexhaustion",
+      "fromNode": "n_agents_settings_goalpolicy",
+      "toNode": "n_agents_settings_goalpolicy_openpronexhaustion",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_agents_settings_reviewgate_automatedreviewengine",
+      "fromNode": "n_agents_settings_reviewgate",
+      "toNode": "n_agents_settings_reviewgate_automatedreviewengine",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_agents_settings_reviewgate_autoremediation",
+      "fromNode": "n_agents_settings_reviewgate",
+      "toNode": "n_agents_settings_reviewgate_autoremediation",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_agents_settings_reviewgate_configpath",
+      "fromNode": "n_agents_settings_reviewgate",
+      "toNode": "n_agents_settings_reviewgate_configpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_autoremediation_agents_settings_autoremediation_enabled",
+      "fromNode": "n_agents_settings_reviewgate_autoremediation",
+      "toNode": "n_agents_settings_autoremediation_enabled",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_autoremediation_agents_settings_autoremediation_enforcesurgicaledits",
+      "fromNode": "n_agents_settings_reviewgate_autoremediation",
+      "toNode": "n_agents_settings_autoremediation_enforcesurgicaledits",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_autoremediation_agents_settings_autoremediation_enforcetdd",
+      "fromNode": "n_agents_settings_reviewgate_autoremediation",
+      "toNode": "n_agents_settings_autoremediation_enforcetdd",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_autoremediation_agents_settings_autoremediation_parserscript",
+      "fromNode": "n_agents_settings_reviewgate_autoremediation",
+      "toNode": "n_agents_settings_autoremediation_parserscript",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_settings_reviewgate_autoremediation_agents_settings_autoremediation_taskprefix",
+      "fromNode": "n_agents_settings_reviewgate_autoremediation",
+      "toNode": "n_agents_settings_autoremediation_taskprefix",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_checkghcli",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_checkghcli",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_execsync",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_execsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_fs",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_getgitbranch",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_getgitbranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_main",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_antigravity_scripts_open_pr_on_goal_path",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_getgitbranch_antigravity_scripts_open_pr_on_goal_main",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal_getgitbranch",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_hasunpushedcommits_antigravity_scripts_open_pr_on_goal_main",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_getlatestcommitmessage_antigravity_scripts_open_pr_on_goal_main",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_open_pr_on_goal_checkghcli_antigravity_scripts_open_pr_on_goal_main",
+      "fromNode": "n_antigravity_scripts_open_pr_on_goal_checkghcli",
+      "toNode": "n_antigravity_scripts_open_pr_on_goal_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_execsync",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_execsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_fs",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_main",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_path",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_tests_test_hooks",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review",
+      "toNode": "n_tests_test_hooks",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_parsereviewcomments_antigravity_scripts_parse_coderabbit_review_main",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_parsereviewcomments_tests_test_hooks",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review_parsereviewcomments",
+      "toNode": "n_tests_test_hooks",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations_antigravity_scripts_parse_coderabbit_review_main",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations_tests_test_hooks",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review_updateprdwithremediations",
+      "toNode": "n_tests_test_hooks",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments_antigravity_scripts_parse_coderabbit_review_main",
+      "fromNode": "n_antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments",
+      "toNode": "n_antigravity_scripts_parse_coderabbit_review_main",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_goalpolicy",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_goalpolicy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_knowledgesources",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_knowledgesources",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_name",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_planningpolicy",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_planningpolicy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_reviewgate",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_reviewgate",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_schema",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_schema",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_antigravity_settings_version",
+      "fromNode": "n_antigravity_settings",
+      "toNode": "n_antigravity_settings_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_planningpolicy_antigravity_settings_planningpolicy_disallowhallucinateddependencies",
+      "fromNode": "n_antigravity_settings_planningpolicy",
+      "toNode": "n_antigravity_settings_planningpolicy_disallowhallucinateddependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_planningpolicy_antigravity_settings_planningpolicy_instructions",
+      "fromNode": "n_antigravity_settings_planningpolicy",
+      "toNode": "n_antigravity_settings_planningpolicy_instructions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_planningpolicy_antigravity_settings_planningpolicy_primarycontextsource",
+      "fromNode": "n_antigravity_settings_planningpolicy",
+      "toNode": "n_antigravity_settings_planningpolicy_primarycontextsource",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_planningpolicy_antigravity_settings_planningpolicy_requiregraphtopologyquery",
+      "fromNode": "n_antigravity_settings_planningpolicy",
+      "toNode": "n_antigravity_settings_planningpolicy_requiregraphtopologyquery",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_planningpolicy_antigravity_settings_planningpolicy_secondarycontextsource",
+      "fromNode": "n_antigravity_settings_planningpolicy",
+      "toNode": "n_antigravity_settings_planningpolicy_secondarycontextsource",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_goalpolicy_antigravity_settings_goalpolicy_automatedreviewer",
+      "fromNode": "n_antigravity_settings_goalpolicy",
+      "toNode": "n_antigravity_settings_goalpolicy_automatedreviewer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_goalpolicy_antigravity_settings_goalpolicy_basebranch",
+      "fromNode": "n_antigravity_settings_goalpolicy",
+      "toNode": "n_antigravity_settings_goalpolicy_basebranch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_goalpolicy_antigravity_settings_goalpolicy_instructions",
+      "fromNode": "n_antigravity_settings_goalpolicy",
+      "toNode": "n_antigravity_settings_goalpolicy_instructions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_goalpolicy_antigravity_settings_goalpolicy_openpronexhaustion",
+      "fromNode": "n_antigravity_settings_goalpolicy",
+      "toNode": "n_antigravity_settings_goalpolicy_openpronexhaustion",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_antigravity_settings_reviewgate_automatedreviewengine",
+      "fromNode": "n_antigravity_settings_reviewgate",
+      "toNode": "n_antigravity_settings_reviewgate_automatedreviewengine",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_antigravity_settings_reviewgate_autoremediation",
+      "fromNode": "n_antigravity_settings_reviewgate",
+      "toNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_antigravity_settings_reviewgate_configpath",
+      "fromNode": "n_antigravity_settings_reviewgate",
+      "toNode": "n_antigravity_settings_reviewgate_configpath",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_autoremediation_antigravity_settings_autoremediation_enabled",
+      "fromNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "toNode": "n_antigravity_settings_autoremediation_enabled",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_autoremediation_antigravity_settings_autoremediation_enforcesurgicaledits",
+      "fromNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "toNode": "n_antigravity_settings_autoremediation_enforcesurgicaledits",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_autoremediation_antigravity_settings_autoremediation_enforcetdd",
+      "fromNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "toNode": "n_antigravity_settings_autoremediation_enforcetdd",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_autoremediation_antigravity_settings_autoremediation_parserscript",
+      "fromNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "toNode": "n_antigravity_settings_autoremediation_parserscript",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_antigravity_settings_reviewgate_autoremediation_antigravity_settings_autoremediation_taskprefix",
+      "fromNode": "n_antigravity_settings_reviewgate_autoremediation",
+      "toNode": "n_antigravity_settings_autoremediation_taskprefix",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_docref_adr_0005",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_docref_adr_0005",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_docref_adr_0006",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_docref_adr_0006",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_assert",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_assert",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_fs",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_fs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_path",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_runhook",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_runhook",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_scripts_dir",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_scripts_dir",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_spawnsync",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_spawnsync",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_testtempdir",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_testtempdir",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_hooks_tests_test_hooks_workspace_dir",
+      "fromNode": "n_tests_test_hooks",
+      "toNode": "n_tests_test_hooks_workspace_dir",
+      "label": "contains [EXTRACTED]"
+    }
+  ]
+}

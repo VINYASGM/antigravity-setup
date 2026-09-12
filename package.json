@@ -1,0 +1,21 @@
+{
+  "name": "start-workspace",
+  "version": "1.0.0",
+  "description": "Workspace with Memory Substrate and Antigravity Safety Guardrails",
+  "main": "index.js",
+  "bin": {
+    "graphify": "./scripts/graphify-cli.js"
+  },
+  "scripts": {
+    "graphify": "node ./scripts/graphify-cli.js",
+    "test": "node ./tests/test-hooks.js"
+  },
+  "keywords": [
+    "antigravity",
+    "graphify",
+    "obsidian",
+    "guardrails"
+  ],
+  "author": "",
+  "license": "ISC"
+}
