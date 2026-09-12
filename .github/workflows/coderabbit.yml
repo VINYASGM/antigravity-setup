@@ -1,18 +1,17 @@
-name: CodeRabbit AI Code Review
+name: CodeRabbit & PR Quality Gate
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-  pull_request_review_comment:
-    types: [created]
+  workflow_dispatch:
 
 permissions:
   contents: read
-  pull-requests: write
-  issues: write
+  pull-requests: read
 
 jobs:
-  review:
+  validate-quality-gate:
+    name: Validate CodeRabbit Config & Quality Guardrails
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,9 +19,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: CodeRabbit Review Action
-        uses: coderabbitai/openai-pr-reviewer@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          debug: false
+          node-version: 20
+
+      - name: Validate CodeRabbit Configuration (.coderabbit.yaml)
+        run: |
+          node -e "
+            const fs = require('fs');
+            if (!fs.existsSync('.coderabbit.yaml')) {
+              console.error('Error: .coderabbit.yaml configuration file not found.');
+              process.exit(1);
+            }
+            console.log('✓ .coderabbit.yaml successfully detected.');
+          "
+
+      - name: Run Quality Gate Test Suite
+        run: node tests/test-hooks.js
