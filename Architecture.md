@@ -1,67 +1,70 @@
-# Architecture Document: Workspace Guardrails, Memory Substrate & Automated Review Gates
+# Architecture Document: Canonical Antigravity Setup, Lifecycle Guardrails & Continuous Evaluation
 
 ## 1. High-Level Architecture Overview
 
-The workspace integrates a complete closed-loop engineering system:
-1. **Antigravity Lifecycle Hooks**: Real-time safety gating, branch locking, shell sandboxing, syntax checking, and goal-exhaustion PR dispatch.
-2. **Memory Substrate**: Graphify AST topology (`.antigravity/graph.json`) and Obsidian Architecture Decision Records (`docs/adr/`).
-3. **Project Settings & Knowledge Injection**: Persistent knowledge mounting in Antigravity 2.0 with anti-hallucination planning invariants.
-4. **Behavioral Skills Suite**: 9 modular skills spanning Delivery Workflows, Cognitive Discipline, and Review Remediation.
-5. **Automated Review Gates (CodeRabbit)**: Automated PR creation on goal completion, static & AI auditing, and closed-loop remediation via `prd.json`.
+The workspace implements an end-to-end, testable and observable agentic engineering system:
+1. **Master Directive & Personas (`AGENTS.md`)**: Defines the Three-Layer Architecture (Directive, Orchestration, Execution) with specialized subagent personas (`architect`, `dev`, `devops`, `data_engineer`).
+2. **Context Compaction Resilience (`MEMORY.md`)**: Dense, persistent state document that survives the 135,000-token automated context compaction threshold.
+3. **Contextual Rules (`.agent/rules/`)**: Scoped rules targeted via YAML frontmatter `globs` arrays.
+4. **Semantic Skills (`.agent/skills/`)**: Capabilities loaded via progressive disclosure with `SKILL.md` semantic frontmatter.
+5. **Standard Multi-Step Workflows (`.agent/workflows/`)**: Standard operating procedures (`ci-remediate`, `security-audit`, `deploy-verify`).
+6. **Model Context Protocol (`mcp_config.json`)**: Pre-configured server connections for GitHub, PostgreSQL, Firebase, Firecrawl, and framework orchestration.
+7. **Antigravity Lifecycle Hooks (`.agents/hooks.json`)**: Real-time safety gating, branch locking, shell sandboxing, multi-language syntax checking, and goal-exhaustion PR dispatch.
+8. **Memory Substrate**: Graphify AST topology (`.antigravity/graph.json`) and Obsidian Architecture Decision Records (`docs/adr/`).
+9. **Continuous Evaluation Infrastructure (`coder-eval`)**: Declarative evaluation task suites (`evals/`), benchmark engine (`scripts/coder-eval-runner.js`), and GitHub Actions CI/CD quality gates (`.github/workflows/coder-eval.yml`).
 
 ```mermaid
 flowchart TD
-    subgraph Antigravity Project Settings & Knowledge Mounting
-        Settings[".antigravity/settings.json"] -->|Mount Source 1| GJSON[".antigravity/graph.json"]
-        Settings -->|Mount Source 2| OADR["docs/adr/"]
-        Settings -->|Mount Source 3| OArch["docs/architecture/"]
-        Settings -->|Enforce Policy| PlanPol["requireGraphTopologyQuery = true"]
-        Settings -->|Configure Review Gate| RG["reviewGate + goalPolicy"]
-    end
-
-    subgraph Behavioral Skills Suite [.agents/skills/]
-        W1["to-prd"] --> W2["design-an-interface"]
-        W2 --> W3["tdd"]
-        W3 --> W4["git-guardrails"]
-        
-        Remed["coderabbit-remediate"] --> W1
+    subgraph Directives & Personas
+        Agents["AGENTS.md<br/>(Directive, Orchestration, Execution)"]
+        Memory["MEMORY.md<br/>(135k Compaction State Persistence)"]
+        Rules[".agent/rules/<br/>(Glob-Targeted Scoped Rules)"]
+        Skills[".agent/skills/<br/>(Semantic Skills / Progressive Disclosure)"]
+        Workflows[".agent/workflows/<br/>(Multi-Step Process Automation)"]
+        MCP["mcp_config.json<br/>(Model Context Protocol Integrations)"]
     end
 
     subgraph Memory & Context Substrate
         Codebase[Source Code & Files] -->|AST Analysis| GExt[Graphify Engine]
-        GExt -->|JSON Graph| GJSON
-        GExt -->|Vault Notes & Canvas| OArch
+        GExt -->|JSON Graph| GJSON[".antigravity/graph.json"]
         
-        Dev[Architects / Developers] -->|Author & Maintain| OADR
-        OADR -.->|Wikilinks| OArch
+        Dev[Architects / Developers] -->|Author & Maintain| OADR["docs/adr/ (Obsidian Vault)"]
     end
 
-    subgraph Execution Loop & Automated Review Gates
-        Model[Agent LLM Model] --> W1
-        PreInv[PreInvocation: knowledge-injector.js] -->|Inject Knowledge & Policy| Model
+    subgraph Execution Loop & Lifecycle Guardrails
+        Model[Agent LLM Model] --> Agents
+        PreInv["PreInvocation: knowledge-injector.js<br/>(Knowledge Mount + Freshness Check)"] -->|Inject Ground-Truth State| Model
         
-        W4 --> ToolDecision[Tool Step: git / run_command]
-        ToolDecision --> HookDispatch{Lifecycle Guard}
+        Model --> ToolDecision[Tool Step: git / run_command / file write]
+        ToolDecision --> HookDispatch{Lifecycle Guard: .agents/hooks.json}
         
-        HookDispatch -- PreToolUse --> BG[branch-guard.js]
-        HookDispatch -- PreToolUse --> SS[shell-sandbox.js]
-        HookDispatch -- PreToolUse (Commit) --> LE1[lint-enforcer.js]
+        HookDispatch -- PreToolUse --> BG["branch-guard.js<br/>(Branch Locking)"]
+        HookDispatch -- PreToolUse --> SS["shell-sandbox.js<br/>(PowerShell + Shell Sandboxing)"]
+        HookDispatch -- PreToolUse (Commit) --> LE1["lint-enforcer.js (pre-tool)"]
         
-        BG -->|Allow / Deny| Exec[Execute Tool]
+        BG -->|Allow / Deny| Exec[Execute Tool via spawnSync]
         SS -->|Allow / Deny / Ask| Exec
         LE1 -->|Allow / Deny| Exec
         
-        Exec --> PostCheck[PostToolUse: lint-enforcer.js]
+        Exec --> PostCheck["PostToolUse: lint-enforcer.js (multi-lang check)"]
         PostCheck --> Model
         
-        Model -- /goal Queue Exhausted --> StopHook{Stop Hooks}
-        StopHook --> LE2[lint-enforcer.js (stop)]
-        StopHook --> PRDisp["open-pr-on-goal.js<br/>(Push Feature Branch & Open PR)"]
+        Model -- Goal Completed (prd.json) --> StopHook{Stop Hook}
+        StopHook --> LE2["lint-enforcer.js (stop)"]
+        StopHook --> PRDisp["open-pr-on-goal.js<br/>(Verify Tests & Push PR)"]
+    end
+
+    subgraph Continuous Evaluation & CI/CD Quality Gates
+        EvalConfig["evals/coder-eval.config.yml"] --> Runner["scripts/coder-eval-runner.js"]
+        TaskSuite["evals/tasks/<br/>(skill-routing, code-gen, ab-tests)"] --> Runner
         
-        PRDisp --> GHPR["GitHub Pull Request"]
-        GHPR --> CR["CodeRabbit AI Review<br/>(.coderabbit.yaml)"]
-        CR -->|Review Comments: Complexity, Security, Bugs| CRLink["Review URL / Comments"]
-        CRLink --> Remed
+        Runner --> M1["skill_triggered: Semantic Routing (>= 85%)"]
+        Runner --> M2["Weighted Scoring: AST & Rubrics (>= 85%)"]
+        Runner --> M3["Telemetry Tracking: Token Economics"]
+        Runner --> M4["A/B Experimentation: Prompt Drift"]
+        
+        Runner --> Rep["evals/results/report.json & summary.md"]
+        Rep --> GHA[".github/workflows/coder-eval.yml<br/>(CI/CD Pipeline Quality Gate)"]
     end
 ```
 
@@ -70,13 +73,15 @@ flowchart TD
 ## 2. Review Gate & Remediation Subsystem
 
 1. **Auto-PR Dispatch (`open-pr-on-goal.js`)**:
-   - Executes during the `Stop` event when `fullyIdle: true`.
-   - Confirms active branch is a feature branch and verifies commit history.
-   - Pushes branch and invokes `gh pr create` with `@coderabbitai review` tag.
-2. **CodeRabbit Audit Engine (`.coderabbit.yaml`)**:
+   - Executes during the `Stop` event.
+   - Inspects `prd.json` to verify all tasks are marked `done`.
+   - Detects the default base branch dynamically (`main` vs `master`).
+   - Runs `npm test` synchronously before asserting quality checkboxes.
+   - Uses `spawnSync` with `{ shell: false }` to eliminate command injection.
+2. **CodeRabbit Audit Engine (`.coderabbit.yaml` & `eslint.config.mjs`)**:
    - Audits cyclomatic complexity (> 10 threshold).
    - Scans for security vulnerabilities and injection flaws.
-   - Flags logic bugs and unhandled exceptions with structured comments (`[CRITICAL]`, `[WARNING]`, `[SUGGESTION]`).
-3. **Review Parser & Remediation Pass (`parse-coderabbit-review.js` & `coderabbit-remediate`)**:
-   - Translates line-level findings into atomic `REMEDIATION-XXX` tasks in `prd.json`.
-   - Executes autonomous TDD remediation pass and pushes fixes back to the PR.
+   - Executes ESLint static checks via flat `eslint.config.mjs`.
+3. **Continuous Evaluation Pipeline (`coder-eval`)**:
+   - Executes on every PR and weekly cron schedule.
+   - Automatically catches silent regressions, prompt erosion, and skill routing failures before they reach production developers.

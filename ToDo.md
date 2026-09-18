@@ -1,6 +1,6 @@
-# ToDo / Roadmap: Workspace Safety Guardrails, Memory Substrate & Behavioral Skills
+# ToDo / Roadmap: Canonical Antigravity Architecture, Guardrails & Continuous Evaluation
 
-## Phase 1: Planning & Documentation [COMPLETED]
+## Phase 1: Planning & Governance Documentation [COMPLETED]
 - [x] Create Product Requirements Document (`PRD.md`)
 - [x] Create Technical Requirements Document (`TRD.md`)
 - [x] Create System Architecture Document (`Architecture.md`)
@@ -8,60 +8,58 @@
 - [x] Initialize Project State (`State.md`)
 - [x] Document Context & Runtime Metadata (`context.md`)
 
-## Phase 2: Configuration & Directory Setup [COMPLETED]
-- [x] Create `.antigravity/` directory and `.antigravity/scripts/` directory
-- [x] Create `.antigravity/hooks.json` specifying `lint-enforcer`, `branch-guard`, and `shell-sandbox`
-- [x] Establish fallback / compatibility mirror in `.agents/hooks.json`
+## Phase 2: Configuration & Discovery Path Realignment [COMPLETED]
+- [x] Eliminate redundant `.antigravity/hooks.json` dead duplicate
+- [x] Eliminate decorative, unparsed `settings.json` files
+- [x] Standardize on `.agents/hooks.json` as authoritative hook registration
+- [x] Maintain scripts in `.antigravity/scripts/`
 
-## Phase 3: Hook Handlers Implementation [COMPLETED]
-- [x] Implement `.antigravity/scripts/branch-guard.js`
-- [x] Implement `.antigravity/scripts/shell-sandbox.js`
-- [x] Implement `.antigravity/scripts/lint-enforcer.js`
+## Phase 3: Shell Injection Remediation [COMPLETED]
+- [x] Migrate `open-pr-on-goal.js` to `spawnSync` with `{ shell: false }`
+- [x] Migrate `parse-coderabbit-review.js` to `spawnSync` with `{ shell: false }`
+- [x] Implement strict input sanitization on PR numbers and repository strings
+- [x] Migrate `lint-enforcer.js` node syntax checking to `spawnSync`
 
-## Phase 4: Verification & Automated Testing [COMPLETED]
-- [x] Execute automated mock input tests for all hooks (`tests/test-hooks.js`)
-- [x] 19 / 19 unit tests passing
+## Phase 4: Shell Sandbox & Environment Hardening [COMPLETED]
+- [x] Intercept PowerShell destructive cmdlets (`Remove-Item -Recurse -Force`, `Clear-Disk`, `Remove-Item Env:\`)
+- [x] Intercept unrecoverable Git data loss commands (`git clean -fdx`, `git reflog expire`)
+- [x] Require interactive user confirmation for broad staging (`git add .`, `git add -A`)
+- [x] Enforce fail-closed policy (`deny`) on unexpected exceptions in security hooks
 
-## Phase 5: Memory Substrate: Graphify + Obsidian [COMPLETED]
-- [x] Initialize `docs/adr/` directory with Obsidian vault configuration (`.obsidian/app.json`)
-- [x] Create ADR Index (`docs/adr/README.md`) and standard template
-- [x] Record `ADR-0001: Establish Memory Substrate with Graphify + Obsidian`
-- [x] Record `ADR-0002: Antigravity Lifecycle Safety & Quality Guardrails`
-- [x] Record `ADR-0003: Architecture Decision Records Standards & Invariants`
-- [x] Implement `scripts/graphify-cli.js` bridge and register `package.json` bin
-- [x] Execute `npx graphify --output .antigravity/graph.json --obsidian docs/architecture`
-- [x] Verify `.antigravity/graph.json` contains AST nodes and edges
-- [x] Verify `docs/architecture/` contains Obsidian markdown notes and `graph.canvas`
+## Phase 5: Goal-Driven & Branch-Agnostic PR Dispatch [COMPLETED]
+- [x] Gate `open-pr-on-goal.js` strictly on completed tasks in `prd.json`
+- [x] Dynamically detect repository base branch (`main` vs `master`)
+- [x] Run local test suite synchronously before checking quality checkboxes
 
-## Phase 6: Antigravity Knowledge Injection & Anti-Hallucination Planning [COMPLETED]
-- [x] Create `.antigravity/settings.json` mounting `docs/` and `.antigravity/graph.json`
-- [x] Create `.agents/settings.json` mirror for standard discovery
-- [x] Implement `.agents/rules/knowledge-substrate.md` and root `GEMINI.md`
-- [x] Implement `.antigravity/scripts/knowledge-injector.js` PreInvocation hook
-- [x] Register `knowledge-injector` in `.antigravity/hooks.json` and `.agents/hooks.json`
-- [x] Mount Knowledge Item in `<appDataDir>\knowledge\start-codebase-topology\metadata.json`
-- [x] Record `ADR-0004: Antigravity Knowledge Injection & Anti-Hallucination Policy`
+## Phase 6: Mechanical Substrate Freshness & Repository Hygiene [COMPLETED]
+- [x] Implement mtime freshness comparison in `knowledge-injector.js`
+- [x] Inject real-time warning if `.antigravity/graph.json` is older than modified source files
+- [x] Add `docs/architecture/` to `.gitignore`
+- [x] Untrack and clean 159 single-identifier generated files from git
+- [x] Preserve hand-authored `docs/adr/` Obsidian vault
 
-## Phase 7: Comprehensive Behavioral Skills Suite [COMPLETED]
-- [x] Install `.agents/skills/to-prd/SKILL.md` (Requirements -> `prd.json`)
-- [x] Install `.agents/skills/design-an-interface/SKILL.md` (Contract-first interfaces)
-- [x] Install `.agents/skills/tdd/SKILL.md` (Red-Green-Refactor enforcement)
-- [x] Install `.agents/skills/git-guardrails/SKILL.md` (Conventional Commits & Ephemeral Branches)
-- [x] Install `.agents/skills/think-first/SKILL.md` (Rule 1: Think Before Coding)
-- [x] Install `.agents/skills/simplify/SKILL.md` (Rule 2: Simplicity First & De-bloating)
-- [x] Install `.agents/skills/surgical-edits/SKILL.md` (Rule 3: Surgical Changes & Zero Collateral Damage)
-- [x] Install `.agents/skills/goal-driven-dev/SKILL.md` (Rule 4: Goal-Driven Execution & Verification Loops)
-- [x] Record `ADR-0005: Comprehensive Behavioral Skills Suite` in `docs/adr/`
+## Phase 7: Multi-Language Syntax Validation & ESLint Integration [COMPLETED]
+- [x] Add Python syntax validation (`py_compile`) to `lint-enforcer.js`
+- [x] Author modern flat `eslint.config.mjs` for CodeRabbit automated static analysis
+- [x] Document fail-safe rationale for lint-enforcer
 
-## Phase 8: CodeRabbit Integration & Automated Review Gates [COMPLETED]
-- [x] Initialize Git repository baseline on `main` branch with `.gitignore`
-- [x] Author `.coderabbit.yaml` auditing for cyclomatic complexity (> 10), security, and logic bugs
-- [x] Create `.github/workflows/coderabbit.yml` GitHub Actions automated audit workflow
-- [x] Implement `.antigravity/scripts/open-pr-on-goal.js` auto-PR creator on `Stop` event
-- [x] Implement `.antigravity/scripts/parse-coderabbit-review.js` review-to-`prd.json` parser
-- [x] Install `.agents/skills/coderabbit-remediate/SKILL.md` autonomous remediation runbook
-- [x] Register `goal-pr-creator` in `hooks.json` and configure `reviewGate` in `settings.json`
-- [x] Record `ADR-0006: CodeRabbit Review Gates, Automated PR Dispatch & Autonomous Remediation Pass`
-- [x] Expand automated test suite to 28 / 28 passing tests
-- [x] Refresh codebase topology via Graphify (144 AST nodes, 165 edges, 13 communities)
-- [x] Update all governance documents (`PRD.md`, `TRD.md`, `Architecture.md`, `State.md`, `context.md`, `walkthrough.md`)
+## Phase 8: Canonical Directory Structure & Scaffolding [COMPLETED]
+- [x] Author `AGENTS.md` implementing Three-Layer Architecture (Directive, Orchestration, Execution)
+- [x] Author `MEMORY.md` persistent state document to survive 135,000-token context compaction
+- [x] Implement `mcp_config.json` adhering to Model Context Protocol specification
+- [x] Author `.agent/rules/` with contextual targeting via YAML frontmatter `globs` arrays
+- [x] Author high-leverage skills (`ci-debugger`, `doc-updater`, `security-auditor`) with semantic frontmatter
+- [x] Author `.agent/workflows/` multi-step process automations (`ci-remediate`, `security-audit`, `deploy-verify`)
+- [x] Mirror `.agent/` and `.agents/` structures for complete discovery parity
+
+## Phase 9: Continuous Evaluation Infrastructure (`coder-eval`) [COMPLETED]
+- [x] Author `evals/coder-eval.config.yml` with quality thresholds (0.85 min score, 100% skill trigger)
+- [x] Author declarative benchmark task suites (`evals/tasks/skill-routing.yml`, `code-generation.yml`, `ab-experiments.yml`)
+- [x] Implement zero-dependency evaluation engine (`scripts/coder-eval-runner.js`)
+- [x] Integrate GitHub Actions CI/CD quality gate workflow (`.github/workflows/coder-eval.yml`)
+- [x] Record `ADR-0007: Continuous Evaluation Infrastructure via Coder-Eval & CI/CD Quality Gates` in `docs/adr/`
+- [x] Register `"eval"` script in `package.json`
+- [x] Expand verification suite (`tests/test-hooks.js`) -> 41 / 41 tests passing (100%)
+- [x] Verify benchmark runner -> 100% score on all quality gates
+- [x] Refresh codebase topology via Graphify -> 146 AST nodes, 177 edges, 15 communities
+- [x] Synchronize all governance documents (`PRD.md`, `TRD.md`, `Architecture.md`, `State.md`, `ToDo.md`, `context.md`, `MEMORY.md`)

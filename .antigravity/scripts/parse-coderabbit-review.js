@@ -13,7 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { spawnSync } = require('child_process');
 
 function parseReviewComments(inputContent) {
   const findings = [];
@@ -138,19 +138,31 @@ function fetchGithubPrComments(urlOrNumber) {
     let prNumber = urlOrNumber;
     let repo = '';
 
-    const urlMatch = urlOrNumber.match(/github\.com\/([^\/]+\/[^\/]+)\/pull\/(\d+)/i);
+    const urlMatch = typeof urlOrNumber === 'string' ? urlOrNumber.match(/github\.com\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)\/pull\/(\d+)/i) : null;
     if (urlMatch) {
       repo = urlMatch[1];
       prNumber = urlMatch[2];
     }
 
-    const repoArg = repo ? `-R ${repo}` : '';
-    const output = execSync(`gh pr view ${prNumber} ${repoArg} --json comments,reviews`, {
+    // Strict validation: prNumber must be strictly numeric
+    if (!/^\d+$/.test(String(prNumber))) {
+      return null;
+    }
+
+    const args = ['pr', 'view', String(prNumber)];
+    if (repo && /^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/.test(repo)) {
+      args.push('-R', repo);
+    }
+    args.push('--json', 'comments,reviews');
+
+    const res = spawnSync('gh', args, {
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'ignore'],
-      timeout: 15000
+      timeout: 15000,
+      shell: false
     });
-    return output;
+
+    return res.status === 0 ? res.stdout : null;
   } catch (err) {
     return null;
   }

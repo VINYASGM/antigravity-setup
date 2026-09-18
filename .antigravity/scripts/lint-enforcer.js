@@ -11,7 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { spawnSync } = require('child_process');
 
 const CACHE_DIR = path.resolve(__dirname, '..', '.cache');
 const CACHE_FILE = path.join(CACHE_DIR, 'modified_files.json');
@@ -67,14 +67,50 @@ function validateFileSyntax(filePath) {
   // 2. JavaScript / Node script validation
   if (ext === '.js' || ext === '.mjs' || ext === '.cjs') {
     try {
-      execSync(`node --check "${filePath}"`, {
+      const res = spawnSync(process.execPath, ['--check', filePath], {
         stdio: ['ignore', 'pipe', 'pipe'],
-        timeout: 5000
+        timeout: 5000,
+        shell: false
       });
+      if (res.status !== 0) {
+        const stderr = res.stderr ? res.stderr.toString('utf8').trim() : 'Syntax check failed';
+        return `JavaScript syntax error in ${path.basename(filePath)}:\n${stderr.split('\n').slice(0, 3).join('\n')}`;
+      }
       return null;
     } catch (err) {
-      const stderr = err.stderr ? err.stderr.toString('utf8').trim() : err.message;
-      return `JavaScript syntax error in ${path.basename(filePath)}:\n${stderr.split('\n').slice(0, 3).join('\n')}`;
+      return `JavaScript syntax check error in ${path.basename(filePath)}: ${err.message}`;
+    }
+  }
+
+  // 3. Python syntax validation (cross-platform python / py)
+  if (ext === '.py') {
+    try {
+      let res = spawnSync('python', ['-m', 'py_compile', filePath], {
+        stdio: ['ignore', 'pipe', 'pipe'],
+        timeout: 5000,
+        shell: false
+      });
+      if (res.error && res.error.code === 'ENOENT') {
+        res = spawnSync('python3', ['-m', 'py_compile', filePath], {
+          stdio: ['ignore', 'pipe', 'pipe'],
+          timeout: 5000,
+          shell: false
+        });
+      }
+      if (res.error && res.error.code === 'ENOENT') {
+        res = spawnSync('py', ['-m', 'py_compile', filePath], {
+          stdio: ['ignore', 'pipe', 'pipe'],
+          timeout: 5000,
+          shell: false
+        });
+      }
+      if (res.status !== 0 && !res.error) {
+        const stderr = res.stderr ? res.stderr.toString('utf8').trim() : 'Python syntax error';
+        return `Python syntax error in ${path.basename(filePath)}:\n${stderr.split('\n').slice(0, 3).join('\n')}`;
+      }
+      return null;
+    } catch (err) {
+      return `Python syntax check error in ${path.basename(filePath)}: ${err.message}`;
     }
   }
 
@@ -215,12 +251,16 @@ function main() {
         process.stdout.write(JSON.stringify({ decision: 'allow' }));
       }
     } catch (err) {
+      // Fail-Safe Policy Rationale:
+      // While security hooks (branch-guard, shell-sandbox) fail closed ('deny') to prevent
+      // irreversible destruction, lint-enforcer fails open ('allow') on unexpected payload parse
+      // errors so an IDE metadata glitch never permanently deadlocks the user or agent loop.
       if (mode === 'post-tool') {
         process.stdout.write(JSON.stringify({}));
       } else {
         process.stdout.write(JSON.stringify({
           decision: 'allow',
-          reason: `lint-enforcer fallback: ${err.message}`
+          reason: `lint-enforcer fallback (fail-safe open for non-critical parser error): ${err.message}`
         }));
       }
     }

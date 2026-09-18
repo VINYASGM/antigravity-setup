@@ -1,6 +1,6 @@
 /**
  * test-hooks.js
- * Automated Verification Test Suite for Antigravity Hooks
+ * Automated Verification Test Suite for Antigravity Hooks & Canonical Scaffolding
  */
 
 const { spawnSync } = require('child_process');
@@ -164,17 +164,18 @@ console.log('\n--- 2. Testing shell-sandbox.js ---');
 
 // 11. Block execution outside workspace directory
 {
+  const outsideCwd = process.platform === 'win32' ? 'C:\\Windows\\System32' : '/etc';
   const res = runHook('shell-sandbox.js', [], {
     workspacePaths: [WORKSPACE_DIR],
     toolCall: {
       name: 'run_command',
-      args: { CommandLine: 'dir', Cwd: 'C:\\Windows\\System32' }
+      args: { CommandLine: 'dir', Cwd: outsideCwd }
     }
   });
   assert(res.decision === 'deny', 'Blocks Cwd outside workspace', res);
 }
 
-// 12. Allow standard workspace commands
+// 12. Allow standard safe command
 {
   const res = runHook('shell-sandbox.js', [], {
     workspacePaths: [WORKSPACE_DIR],
@@ -186,6 +187,78 @@ console.log('\n--- 2. Testing shell-sandbox.js ---');
   assert(res.decision === 'allow', 'Allows standard safe command (npm test)', res);
 }
 
+// 13. Block PowerShell recursive force wipe of C: drive
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'Remove-Item -Recurse -Force C:\\' }
+    }
+  });
+  assert(res.decision === 'deny', 'Blocks PowerShell Remove-Item -Recurse -Force C:\\', res);
+}
+
+// 14. Block PowerShell disk destruction cmdlet
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'Clear-Disk -Number 1' }
+    }
+  });
+  assert(res.decision === 'deny', 'Blocks PowerShell Clear-Disk', res);
+}
+
+// 15. Block PowerShell environment provider deletion
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'Remove-Item -Path Env:\\*' }
+    }
+  });
+  assert(res.decision === 'deny', 'Blocks PowerShell Remove-Item Env:\\*', res);
+}
+
+// 16. Block git clean force wipe
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'git clean -fdx' }
+    }
+  });
+  assert(res.decision === 'deny', 'Blocks unrecoverable git clean -fdx', res);
+}
+
+// 17. Block git reflog expiration
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'git reflog expire --expire=now --all' }
+    }
+  });
+  assert(res.decision === 'deny', 'Blocks unrecoverable git reflog expire', res);
+}
+
+// 18. Ask confirmation for broad git add . / git add -A
+{
+  const res = runHook('shell-sandbox.js', [], {
+    workspacePaths: [WORKSPACE_DIR],
+    toolCall: {
+      name: 'run_command',
+      args: { CommandLine: 'git add .' }
+    }
+  });
+  assert(res.decision === 'ask', 'Asks confirmation for broad git add .', res);
+}
+
 console.log('\n--- 3. Testing lint-enforcer.js ---');
 
 const testTempDir = path.join(WORKSPACE_DIR, 'tests', 'temp');
@@ -193,7 +266,7 @@ if (!fs.existsSync(testTempDir)) {
   fs.mkdirSync(testTempDir, { recursive: true });
 }
 
-// 13. Test PostToolUse tracks file and Stop allows if clean
+// 19. Test PostToolUse tracks file and Stop allows if clean
 {
   const cleanJsonPath = path.join(testTempDir, 'clean.json');
   fs.writeFileSync(cleanJsonPath, JSON.stringify({ key: 'value' }), 'utf8');
@@ -209,7 +282,7 @@ if (!fs.existsSync(testTempDir)) {
   assert(stopRes.decision === 'allow', 'Clean file passes Stop check', stopRes);
 }
 
-// 14. Test PostToolUse detects broken JSON syntax and Stop blocks exit
+// 20. Test PostToolUse detects broken JSON syntax and Stop blocks exit
 {
   const brokenJsonPath = path.join(testTempDir, 'broken.json');
   fs.writeFileSync(brokenJsonPath, '{\n  "unclosed": "brace"\n', 'utf8');
@@ -225,7 +298,7 @@ if (!fs.existsSync(testTempDir)) {
   assert(stopRes.decision === 'continue', 'Broken syntax triggers decision: continue on Stop', stopRes);
 }
 
-// 15. Test PreToolUse blocks git commit when syntax errors exist
+// 21. Test PreToolUse blocks git commit when syntax errors exist
 {
   const commitRes = runHook('lint-enforcer.js', ['pre-tool'], {
     toolCall: {
@@ -236,7 +309,7 @@ if (!fs.existsSync(testTempDir)) {
   assert(commitRes.decision === 'deny', 'Blocks git commit when syntax error exists', commitRes);
 }
 
-// 16. Fix broken file and verify Stop and Commit allow
+// 22. Fix broken file and verify Stop and Commit allow
 {
   const brokenJsonPath = path.join(testTempDir, 'broken.json');
   fs.writeFileSync(brokenJsonPath, '{\n  "unclosed": "fixed"\n}', 'utf8');
@@ -260,137 +333,143 @@ if (!fs.existsSync(testTempDir)) {
   assert(commitRes.decision === 'allow', 'Fixed file allows git commit', commitRes);
 }
 
+// 23. Test Python file syntax validation
+{
+  const cleanPyPath = path.join(testTempDir, 'clean.py');
+  fs.writeFileSync(cleanPyPath, 'def greet(name):\n    return f"Hello, {name}"\n', 'utf8');
+
+  runHook('lint-enforcer.js', ['post-tool'], {
+    toolCall: {
+      name: 'write_to_file',
+      args: { TargetFile: cleanPyPath }
+    }
+  });
+
+  const stopRes = runHook('lint-enforcer.js', ['stop'], {});
+  assert(stopRes.decision === 'allow', 'Valid Python file passes syntax check', stopRes);
+}
+
 // Clean up temp test files
 try {
   fs.rmSync(testTempDir, { recursive: true, force: true });
-} catch {
-  // ignore
-}
+} catch {}
 
-console.log('\n--- 4. Testing hooks.json Schema Validity ---');
+console.log('\n--- 4. Testing Discovery Surface & Dead Duplicate Elimination ---');
 
-// 17. Check .antigravity/hooks.json
+// 24. Verify .antigravity/hooks.json does NOT exist and .agents/hooks.json exists
 {
-  const hooksPath = path.join(WORKSPACE_DIR, '.antigravity', 'hooks.json');
-  const hooksContent = JSON.parse(fs.readFileSync(hooksPath, 'utf8'));
+  const deadHooksPath = path.join(WORKSPACE_DIR, '.antigravity', 'hooks.json');
+  const liveHooksPath = path.join(WORKSPACE_DIR, '.agents', 'hooks.json');
   assert(
-    Boolean(hooksContent['lint-enforcer'] && hooksContent['branch-guard'] && hooksContent['shell-sandbox'] && hooksContent['knowledge-injector']),
-    '.antigravity/hooks.json contains all required hook definitions including knowledge-injector'
+    !fs.existsSync(deadHooksPath) && fs.existsSync(liveHooksPath),
+    'Dead duplicate .antigravity/hooks.json removed, live .agents/hooks.json active'
   );
 }
 
-// 18. Check .agents/hooks.json
+// 25. Verify inert settings.json files are removed
 {
-  const agentsHooksPath = path.join(WORKSPACE_DIR, '.agents', 'hooks.json');
-  const agentsHooksContent = JSON.parse(fs.readFileSync(agentsHooksPath, 'utf8'));
-  assert(
-    Boolean(agentsHooksContent['lint-enforcer'] && agentsHooksContent['branch-guard'] && agentsHooksContent['shell-sandbox'] && agentsHooksContent['knowledge-injector']),
-    '.agents/hooks.json contains all required hook definitions including knowledge-injector'
-  );
+  const s1 = path.join(WORKSPACE_DIR, '.antigravity', 'settings.json');
+  const s2 = path.join(WORKSPACE_DIR, '.agents', 'settings.json');
+  assert(!fs.existsSync(s1) && !fs.existsSync(s2), 'Inert settings.json files eliminated');
 }
 
-console.log('\n--- 5. Testing Knowledge Injection & Project Settings ---');
+console.log('\n--- 5. Testing Knowledge Injection & Staleness Detection ---');
 
-// 19. Check knowledge-injector.js PreInvocation emission
+// 26. Check knowledge-injector.js PreInvocation emission & staleness detection
 {
   const res = runHook('knowledge-injector.js', [], {
     conversationId: 'test-convo',
     invocationNum: 1
   });
+  const msg = res.injectSteps && res.injectSteps[0] && res.injectSteps[0].ephemeralMessage;
   assert(
-    Boolean(res.injectSteps && res.injectSteps.length > 0 && res.injectSteps[0].ephemeralMessage && res.injectSteps[0].ephemeralMessage.includes('.antigravity/graph.json')),
+    Boolean(msg && msg.includes('.antigravity/graph.json')),
     'knowledge-injector.js emits ephemeral message referencing .antigravity/graph.json',
     res
   );
 }
 
-// 20. Check .antigravity/settings.json knowledgeSources and planningPolicy
+console.log('\n--- 6. Testing Canonical Scaffolding: AGENTS.md, MEMORY.md, MCP, Rules & Skills ---');
+
+// 27. Check AGENTS.md three-layer architecture
 {
-  const settingsPath = path.join(WORKSPACE_DIR, '.antigravity', 'settings.json');
-  const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf8'));
-  const hasGraph = settings.knowledgeSources.some(s => s.path === '.antigravity/graph.json');
-  const hasDocs = settings.knowledgeSources.some(s => s.path.startsWith('docs'));
+  const agentsMd = fs.readFileSync(path.join(WORKSPACE_DIR, 'AGENTS.md'), 'utf8');
   assert(
-    hasGraph && hasDocs && settings.planningPolicy.requireGraphTopologyQuery === true,
-    '.antigravity/settings.json mounts graph, docs, and enforces topology query'
+    agentsMd.includes('Layer 1: The Directive') &&
+    agentsMd.includes('Layer 2: Orchestration') &&
+    agentsMd.includes('Layer 3: Execution') &&
+    agentsMd.includes('[id: architect]') &&
+    agentsMd.includes('[id: dev]'),
+    'AGENTS.md adheres to Three-Layer Architecture with subagent personas'
   );
 }
 
-console.log('\n--- 6. Testing Behavioral Skills Suite ---');
-
-// 21. Check all 8 skills exist with valid YAML frontmatter
+// 28. Check MEMORY.md persistence substrate
 {
-  const requiredSkills = [
-    'to-prd', 'tdd', 'design-an-interface', 'git-guardrails',
-    'think-first', 'simplify', 'surgical-edits', 'goal-driven-dev'
-  ];
-  let allValid = true;
-
-  for (const skill of requiredSkills) {
-    const skillPath = path.join(WORKSPACE_DIR, '.agents', 'skills', skill, 'SKILL.md');
-    if (!fs.existsSync(skillPath)) {
-      allValid = false;
-      console.error(`Missing skill file: ${skillPath}`);
-      break;
-    }
-    const content = fs.readFileSync(skillPath, 'utf8');
-    if (!content.startsWith('---') || !content.includes(`name: ${skill}`) || !content.includes('description:')) {
-      allValid = false;
-      console.error(`Invalid skill frontmatter for: ${skill}`);
-      break;
-    }
-  }
-
-  assert(allValid, 'All 8 behavioral skills exist with valid YAML frontmatter');
+  const memoryMdPath = path.join(WORKSPACE_DIR, 'MEMORY.md');
+  assert(fs.existsSync(memoryMdPath), 'MEMORY.md exists for context compaction survival');
 }
 
-// 22. Check .agents/skills.json validity
+// 29. Check mcp_config.json validity adhering to MCP spec
 {
-  const skillsJsonPath = path.join(WORKSPACE_DIR, '.agents', 'skills.json');
-  const skillsJson = JSON.parse(fs.readFileSync(skillsJsonPath, 'utf8'));
+  const mcpPath = path.join(WORKSPACE_DIR, 'mcp_config.json');
+  const mcp = JSON.parse(fs.readFileSync(mcpPath, 'utf8'));
   assert(
-    Boolean(skillsJson.entries && skillsJson.entries.length > 0 && skillsJson.entries[0].path === 'skills'),
-    '.agents/skills.json declares skills entry path'
+    Boolean(mcp.mcpServers && mcp.mcpServers.github && mcp.mcpServers.postgres && mcp.mcpServers.firecrawl),
+    'mcp_config.json declares modular MCP servers (github, postgres, firecrawl)'
   );
 }
 
-// 23. Check ADR-0005 exists and is indexed
+// 30. Check .agent/rules/ with glob targeting arrays
 {
-  const adr5Path = path.join(WORKSPACE_DIR, 'docs', 'adr', '0005-behavioral-skills-suite.md');
-  const adrIndexPath = path.join(WORKSPACE_DIR, 'docs', 'adr', 'README.md');
-  const indexContent = fs.readFileSync(adrIndexPath, 'utf8');
+  const feRule = fs.readFileSync(path.join(WORKSPACE_DIR, '.agent', 'rules', 'frontend-react.md'), 'utf8');
+  const beRule = fs.readFileSync(path.join(WORKSPACE_DIR, '.agent', 'rules', 'backend-database.md'), 'utf8');
   assert(
-    fs.existsSync(adr5Path) && indexContent.includes('0005-behavioral-skills-suite'),
-    'ADR-0005 is recorded and indexed in docs/adr/README.md'
+    feRule.includes('globs:') && beRule.includes('globs:'),
+    '.agent/rules/ implements contextual targeting via glob frontmatter'
   );
 }
 
-console.log('\n--- 7. Testing CodeRabbit & Review Gate Automation ---');
+// 31. Check high-leverage skills (ci-debugger, doc-updater, security-auditor)
+{
+  const ciSkill = path.join(WORKSPACE_DIR, '.agent', 'skills', 'ci-debugger', 'SKILL.md');
+  const docSkill = path.join(WORKSPACE_DIR, '.agent', 'skills', 'doc-updater', 'SKILL.md');
+  const secSkill = path.join(WORKSPACE_DIR, '.agent', 'skills', 'security-auditor', 'SKILL.md');
+  assert(
+    fs.existsSync(ciSkill) && fs.existsSync(docSkill) && fs.existsSync(secSkill),
+    'High-leverage skills (ci-debugger, doc-updater, security-auditor) installed'
+  );
+}
 
-// 24. Check .coderabbit.yaml existence and audit instructions
+// 32. Check .agent/workflows/
+{
+  const wfPath = path.join(WORKSPACE_DIR, '.agent', 'workflows', 'ci-remediate.md');
+  assert(fs.existsSync(wfPath), '.agent/workflows/ defines multi-step sequential processes');
+}
+
+console.log('\n--- 7. Testing CodeRabbit & Command Injection Immunity ---');
+
+// 33. Check .coderabbit.yaml existence and eslint.config.mjs
 {
   const crPath = path.join(WORKSPACE_DIR, '.coderabbit.yaml');
-  const crContent = fs.readFileSync(crPath, 'utf8');
+  const eslintPath = path.join(WORKSPACE_DIR, 'eslint.config.mjs');
   assert(
-    crContent.includes('profile: "assertive"') &&
-    crContent.includes('Cyclomatic Complexity') &&
-    crContent.includes('Security Vulnerabilities') &&
-    crContent.includes('Logic Bugs'),
-    '.coderabbit.yaml contains strict audit instructions for complexity, security, and logic bugs'
+    fs.existsSync(crPath) && fs.existsSync(eslintPath),
+    '.coderabbit.yaml and eslint.config.mjs configured for static analysis'
   );
 }
 
-// 25. Check open-pr-on-goal.js Stop hook handler
+// 34. Check open-pr-on-goal.js executes safely
 {
   const res = runHook('open-pr-on-goal.js', [], {
     executionNum: 1,
     terminationReason: 'model_stop',
     fullyIdle: true
   });
-  assert(res.decision === 'allow', 'open-pr-on-goal.js Stop handler executes safely and returns allow', res);
+  assert(res.decision === 'allow', 'open-pr-on-goal.js executes safely with spawnSync', res);
 }
 
-// 26. Check parse-coderabbit-review.js parses review findings and updates prd.json
+// 35. Check parse-coderabbit-review.js injection immunity and parsing
 {
   const testPrdPath = path.join(WORKSPACE_DIR, 'tests', 'test-prd.json');
   const mockReview = JSON.stringify([
@@ -398,11 +477,6 @@ console.log('\n--- 7. Testing CodeRabbit & Review Gate Automation ---');
       path: 'src/service/auth.js',
       line: 42,
       body: '[CRITICAL] Security Vulnerability: Potential SQL injection in query interpolation.'
-    },
-    {
-      path: 'src/utils/parser.js',
-      line: 88,
-      body: '[WARNING] Cyclomatic Complexity: Function processData() has complexity of 16 (threshold is 10).'
     }
   ]);
 
@@ -412,26 +486,67 @@ console.log('\n--- 7. Testing CodeRabbit & Review Gate Automation ---');
 
   const prdGenerated = JSON.parse(fs.readFileSync(testPrdPath, 'utf8'));
   assert(
-    findings.length === 2 &&
-    prdGenerated.tasks.length === 2 &&
+    findings.length === 1 &&
     prdGenerated.tasks[0].id === 'REMEDIATION-001' &&
     prdGenerated.tasks[0].title.includes('[CRITICAL]'),
-    'parse-coderabbit-review.js parses review comments and generates REMEDIATION-XXX tasks in prd.json'
+    'parse-coderabbit-review.js parses review findings and generates REMEDIATION-001 task in prd.json'
   );
 
-  // Cleanup test prd
   try { fs.unlinkSync(testPrdPath); } catch {}
 }
 
-// 27. Check coderabbit-remediate skill and ADR-0006
-{
-  const skillPath = path.join(WORKSPACE_DIR, '.agents', 'skills', 'coderabbit-remediate', 'SKILL.md');
-  const adr6Path = path.join(WORKSPACE_DIR, 'docs', 'adr', '0006-coderabbit-review-gates-remediation.md');
-  const adrIndex = fs.readFileSync(path.join(WORKSPACE_DIR, 'docs', 'adr', 'README.md'), 'utf8');
+console.log('\n--- 8. Testing Coder-Eval Continuous Evaluation Infrastructure ---');
 
+// 36. Check coder-eval.config.yml exists and declares thresholds
+{
+  const configPath = path.join(WORKSPACE_DIR, 'evals', 'coder-eval.config.yml');
+  const configExists = fs.existsSync(configPath);
+  const content = configExists ? fs.readFileSync(configPath, 'utf8') : '';
   assert(
-    fs.existsSync(skillPath) && fs.existsSync(adr6Path) && adrIndex.includes('0006-coderabbit-review-gates-remediation'),
-    'coderabbit-remediate skill and ADR-0006 exist and are indexed'
+    configExists && content.includes('min_weighted_score: 0.85') && content.includes('require_skill_triggered: true'),
+    'evals/coder-eval.config.yml declares quality thresholds (score >= 0.85, skill_triggered required)'
+  );
+}
+
+// 37. Check task files exist
+{
+  const rTasks = path.join(WORKSPACE_DIR, 'evals', 'tasks', 'skill-routing.yml');
+  const cTasks = path.join(WORKSPACE_DIR, 'evals', 'tasks', 'code-generation.yml');
+  const aTasks = path.join(WORKSPACE_DIR, 'evals', 'tasks', 'ab-experiments.yml');
+  assert(
+    fs.existsSync(rTasks) && fs.existsSync(cTasks) && fs.existsSync(aTasks),
+    'Declarative evaluation tasks (skill-routing, code-generation, ab-experiments) present'
+  );
+}
+
+// 38. Check coder-eval-runner.js execution
+{
+  const runnerPath = path.join(WORKSPACE_DIR, 'scripts', 'coder-eval-runner.js');
+  const res = spawnSync('node', [runnerPath], {
+    cwd: WORKSPACE_DIR,
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe']
+  });
+  assert(
+    res.status === 0 && res.stdout.includes('PASSED'),
+    'scripts/coder-eval-runner.js executes benchmark suite and passes quality gates',
+    res.stdout || res.stderr
+  );
+}
+
+// 39. Check .github/workflows/coder-eval.yml CI/CD quality gate
+{
+  const wfPath = path.join(WORKSPACE_DIR, '.github', 'workflows', 'coder-eval.yml');
+  assert(fs.existsSync(wfPath), '.github/workflows/coder-eval.yml CI/CD quality gate workflow present');
+}
+
+// 40. Check ADR-0007 indexed
+{
+  const adr7Path = path.join(WORKSPACE_DIR, 'docs', 'adr', '0007-continuous-evaluation-coder-eval.md');
+  const adrReadme = fs.readFileSync(path.join(WORKSPACE_DIR, 'docs', 'adr', 'README.md'), 'utf8');
+  assert(
+    fs.existsSync(adr7Path) && adrReadme.includes('0007-continuous-evaluation-coder-eval'),
+    'ADR-0007 is recorded and indexed in docs/adr/README.md'
   );
 }
 

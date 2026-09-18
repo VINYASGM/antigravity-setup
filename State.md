@@ -1,46 +1,37 @@
 # Project State
 
-## Current Phase: Completed & Fully Verified (Safety Guardrails + Memory Substrate + Behavioral Skills + CodeRabbit Review Gates)
-**Last Updated**: 2026-09-12
+## Current Phase: Completed & Fully Verified (Canonical Scaffolding + Hardened Guardrails + Coder-Eval Continuous Evaluation)
+**Last Updated**: 2026-09-18
 
 ### Status Overview
-- **Documentation**: All governance documents (`PRD.md`, `TRD.md`, `Architecture.md`, `ToDo.md`, `State.md`, `context.md`) fully aligned and up to date.
-- **Hook Configuration**: Created [.antigravity/hooks.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/hooks.json) and mirrored to [.agents/hooks.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/hooks.json).
-- **Hook Handlers**:
-  - [.antigravity/scripts/branch-guard.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/branch-guard.js) (Branch locking: blocks push/delete/direct commit on protected branches, allows initial baseline commit).
-  - [.antigravity/scripts/shell-sandbox.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/shell-sandbox.js) (Shell sandboxing & destructive command interception).
-  - [.antigravity/scripts/lint-enforcer.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/lint-enforcer.js) (Syntax integrity and lint enforcement).
-  - [.antigravity/scripts/knowledge-injector.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/knowledge-injector.js) (PreInvocation knowledge reminder).
-  - [.antigravity/scripts/open-pr-on-goal.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/open-pr-on-goal.js) (Automated PR creation on `/goal` queue exhaustion).
-- **Complete Behavioral Skills Suite (8 Core + 1 Remediation Skill)** in [.agents/skills/](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/):
-  - **Delivery Workflow Tier**:
-    - [to-prd](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/to-prd/SKILL.md): Requirements formalization (`prd.json`).
-    - [design-an-interface](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/design-an-interface/SKILL.md): Contract-first design.
-    - [tdd](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/tdd/SKILL.md): Red-Green-Refactor enforcement.
-    - [git-guardrails](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/git-guardrails/SKILL.md): Conventional Commits & Ephemeral Branches.
-  - **Cognitive Discipline Tier (Operationalizing Core Rules)**:
-    - [think-first](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/think-first/SKILL.md): Rule 1: Assumptions, trade-offs, and alternative analysis.
-    - [simplify](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/simplify/SKILL.md): Rule 2: De-bloating, single-use abstraction stripping.
-    - [surgical-edits](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/surgical-edits/SKILL.md): Rule 3: Zero adjacent edits, 100% diff traceability.
-    - [goal-driven-dev](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/goal-driven-dev/SKILL.md): Rule 4: Binary success criteria with autonomous loop execution.
-  - **Review Gate & Remediation Tier**:
-    - [coderabbit-remediate](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills/coderabbit-remediate/SKILL.md): Ingests CodeRabbit review links, populates `prd.json`, and drives autonomous remediation.
-  - Declared in [.agents/skills.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/skills.json).
-- **CodeRabbit Integration & Review Gates**:
-  - [.coderabbit.yaml](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.coderabbit.yaml): Strict rules for cyclomatic complexity (> 10), security flaws, logic bugs.
-  - [.github/workflows/coderabbit.yml](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.github/workflows/coderabbit.yml): PR review automation workflow.
-  - [.antigravity/scripts/parse-coderabbit-review.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/parse-coderabbit-review.js): Converts PR review findings into atomic `prd.json` tasks.
-- **Memory Substrate**:
-  - Obsidian ADR Vault: [docs/adr/](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/docs/adr/) with `.obsidian/` configuration, `README.md`, and ADRs (ADR-0001 to ADR-0006).
-  - Codebase Topology: [.antigravity/graph.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/graph.json) containing 144 AST nodes, 165 dependency edges, and 13 communities.
-  - Obsidian Architecture Notes: [docs/architecture/](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/docs/architecture/) (157 markdown notes + `graph.canvas`).
-  - CLI Bridge: [scripts/graphify-cli.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/scripts/graphify-cli.js) and [package.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/package.json).
-- **Antigravity Knowledge Injection**:
-  - Project Settings: [.antigravity/settings.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/settings.json) & [.agents/settings.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/settings.json).
-  - Anti-Hallucination Planning Policy: `requireGraphTopologyQuery: true` and `disallowHallucinatedDependencies: true`.
-  - Rules: [.agents/rules/knowledge-substrate.md](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/rules/knowledge-substrate.md) and [GEMINI.md](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/GEMINI.md).
-  - IDE Knowledge Item: Mounted at `<appDataDir>\knowledge\start-codebase-topology\metadata.json`.
+- **Documentation**: All core governance documents (`PRD.md`, `TRD.md`, `Architecture.md`, `ToDo.md`, `State.md`, `context.md`, `MEMORY.md`) fully synchronized.
+- **Canonical Scaffolding**:
+  - `AGENTS.md`: Three-Layer Architecture (Directive, Orchestration, Execution) with subagent personas (`architect`, `dev`, `devops`, `data_engineer`).
+  - `MEMORY.md`: Autonomous persistent state substrate engineered to survive 135,000-token context compaction events.
+  - `mcp_config.json`: Standard Model Context Protocol servers configured for GitHub, PostgreSQL, Firebase, Firecrawl, and framework orchestration.
+  - `.agent/rules/` & `.agents/rules/`: Contextual targeting using YAML frontmatter `globs` arrays (`frontend-react.md`, `backend-database.md`, `devops-ci.md`, `knowledge-substrate.md`).
+  - `.agent/skills/` & `.agents/skills/`: Semantic skills with progressive disclosure (`SKILL.md` frontmatter with `allow_implicit_invocation: true`), including `ci-debugger` (with mandatory secret redaction and dry-run policy), `doc-updater`, and `security-auditor`.
+  - `.agent/workflows/` & `.agents/workflows/`: Multi-step process automations (`ci-remediate.md`, `security-audit.md`, `deploy-verify.md`).
+- **Hook Configuration**:
+  - Authoritative registration: [.agents/hooks.json](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.agents/hooks.json).
+  - Dead duplicate `.antigravity/hooks.json` and decorative `settings.json` eliminated.
+- **Hardened Hook Handlers**:
+  - [.antigravity/scripts/branch-guard.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/branch-guard.js): Fail-closed branch locking on sensitive branches.
+  - [.antigravity/scripts/shell-sandbox.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/shell-sandbox.js): Fail-closed execution sandbox blocking destructive PowerShell cmdlets (`Remove-Item -Recurse -Force`, `Clear-Disk`, `Remove-Item Env:\`), Git data loss (`git clean -fdx`, `git reflog expire`), and gating `git add .` / `git add -A`.
+  - [.antigravity/scripts/lint-enforcer.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/lint-enforcer.js): Multi-language syntax verification (`.json`, `.js`, `.py`, `.ts`) using `spawnSync`, with documented fail-safe policy.
+  - [.antigravity/scripts/knowledge-injector.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/knowledge-injector.js): PreInvocation knowledge reminder with mechanical mtime staleness detection.
+  - [.antigravity/scripts/open-pr-on-goal.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/open-pr-on-goal.js): Injection-immune (`spawnSync` `{ shell: false }`), goal-driven (gated on `prd.json` completion), dynamically branched (`main` vs `master`), with synchronous test verification.
+  - [.antigravity/scripts/parse-coderabbit-review.js](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.antigravity/scripts/parse-coderabbit-review.js): Injection-immune review comment ingestion and `prd.json` task generation.
+- **Continuous Evaluation Infrastructure (`coder-eval`)**:
+  - Configuration: [`evals/coder-eval.config.yml`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/evals/coder-eval.config.yml) enforcing `min_weighted_score: 0.85` and `require_skill_triggered: true`.
+  - Declarative Tasks: [`evals/tasks/skill-routing.yml`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/evals/tasks/skill-routing.yml), [`evals/tasks/code-generation.yml`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/evals/tasks/code-generation.yml), and [`evals/tasks/ab-experiments.yml`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/evals/tasks/ab-experiments.yml).
+  - Benchmark Runner: [`scripts/coder-eval-runner.js`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/scripts/coder-eval-runner.js) executing continuous evaluation with telemetry tracking and A/B benchmarking.
+  - CI/CD Quality Gate: [`.github/workflows/coder-eval.yml`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/.github/workflows/coder-eval.yml) workflow running on PRs and weekly cron.
+  - ADR: [`docs/adr/0007-continuous-evaluation-coder-eval.md`](file:///c:/Users/Vinyas%20G%20M/OneDrive/Desktop/start/docs/adr/0007-continuous-evaluation-coder-eval.md).
+- **Static Analysis & Repository Hygiene**:
+  - `eslint.config.mjs`: Modern flat configuration for CodeRabbit static analysis.
+  - `.gitignore`: Ignoring regenerable `docs/architecture/` notes, preserving hand-authored `docs/adr/`.
 - **Verification**:
-  - Automated test suite: 28 / 28 passing (100% pass rate).
-  - Git repository initialized and baseline commit created on `main`.
-  - PreInvocation knowledge injection verified active in real-time execution loop.
+  - Automated test suite: 41 / 41 passing (100% pass rate).
+  - Coder-Eval benchmark: 100.0% weighted score, 6/6 skills triggered, all quality gates passed.
+  - Codebase topology synchronized: 146 AST nodes, 177 edges, 15 communities in `.antigravity/graph.json`.

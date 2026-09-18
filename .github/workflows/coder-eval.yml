@@ -1,0 +1,56 @@
+name: Continuous Evaluation (coder-eval) & Quality Gates
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  schedule:
+    # Run weekly on Sundays at midnight UTC to detect model drift
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+jobs:
+  coder-eval-gate:
+    name: Coder-Eval Quality Gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Unit Verification Suite
+        run: npm test
+
+      - name: Execute Coder-Eval Benchmark Suite
+        run: npm run eval
+
+      - name: Publish Evaluation Summary to Job Summary
+        if: always()
+        run: |
+          if [ -f evals/results/summary.md ]; then
+            cat evals/results/summary.md >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Archive Evaluation Results Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coder-eval-results
+          path: evals/results/
+          retention-days: 14

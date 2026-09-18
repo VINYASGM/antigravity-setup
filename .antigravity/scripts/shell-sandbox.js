@@ -18,12 +18,21 @@ const BLOCKED_COMMAND_PATTERNS = [
   { pattern: /\bformat\s+[a-z]:/i, description: 'Drive formatting utility' },
   { pattern: /\bdiskpart\b/i, description: 'Low-level disk partitioner' },
   { pattern: /\bbcdedit\b/i, description: 'Boot configuration data editor' },
+  { pattern: /\b(?:Clear-Disk|Format-Volume|Initialize-Disk|Stop-Computer|Restart-Computer)\b/i, description: 'PowerShell disk or system termination cmdlet' },
 
   // Dangerous recursive deletions targeting system/root drives
   { pattern: /\b(?:rmdir|rd)\s+(?:\/[sqSQ]\s+)+[a-zA-Z]:\\?$/i, description: 'Recursive wipe of drive root' },
   { pattern: /\b(?:rmdir|rd)\s+(?:\/[sqSQ]\s+)+.*(?:windows|system32|program\s+files)/i, description: 'System directory deletion' },
   { pattern: /\bdel\s+(?:\/[sfqSFQ]\s+)+[a-zA-Z]:\\(?:\*|\*\.\*)?$/i, description: 'Recursive wipe of drive root files' },
   { pattern: /\brm\s+-[a-zA-Z]*r[a-zA-Z]*f?\s+([\/~]|[a-zA-Z]:[\\\/]|\$HOME)/i, description: 'Recursive deletion of root or home directory' },
+
+  // PowerShell destructive filesystem and environment deletions
+  { pattern: /\b(?:Remove-Item|ri)\b(?=.*-(?:Recurse|r)\b)(?=.*-(?:Force|f)\b).*(?:[a-zA-Z]:\\|\/|\$HOME|\~)/i, description: 'PowerShell recursive force wipe of drive root or home' },
+  { pattern: /\b(?:Remove-Item|ri)\b\s+.*(?:Env:|Variable:|HKLM:|HKCU:|\$env:)/i, description: 'PowerShell environment or registry provider deletion' },
+
+  // Git unrecoverable history and working tree destruction
+  { pattern: /\bgit(?:\.exe)?\s+clean\s+.*-[a-zA-Z]*f/i, description: 'Unrecoverable git clean force wipe' },
+  { pattern: /\bgit(?:\.exe)?\s+reflog\s+expire\b/i, description: 'Unrecoverable git reflog expiration' },
 
   // Windows Registry modification/destruction
   { pattern: /\breg\s+(?:delete|add)\s+hk(?:lm|cu|cr|u|cc)/i, description: 'Windows Registry alteration' },
@@ -40,11 +49,22 @@ const BLOCKED_COMMAND_PATTERNS = [
 const ASK_CONFIRMATION_PATTERNS = [
   { pattern: /\bnpm\s+(?:install|i|add)\s+(?:-g|--global)\b/i, description: 'Global npm package installation' },
   { pattern: /\b(?:choco|winget)\s+install\b/i, description: 'Machine-wide package installation' },
-  { pattern: /\bpip\s+install\s+(?:--user|--break-system-packages)\b/i, description: 'System Python package installation' }
+  { pattern: /\bpip\s+install\s+(?:--user|--break-system-packages)\b/i, description: 'System Python package installation' },
+  { pattern: /\bgit(?:\.exe)?\s+add\s+(?:\.|\-A|\-\-all)(?:\s|$)/i, description: 'Broad staging of all files (git add . / -A) - prefer surgical file staging' }
 ];
 
 function isPathWithinWorkspace(targetPath, workspacePaths) {
   if (!targetPath || !workspacePaths || !workspacePaths.length) return true;
+
+  // On POSIX, Windows drive-letter paths (e.g. C:\Windows) are inherently foreign/outside
+  if (process.platform !== 'win32' && /^[a-zA-Z]:[\\\/]/.test(targetPath)) {
+    return false;
+  }
+
+  // On Windows, POSIX absolute root paths (e.g. /etc) are outside
+  if (process.platform === 'win32' && /^[\/\\](etc|var|usr|bin|sbin|root|home)\b/i.test(targetPath)) {
+    return false;
+  }
 
   const normalizedTarget = path.resolve(targetPath).toLowerCase();
   return workspacePaths.some(ws => {
@@ -63,7 +83,10 @@ function evaluateCommand(commandLine, cwd, workspacePaths) {
     if (!isPathWithinWorkspace(cwd, workspacePaths)) {
       // Allow temp/scratch dirs inside user profile if designated
       const normalizedCwd = path.resolve(cwd).toLowerCase();
-      const isTempOrScratch = normalizedCwd.includes('antigravity-ide\\brain') || normalizedCwd.includes('\\temp\\');
+      const isTempOrScratch = normalizedCwd.includes('antigravity-ide/brain') || 
+                              normalizedCwd.includes('antigravity-ide\\brain') || 
+                              normalizedCwd.includes('/temp/') || 
+                              normalizedCwd.includes('\\temp\\');
       if (!isTempOrScratch) {
         return {
           decision: 'deny',

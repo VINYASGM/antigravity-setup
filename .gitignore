@@ -4,9 +4,22 @@ node_modules/
 # Cache & Build outputs
 .antigravity/.cache/
 graphify-out/
+evals/results/
 tests/temp/
+tests/audit-temp/
+tests/audit-temp-test/
 dist/
 build/
+*-report.json
+axe-report.json
+lighthouse-report.json
+
+# Ephemeral subagent preview and request files
+.agents/teamwork_preview_*
+.agents/ORIGINAL_REQUEST.md
+
+# Regenerable Architecture Visual Vault (keep docs/adr/ tracked)
+docs/architecture/
 
 # Logs
 *.log

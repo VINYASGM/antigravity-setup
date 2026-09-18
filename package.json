@@ -7,8 +7,9 @@
     "graphify": "./scripts/graphify-cli.js"
   },
   "scripts": {
-    "graphify": "node ./scripts/graphify-cli.js",
-    "test": "node ./tests/test-hooks.js"
+    "graphify": "node ./scripts/graphify-cli.js --output .antigravity/graph.json",
+    "test": "node ./tests/test-hooks.js",
+    "eval": "node ./scripts/coder-eval-runner.js"
   },
   "keywords": [
     "antigravity",
