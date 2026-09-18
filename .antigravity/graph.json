@@ -9,7 +9,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "shell-sandbox.js",
       "id": "antigravity_scripts_shell_sandbox"
     },
@@ -19,7 +19,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "path",
       "id": "antigravity_scripts_shell_sandbox_path"
     },
@@ -29,7 +29,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "blocked_command_patterns",
       "id": "antigravity_scripts_shell_sandbox_blocked_command_patterns"
     },
@@ -39,7 +39,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "ask_confirmation_patterns",
       "id": "antigravity_scripts_shell_sandbox_ask_confirmation_patterns"
     },
@@ -49,7 +49,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "ispathwithinworkspace()",
       "id": "antigravity_scripts_shell_sandbox_ispathwithinworkspace"
     },
@@ -59,7 +59,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "evaluatecommand()",
       "id": "antigravity_scripts_shell_sandbox_evaluatecommand"
     },
@@ -69,7 +69,7 @@
       "source_file": ".antigravity/scripts/shell-sandbox.js",
       "source_location": "L109",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "main()",
       "id": "antigravity_scripts_shell_sandbox_main"
     },
@@ -79,7 +79,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "graphify-cli.js",
       "id": "scripts_graphify_cli"
     },
@@ -89,7 +89,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "{ spawnsync }",
       "id": "scripts_graphify_cli_spawnsync"
     },
@@ -99,7 +99,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "path",
       "id": "scripts_graphify_cli_path"
     },
@@ -109,7 +109,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "fs",
       "id": "scripts_graphify_cli_fs"
     },
@@ -119,7 +119,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "parseargs()",
       "id": "scripts_graphify_cli_parseargs"
     },
@@ -129,7 +129,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "runpython()",
       "id": "scripts_graphify_cli_runpython"
     },
@@ -139,7 +139,7 @@
       "source_file": "scripts/graphify-cli.js",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "main()",
       "id": "scripts_graphify_cli_main"
     },
@@ -149,7 +149,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "parse-coderabbit-review.js",
       "id": "antigravity_scripts_parse_coderabbit_review"
     },
@@ -159,7 +159,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "fs",
       "id": "antigravity_scripts_parse_coderabbit_review_fs"
     },
@@ -169,7 +169,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "path",
       "id": "antigravity_scripts_parse_coderabbit_review_path"
     },
@@ -179,7 +179,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "parsereviewcomments()",
       "id": "antigravity_scripts_parse_coderabbit_review_parsereviewcomments"
     },
@@ -189,7 +189,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "updateprdwithremediations()",
       "id": "antigravity_scripts_parse_coderabbit_review_updateprdwithremediations"
     },
@@ -199,7 +199,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L136",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "fetchgithubprcomments()",
       "id": "antigravity_scripts_parse_coderabbit_review_fetchgithubprcomments"
     },
@@ -209,7 +209,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L171",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "main()",
       "id": "antigravity_scripts_parse_coderabbit_review_main"
     },
@@ -219,7 +219,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "branch-guard.js",
       "id": "antigravity_scripts_branch_guard"
     },
@@ -229,7 +229,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "{ execsync }",
       "id": "antigravity_scripts_branch_guard_execsync"
     },
@@ -239,7 +239,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "path",
       "id": "antigravity_scripts_branch_guard_path"
     },
@@ -249,7 +249,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "protected_branches",
       "id": "antigravity_scripts_branch_guard_protected_branches"
     },
@@ -259,7 +259,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "protected_regex",
       "id": "antigravity_scripts_branch_guard_protected_regex"
     },
@@ -269,7 +269,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "isprotectedbranch()",
       "id": "antigravity_scripts_branch_guard_isprotectedbranch"
     },
@@ -279,7 +279,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "getcurrentgitbranch()",
       "id": "antigravity_scripts_branch_guard_getcurrentgitbranch"
     },
@@ -289,7 +289,7 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "inspectcommand()",
       "id": "antigravity_scripts_branch_guard_inspectcommand"
     },
@@ -299,49 +299,9 @@
       "source_file": ".antigravity/scripts/branch-guard.js",
       "source_location": "L174",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "main()",
       "id": "antigravity_scripts_branch_guard_main"
-    },
-    {
-      "label": "knowledge-injector.js",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "knowledge-injector.js",
-      "id": "antigravity_scripts_knowledge_injector"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "fs",
-      "id": "antigravity_scripts_knowledge_injector_fs"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "path",
-      "id": "antigravity_scripts_knowledge_injector_path"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L51",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "main()",
-      "id": "antigravity_scripts_knowledge_injector_main"
     },
     {
       "label": "lint-enforcer.js",
@@ -349,7 +309,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "lint-enforcer.js",
       "id": "antigravity_scripts_lint_enforcer"
     },
@@ -359,7 +319,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "fs",
       "id": "antigravity_scripts_lint_enforcer_fs"
     },
@@ -369,7 +329,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "path",
       "id": "antigravity_scripts_lint_enforcer_path"
     },
@@ -379,7 +339,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "cache_dir",
       "id": "antigravity_scripts_lint_enforcer_cache_dir"
     },
@@ -389,7 +349,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "cache_file",
       "id": "antigravity_scripts_lint_enforcer_cache_file"
     },
@@ -399,7 +359,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "ensurecachedir()",
       "id": "antigravity_scripts_lint_enforcer_ensurecachedir"
     },
@@ -409,7 +369,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "loadcache()",
       "id": "antigravity_scripts_lint_enforcer_loadcache"
     },
@@ -419,7 +379,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "savecache()",
       "id": "antigravity_scripts_lint_enforcer_savecache"
     },
@@ -429,7 +389,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "validatefilesyntax()",
       "id": "antigravity_scripts_lint_enforcer_validatefilesyntax"
     },
@@ -439,7 +399,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L113",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "runprojectlinter()",
       "id": "antigravity_scripts_lint_enforcer_runprojectlinter"
     },
@@ -449,7 +409,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L133",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "handleposttool()",
       "id": "antigravity_scripts_lint_enforcer_handleposttool"
     },
@@ -459,7 +419,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L160",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "handlepretool()",
       "id": "antigravity_scripts_lint_enforcer_handlepretool"
     },
@@ -469,7 +429,7 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L199",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "handlestop()",
       "id": "antigravity_scripts_lint_enforcer_handlestop"
     },
@@ -479,309 +439,9 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L224",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "main()",
       "id": "antigravity_scripts_lint_enforcer_main"
-    },
-    {
-      "label": "open-pr-on-goal.js",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "open-pr-on-goal.js",
-      "id": "antigravity_scripts_open_pr_on_goal"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "fs",
-      "id": "antigravity_scripts_open_pr_on_goal_fs"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "path",
-      "id": "antigravity_scripts_open_pr_on_goal_path"
-    },
-    {
-      "label": "getGitBranch()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "getgitbranch()",
-      "id": "antigravity_scripts_open_pr_on_goal_getgitbranch"
-    },
-    {
-      "label": "hasUnpushedCommits()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L48",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "hasunpushedcommits()",
-      "id": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
-    },
-    {
-      "label": "getLatestCommitMessage()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L53",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "getlatestcommitmessage()",
-      "id": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
-    },
-    {
-      "label": "checkGhCli()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L58",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "checkghcli()",
-      "id": "antigravity_scripts_open_pr_on_goal_checkghcli"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L94",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "main()",
-      "id": "antigravity_scripts_open_pr_on_goal_main"
-    },
-    {
-      "label": "forensic_verify.js",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "forensic_verify.js",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "fs",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_fs"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "path",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_path"
-    },
-    {
-      "label": "{ spawnSync }",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "{ spawnsync }",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_spawnsync"
-    },
-    {
-      "label": "scrapeContent",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "scrapecontent",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_scrapecontent"
-    },
-    {
-      "label": "decodeEntitiesMatch",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "decodeentitiesmatch",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_decodeentitiesmatch"
-    },
-    {
-      "label": "stripTagsMatch",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "striptagsmatch",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_striptagsmatch"
-    },
-    {
-      "label": "resolveUrlMatch",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "resolveurlmatch",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_resolveurlmatch"
-    },
-    {
-      "label": "htmlToMarkdownMatch",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L20",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "htmltomarkdownmatch",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_htmltomarkdownmatch"
-    },
-    {
-      "label": "parserFn",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L27",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "parserfn",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_parserfn"
-    },
-    {
-      "label": "parsedMd",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L55",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "parsedmd",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_parsedmd"
-    },
-    {
-      "label": "mdAssertions",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L59",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "mdassertions",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_mdassertions"
-    },
-    {
-      "label": "allMdPassed",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L72",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "allmdpassed",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_allmdpassed"
-    },
-    {
-      "label": "axeContent",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L77",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "axecontent",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_axecontent"
-    },
-    {
-      "label": "axeAuditFn",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L84",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "axeauditfn",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_axeauditfn"
-    },
-    {
-      "label": "badRes",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L91",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "badres",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_badres"
-    },
-    {
-      "label": "goodRes",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L95",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "goodres",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_goodres"
-    },
-    {
-      "label": "lhContent",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L122",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "lhcontent",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_lhcontent"
-    },
-    {
-      "label": "lhAuditFn",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L124",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "lhauditfn",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_lhauditfn"
-    },
-    {
-      "label": "fastMetrics",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L129",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "fastmetrics",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_fastmetrics"
-    },
-    {
-      "label": "slowMetrics",
-      "file_type": "code",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L136",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "slowmetrics",
-      "id": "agents_teamwork_preview_auditor_1_forensic_verify_slowmetrics"
-    },
-    {
-      "label": "isGraphStale()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "isgraphstale()",
-      "id": "antigravity_scripts_knowledge_injector_isgraphstale"
     },
     {
       "label": "{ spawnSync }",
@@ -789,59 +449,9 @@
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "{ spawnsync }",
       "id": "antigravity_scripts_lint_enforcer_spawnsync"
-    },
-    {
-      "label": "{ spawnSync }",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "{ spawnsync }",
-      "id": "antigravity_scripts_open_pr_on_goal_spawnsync"
-    },
-    {
-      "label": "runCommandSafe()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "runcommandsafe()",
-      "id": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
-    },
-    {
-      "label": "detectDefaultBranch()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "detectdefaultbranch()",
-      "id": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch"
-    },
-    {
-      "label": "verifyGoalTasksCompleted()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L63",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "verifygoaltaskscompleted()",
-      "id": "antigravity_scripts_open_pr_on_goal_verifygoaltaskscompleted"
-    },
-    {
-      "label": "runTestsLocally()",
-      "file_type": "code",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L80",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "runtestslocally()",
-      "id": "antigravity_scripts_open_pr_on_goal_runtestslocally"
     },
     {
       "label": "{ spawnSync }",
@@ -849,7 +459,7 @@
       "source_file": ".antigravity/scripts/parse-coderabbit-review.js",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "{ spawnsync }",
       "id": "antigravity_scripts_parse_coderabbit_review_spawnsync"
     },
@@ -859,7 +469,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "app.json",
       "id": "docs_adr_obsidian_app"
     },
@@ -869,7 +479,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "attachmentfolderpath",
       "id": "docs_adr_obsidian_app_attachmentfolderpath"
     },
@@ -879,7 +489,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "newfilelocation",
       "id": "docs_adr_obsidian_app_newfilelocation"
     },
@@ -889,7 +499,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "usemarkdownlinks",
       "id": "docs_adr_obsidian_app_usemarkdownlinks"
     },
@@ -899,7 +509,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "livepreview",
       "id": "docs_adr_obsidian_app_livepreview"
     },
@@ -909,7 +519,7 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "showlinenumber",
       "id": "docs_adr_obsidian_app_showlinenumber"
     },
@@ -919,9 +529,189 @@
       "source_file": "docs/adr/.obsidian/app.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "norm_label": "promptdelete",
       "id": "docs_adr_obsidian_app_promptdelete"
+    },
+    {
+      "label": "knowledge-injector.js",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "knowledge-injector.js",
+      "id": "antigravity_scripts_knowledge_injector"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "fs",
+      "id": "antigravity_scripts_knowledge_injector_fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "path",
+      "id": "antigravity_scripts_knowledge_injector_path"
+    },
+    {
+      "label": "isGraphStale()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "isgraphstale()",
+      "id": "antigravity_scripts_knowledge_injector_isgraphstale"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L51",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "main()",
+      "id": "antigravity_scripts_knowledge_injector_main"
+    },
+    {
+      "label": "open-pr-on-goal.js",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "open-pr-on-goal.js",
+      "id": "antigravity_scripts_open_pr_on_goal"
+    },
+    {
+      "label": "{ spawnSync }",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "{ spawnsync }",
+      "id": "antigravity_scripts_open_pr_on_goal_spawnsync"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "fs",
+      "id": "antigravity_scripts_open_pr_on_goal_fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "path",
+      "id": "antigravity_scripts_open_pr_on_goal_path"
+    },
+    {
+      "label": "runCommandSafe()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "runcommandsafe()",
+      "id": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "label": "getGitBranch()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "getgitbranch()",
+      "id": "antigravity_scripts_open_pr_on_goal_getgitbranch"
+    },
+    {
+      "label": "detectDefaultBranch()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "detectdefaultbranch()",
+      "id": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch"
+    },
+    {
+      "label": "hasUnpushedCommits()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L48",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "hasunpushedcommits()",
+      "id": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
+    },
+    {
+      "label": "getLatestCommitMessage()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L53",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "getlatestcommitmessage()",
+      "id": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
+    },
+    {
+      "label": "checkGhCli()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L58",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "checkghcli()",
+      "id": "antigravity_scripts_open_pr_on_goal_checkghcli"
+    },
+    {
+      "label": "verifyGoalTasksCompleted()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L63",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "verifygoaltaskscompleted()",
+      "id": "antigravity_scripts_open_pr_on_goal_verifygoaltaskscompleted"
+    },
+    {
+      "label": "runTestsLocally()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L80",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "runtestslocally()",
+      "id": "antigravity_scripts_open_pr_on_goal_runtestslocally"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L94",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "main()",
+      "id": "antigravity_scripts_open_pr_on_goal_main"
     },
     {
       "label": "eslint.config.mjs",
@@ -929,9 +719,139 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 12,
       "norm_label": "eslint.config.mjs",
       "id": "eslint_config"
+    },
+    {
+      "label": "coder-eval-runner.js",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "coder-eval-runner.js",
+      "id": "scripts_coder_eval_runner"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "fs",
+      "id": "scripts_coder_eval_runner_fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "scripts_coder_eval_runner_path"
+    },
+    {
+      "label": "WORKSPACE_ROOT",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "workspace_root",
+      "id": "scripts_coder_eval_runner_workspace_root"
+    },
+    {
+      "label": "CONFIG_FILE",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "config_file",
+      "id": "scripts_coder_eval_runner_config_file"
+    },
+    {
+      "label": "RESULTS_DIR",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "results_dir",
+      "id": "scripts_coder_eval_runner_results_dir"
+    },
+    {
+      "label": "parseSimpleYaml()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "parsesimpleyaml()",
+      "id": "scripts_coder_eval_runner_parsesimpleyaml"
+    },
+    {
+      "label": "loadInstalledSkills()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L95",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadinstalledskills()",
+      "id": "scripts_coder_eval_runner_loadinstalledskills"
+    },
+    {
+      "label": "computeSemanticMatch()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L130",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "computesemanticmatch()",
+      "id": "scripts_coder_eval_runner_computesemanticmatch"
+    },
+    {
+      "label": "evaluateSkillRouting()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L155",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "evaluateskillrouting()",
+      "id": "scripts_coder_eval_runner_evaluateskillrouting"
+    },
+    {
+      "label": "evaluateCodeGeneration()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L183",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "evaluatecodegeneration()",
+      "id": "scripts_coder_eval_runner_evaluatecodegeneration"
+    },
+    {
+      "label": "evaluateAbExperiments()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L229",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "evaluateabexperiments()",
+      "id": "scripts_coder_eval_runner_evaluateabexperiments"
+    },
+    {
+      "label": "runBenchmark()",
+      "file_type": "code",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L251",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "runbenchmark()",
+      "id": "scripts_coder_eval_runner_runbenchmark"
     },
     {
       "label": "update_docs.js",
@@ -939,7 +859,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "update_docs.js",
       "id": "scripts_update_docs"
     },
@@ -949,7 +869,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "https",
       "id": "scripts_update_docs_https"
     },
@@ -959,7 +879,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "http",
       "id": "scripts_update_docs_http"
     },
@@ -969,7 +889,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "fs",
       "id": "scripts_update_docs_fs"
     },
@@ -979,7 +899,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "path",
       "id": "scripts_update_docs_path"
     },
@@ -989,7 +909,7 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "fetchurl()",
       "id": "scripts_update_docs_fetchurl"
     },
@@ -999,59 +919,109 @@
       "source_file": "scripts/update_docs.js",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "main()",
       "id": "scripts_update_docs_main"
     },
     {
-      "label": "test-yaml.js",
+      "label": "test-hooks.js",
       "file_type": "code",
-      "source_file": ".gemini/scratch/test-yaml.js",
+      "source_file": "tests/test-hooks.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "gemini_scratch_test_yaml",
-      "community": 13,
-      "norm_label": "test-yaml.js"
+      "community": 4,
+      "norm_label": "test-hooks.js",
+      "id": "tests_test_hooks"
     },
     {
-      "label": "fs",
+      "label": "{ spawnSync }",
       "file_type": "code",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L1",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "gemini_scratch_test_yaml_fs",
-      "community": 13,
-      "norm_label": "fs"
+      "community": 4,
+      "norm_label": "{ spawnsync }",
+      "id": "tests_test_hooks_spawnsync"
     },
     {
       "label": "path",
       "file_type": "code",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L2",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "gemini_scratch_test_yaml_path",
-      "community": 13,
-      "norm_label": "path"
+      "community": 4,
+      "norm_label": "path",
+      "id": "tests_test_hooks_path"
     },
     {
-      "label": "routingTasksContent",
+      "label": "fs",
       "file_type": "code",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L4",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "gemini_scratch_test_yaml_routingtaskscontent",
-      "community": 13,
-      "norm_label": "routingtaskscontent"
+      "community": 4,
+      "norm_label": "fs",
+      "id": "tests_test_hooks_fs"
     },
     {
-      "label": "lines",
+      "label": "SCRIPTS_DIR",
       "file_type": "code",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L6",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L10",
       "_origin": "ast",
-      "id": "gemini_scratch_test_yaml_lines",
-      "community": 13,
-      "norm_label": "lines"
+      "community": 4,
+      "norm_label": "scripts_dir",
+      "id": "tests_test_hooks_scripts_dir"
+    },
+    {
+      "label": "WORKSPACE_DIR",
+      "file_type": "code",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "workspace_dir",
+      "id": "tests_test_hooks_workspace_dir"
+    },
+    {
+      "label": "runHook()",
+      "file_type": "code",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "runhook()",
+      "id": "tests_test_hooks_runhook"
+    },
+    {
+      "label": "assert()",
+      "file_type": "code",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "assert()",
+      "id": "tests_test_hooks_assert"
+    },
+    {
+      "label": "testTempDir",
+      "file_type": "code",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L263",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "testtempdir",
+      "id": "tests_test_hooks_testtempdir"
+    },
+    {
+      "label": "ADR-0007",
+      "file_type": "concept",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L542",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "adr-0007",
+      "id": "docref_adr_0007"
     },
     {
       "label": "package.json",
@@ -1060,7 +1030,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package",
-      "community": 1,
+      "community": 0,
       "norm_label": "package.json"
     },
     {
@@ -1070,7 +1040,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "package_name",
-      "community": 1,
+      "community": 0,
       "norm_label": "name"
     },
     {
@@ -1080,7 +1050,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "package_version",
-      "community": 1,
+      "community": 0,
       "norm_label": "version"
     },
     {
@@ -1090,7 +1060,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "package_description",
-      "community": 1,
+      "community": 0,
       "norm_label": "description"
     },
     {
@@ -1100,7 +1070,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "package_main",
-      "community": 1,
+      "community": 0,
       "norm_label": "main"
     },
     {
@@ -1110,7 +1080,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "package_bin",
-      "community": 1,
+      "community": 0,
       "norm_label": "bin"
     },
     {
@@ -1120,7 +1090,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "package_bin_graphify",
-      "community": 1,
+      "community": 0,
       "norm_label": "graphify"
     },
     {
@@ -1130,7 +1100,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts",
-      "community": 1,
+      "community": 0,
       "norm_label": "scripts"
     },
     {
@@ -1140,7 +1110,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_scripts_graphify",
-      "community": 1,
+      "community": 0,
       "norm_label": "graphify"
     },
     {
@@ -1150,7 +1120,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "package_scripts_test",
-      "community": 1,
+      "community": 0,
       "norm_label": "test"
     },
     {
@@ -1160,7 +1130,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_scripts_eval",
-      "community": 1,
+      "community": 0,
       "norm_label": "eval"
     },
     {
@@ -1170,7 +1140,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "package_keywords",
-      "community": 1,
+      "community": 0,
       "norm_label": "keywords"
     },
     {
@@ -1180,7 +1150,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ref_antigravity",
-      "community": 1,
+      "community": 0,
       "norm_label": "antigravity"
     },
     {
@@ -1190,7 +1160,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ref_graphify",
-      "community": 1,
+      "community": 0,
       "norm_label": "graphify"
     },
     {
@@ -1200,7 +1170,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ref_obsidian",
-      "community": 1,
+      "community": 0,
       "norm_label": "obsidian"
     },
     {
@@ -1210,7 +1180,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ref_guardrails",
-      "community": 1,
+      "community": 0,
       "norm_label": "guardrails"
     },
     {
@@ -1220,7 +1190,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "package_author",
-      "community": 1,
+      "community": 0,
       "norm_label": "author"
     },
     {
@@ -1230,238 +1200,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "package_license",
-      "community": 1,
+      "community": 0,
       "norm_label": "license"
-    },
-    {
-      "label": "coder-eval-runner.js",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner",
-      "community": 4,
-      "norm_label": "coder-eval-runner.js"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_fs",
-      "community": 4,
-      "norm_label": "fs"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_path",
-      "community": 4,
-      "norm_label": "path"
-    },
-    {
-      "label": "WORKSPACE_ROOT",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_workspace_root",
-      "community": 4,
-      "norm_label": "workspace_root"
-    },
-    {
-      "label": "CONFIG_FILE",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_config_file",
-      "community": 4,
-      "norm_label": "config_file"
-    },
-    {
-      "label": "RESULTS_DIR",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_results_dir",
-      "community": 4,
-      "norm_label": "results_dir"
-    },
-    {
-      "label": "parseSimpleYaml()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_parsesimpleyaml",
-      "community": 4,
-      "norm_label": "parsesimpleyaml()"
-    },
-    {
-      "label": "loadInstalledSkills()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_loadinstalledskills",
-      "community": 4,
-      "norm_label": "loadinstalledskills()"
-    },
-    {
-      "label": "computeSemanticMatch()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L130",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_computesemanticmatch",
-      "community": 4,
-      "norm_label": "computesemanticmatch()"
-    },
-    {
-      "label": "evaluateSkillRouting()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L155",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_evaluateskillrouting",
-      "community": 4,
-      "norm_label": "evaluateskillrouting()"
-    },
-    {
-      "label": "evaluateCodeGeneration()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L183",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_evaluatecodegeneration",
-      "community": 4,
-      "norm_label": "evaluatecodegeneration()"
-    },
-    {
-      "label": "evaluateAbExperiments()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L229",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_evaluateabexperiments",
-      "community": 4,
-      "norm_label": "evaluateabexperiments()"
-    },
-    {
-      "label": "runBenchmark()",
-      "file_type": "code",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L251",
-      "_origin": "ast",
-      "id": "scripts_coder_eval_runner_runbenchmark",
-      "community": 4,
-      "norm_label": "runbenchmark()"
-    },
-    {
-      "label": "test-hooks.js",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "tests_test_hooks",
-      "community": 5,
-      "norm_label": "test-hooks.js"
-    },
-    {
-      "label": "{ spawnSync }",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "tests_test_hooks_spawnsync",
-      "community": 5,
-      "norm_label": "{ spawnsync }"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "tests_test_hooks_path",
-      "community": 5,
-      "norm_label": "path"
-    },
-    {
-      "label": "fs",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "tests_test_hooks_fs",
-      "community": 5,
-      "norm_label": "fs"
-    },
-    {
-      "label": "SCRIPTS_DIR",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "tests_test_hooks_scripts_dir",
-      "community": 5,
-      "norm_label": "scripts_dir"
-    },
-    {
-      "label": "WORKSPACE_DIR",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "tests_test_hooks_workspace_dir",
-      "community": 5,
-      "norm_label": "workspace_dir"
-    },
-    {
-      "label": "runHook()",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "tests_test_hooks_runhook",
-      "community": 5,
-      "norm_label": "runhook()"
-    },
-    {
-      "label": "assert()",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "tests_test_hooks_assert",
-      "community": 5,
-      "norm_label": "assert()"
-    },
-    {
-      "label": "testTempDir",
-      "file_type": "code",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L263",
-      "_origin": "ast",
-      "id": "tests_test_hooks_testtempdir",
-      "community": 5,
-      "norm_label": "testtempdir"
-    },
-    {
-      "label": "ADR-0007",
-      "file_type": "concept",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L542",
-      "_origin": "ast",
-      "id": "docref_adr_0007",
-      "community": 5,
-      "norm_label": "adr-0007"
     }
   ],
   "links": [
@@ -1899,62 +1639,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_knowledge_injector",
-      "target": "antigravity_scripts_knowledge_injector_fs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_knowledge_injector",
-      "target": "antigravity_scripts_knowledge_injector_isgraphstale"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L51",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_knowledge_injector",
-      "target": "antigravity_scripts_knowledge_injector_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_knowledge_injector",
-      "target": "antigravity_scripts_knowledge_injector_path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/knowledge-injector.js",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_knowledge_injector_main",
-      "target": "antigravity_scripts_knowledge_injector_isgraphstale"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/lint-enforcer.js",
       "source_location": "L16",
       "weight": 1.0,
@@ -2289,6 +1973,128 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_attachmentfolderpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_livepreview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_newfilelocation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_promptdelete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_showlinenumber"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/adr/.obsidian/app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "docs_adr_obsidian_app",
+      "target": "docs_adr_obsidian_app_usemarkdownlinks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_knowledge_injector",
+      "target": "antigravity_scripts_knowledge_injector_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_knowledge_injector",
+      "target": "antigravity_scripts_knowledge_injector_isgraphstale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_knowledge_injector",
+      "target": "antigravity_scripts_knowledge_injector_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_knowledge_injector",
+      "target": "antigravity_scripts_knowledge_injector_path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/knowledge-injector.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_knowledge_injector_main",
+      "target": "antigravity_scripts_knowledge_injector_isgraphstale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L58",
       "weight": 1.0,
@@ -2323,12 +2129,34 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal",
+      "target": "antigravity_scripts_open_pr_on_goal_getgitbranch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal",
       "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal",
+      "target": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits"
     },
     {
       "relation": "contains",
@@ -2401,11 +2229,83 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_checkghcli",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_getgitbranch",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_main",
+      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "antigravity_scripts_open_pr_on_goal_runtestslocally",
       "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
     },
     {
@@ -2425,12 +2325,12 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L49",
+      "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_hasunpushedcommits",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+      "source": "antigravity_scripts_open_pr_on_goal_main",
+      "target": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch"
     },
     {
       "relation": "calls",
@@ -2449,36 +2349,12 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
       "source_location": "L140",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
       "target": "antigravity_scripts_open_pr_on_goal_getlatestcommitmessage"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L59",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_checkghcli",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
     },
     {
       "relation": "calls",
@@ -2497,24 +2373,12 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L123",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L159",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+      "target": "antigravity_scripts_open_pr_on_goal_verifygoaltaskscompleted"
     },
     {
       "relation": "calls",
@@ -2529,326 +2393,211 @@
       "target": "antigravity_scripts_open_pr_on_goal_runtestslocally"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L115",
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L384",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_main",
-      "target": "antigravity_scripts_open_pr_on_goal_verifygoaltaskscompleted"
+      "context": "collection",
+      "confidence_score": 0.5,
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_computesemanticmatch"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L72",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_allmdpassed"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_axeauditfn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L77",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_axecontent"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L91",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_badres"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
+      "source_file": "scripts/coder-eval-runner.js",
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_decodeentitiesmatch"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_config_file"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L129",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L229",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_fastmetrics"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_evaluateabexperiments"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L6",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L183",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_fs"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_evaluatecodegeneration"
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L384",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "collection",
+      "confidence_score": 0.5,
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_evaluateskillrouting"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/coder-eval-runner.js",
       "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_goodres"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_loadinstalledskills"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L20",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_htmltomarkdownmatch"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_parsesimpleyaml"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L124",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_lhauditfn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L122",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_lhcontent"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L59",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_mdassertions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L55",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_parsedmd"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L27",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_parserfn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_resolveurlmatch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
+      "source_file": "scripts/coder-eval-runner.js",
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_scrapecontent"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_path"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L136",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_slowmetrics"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_spawnsync"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".agents/teamwork_preview_auditor_1/forensic_verify.js",
+      "source_file": "scripts/coder-eval-runner.js",
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "agents_teamwork_preview_auditor_1_forensic_verify",
-      "target": "agents_teamwork_preview_auditor_1_forensic_verify_striptagsmatch"
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_results_dir"
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L384",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "collection",
+      "confidence_score": 0.5,
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_runbenchmark"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "scripts_coder_eval_runner",
+      "target": "scripts_coder_eval_runner_workspace_root"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L39",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L267",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_detectdefaultbranch",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+      "source": "scripts_coder_eval_runner_runbenchmark",
+      "target": "scripts_coder_eval_runner_parsesimpleyaml"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": ".antigravity/scripts/open-pr-on-goal.js",
-      "source_location": "L86",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L260",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "antigravity_scripts_open_pr_on_goal_runtestslocally",
-      "target": "antigravity_scripts_open_pr_on_goal_runcommandsafe"
+      "source": "scripts_coder_eval_runner_runbenchmark",
+      "target": "scripts_coder_eval_runner_loadinstalledskills"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L2",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L160",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_attachmentfolderpath"
+      "source": "scripts_coder_eval_runner_evaluateskillrouting",
+      "target": "scripts_coder_eval_runner_computesemanticmatch"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L5",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L275",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_livepreview"
+      "source": "scripts_coder_eval_runner_runbenchmark",
+      "target": "scripts_coder_eval_runner_evaluateskillrouting"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L3",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_newfilelocation"
+      "source": "scripts_coder_eval_runner_runbenchmark",
+      "target": "scripts_coder_eval_runner_evaluatecodegeneration"
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L7",
+      "source_file": "scripts/coder-eval-runner.js",
+      "source_location": "L295",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_promptdelete"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_showlinenumber"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/adr/.obsidian/app.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "docs_adr_obsidian_app",
-      "target": "docs_adr_obsidian_app_usemarkdownlinks"
+      "source": "scripts_coder_eval_runner_runbenchmark",
+      "target": "scripts_coder_eval_runner_evaluateabexperiments"
     },
     {
       "relation": "contains",
@@ -2929,48 +2678,103 @@
       "target": "scripts_update_docs_fetchurl"
     },
     {
-      "relation": "contains",
+      "relation": "cites",
       "confidence": "EXTRACTED",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L1",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L542",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "gemini_scratch_test_yaml",
-      "target": "gemini_scratch_test_yaml_fs",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "docref_adr_0007"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".gemini/scratch/test-yaml.js",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_assert"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_runhook"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_scripts_dir"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test-hooks.js",
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "gemini_scratch_test_yaml",
-      "target": "gemini_scratch_test_yaml_lines",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_spawnsync"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L2",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L263",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "gemini_scratch_test_yaml",
-      "target": "gemini_scratch_test_yaml_path",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_testtempdir"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".gemini/scratch/test-yaml.js",
-      "source_location": "L4",
+      "source_file": "tests/test-hooks.js",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "gemini_scratch_test_yaml",
-      "target": "gemini_scratch_test_yaml_routingtaskscontent",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "tests_test_hooks",
+      "target": "tests_test_hooks_workspace_dir"
     },
     {
       "relation": "contains",
@@ -3162,314 +2966,8 @@
       "source": "package_keywords",
       "target": "ref_obsidian",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L384",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_computesemanticmatch",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_config_file",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L229",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_evaluateabexperiments",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L183",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_evaluatecodegeneration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L384",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_evaluateskillrouting",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_fs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L95",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_loadinstalledskills",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_parsesimpleyaml",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_path",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_results_dir",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "indirect_call",
-      "confidence": "INFERRED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L384",
-      "weight": 1.0,
-      "_origin": "ast",
-      "context": "collection",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_runbenchmark",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner",
-      "target": "scripts_coder_eval_runner_workspace_root",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L267",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_runbenchmark",
-      "target": "scripts_coder_eval_runner_parsesimpleyaml",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L260",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_runbenchmark",
-      "target": "scripts_coder_eval_runner_loadinstalledskills",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L160",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_evaluateskillrouting",
-      "target": "scripts_coder_eval_runner_computesemanticmatch",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L275",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_runbenchmark",
-      "target": "scripts_coder_eval_runner_evaluateskillrouting",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L285",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_runbenchmark",
-      "target": "scripts_coder_eval_runner_evaluatecodegeneration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/coder-eval-runner.js",
-      "source_location": "L295",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_coder_eval_runner_runbenchmark",
-      "target": "scripts_coder_eval_runner_evaluateabexperiments",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L542",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "docref_adr_0007",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_assert",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_fs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_path",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_runhook",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_scripts_dir",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_spawnsync",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L263",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_testtempdir",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test-hooks.js",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_test_hooks",
-      "target": "tests_test_hooks_workspace_dir",
-      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a4d82afd1e3fd233a30dd5e4e39acab1a4c7124b"
+  "built_at_commit": "01c4d8e57a4ff41a3250168510618ca3ed086d2e"
 }
