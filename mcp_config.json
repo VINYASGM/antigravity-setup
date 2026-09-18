@@ -1,0 +1,51 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "Native GitHub integration for issue management, PR reviews, and CI workflow triggers"
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://localhost:5432/production"
+      ],
+      "description": "Database explorer for live PostgreSQL schema introspection and query planning"
+    },
+    "firebase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firebase-tools",
+        "mcp"
+      ],
+      "description": "Firebase MCP for NoSQL database scaffolding, security rules generation, and cloud functions deployment"
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@firecrawl/mcp-server"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      },
+      "description": "Live web extraction, doc scraping, and structured clean Markdown conversion"
+    },
+    "framework-orchestrator": {
+      "command": "node",
+      "args": [
+        "./scripts/framework-mcp.js"
+      ],
+      "description": "Framework-specific orchestration MCP for dev server management, build monitoring, and automated test execution"
+    }
+  }
+}

@@ -20,6 +20,7 @@ Autonomous agents consume significant context windows when reading raw codebases
 | [[0004-antigravity-knowledge-injection\|ADR-0004]] | Antigravity Knowledge Injection & Anti-Hallucination Policy | Accepted | 2026-09-12 |
 | [[0005-behavioral-skills-suite\|ADR-0005]] | Comprehensive Behavioral Skills Suite (Workflow & Cognitive Discipline) | Accepted | 2026-09-12 |
 | [[0006-coderabbit-review-gates-remediation\|ADR-0006]] | CodeRabbit Review Gates, Automated PR Dispatch & Autonomous Remediation Pass | Accepted | 2026-09-12 |
+| [[0007-continuous-evaluation-coder-eval\|ADR-0007]] | Continuous Evaluation Infrastructure via Coder-Eval & CI/CD Quality Gates | Accepted | 2026-09-17 |
 
 ---
 

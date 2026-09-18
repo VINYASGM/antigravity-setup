@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-09-18T14:10:34.449Z",
+  "overallScore": 1,
+  "minThreshold": 0.85,
+  "allSkillsTriggered": true,
+  "qualityGatePassed": true,
+  "routingResults": [
+    {
+      "taskId": "ROUTE-001",
+      "taskName": "CI/CD Pipeline Failure Routing",
+      "expectedSkill": "ci-debugger",
+      "predictedSkill": "ci-debugger",
+      "confidence": 0.88,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    },
+    {
+      "taskId": "ROUTE-002",
+      "taskName": "Live Documentation Scraping Routing",
+      "expectedSkill": "doc-updater",
+      "predictedSkill": "doc-updater",
+      "confidence": 0.88,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    },
+    {
+      "taskId": "ROUTE-003",
+      "taskName": "Static Security & Secret Audit Routing",
+      "expectedSkill": "security-auditor",
+      "predictedSkill": "security-auditor",
+      "confidence": 0.901,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    },
+    {
+      "taskId": "ROUTE-004",
+      "taskName": "Requirements to PRD Task Formalization",
+      "expectedSkill": "to-prd",
+      "predictedSkill": "to-prd",
+      "confidence": 1,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    },
+    {
+      "taskId": "ROUTE-005",
+      "taskName": "Red-Green-Refactor TDD Routing",
+      "expectedSkill": "tdd",
+      "predictedSkill": "tdd",
+      "confidence": 0.88,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    },
+    {
+      "taskId": "ROUTE-006",
+      "taskName": "Git Guardrails & Ephemeral Branch Routing",
+      "expectedSkill": "git-guardrails",
+      "predictedSkill": "git-guardrails",
+      "confidence": 0.88,
+      "skillTriggered": true,
+      "passed": true,
+      "score": 1
+    }
+  ],
+  "codeResults": [
+    {
+      "taskId": "CODE-001",
+      "taskName": "Zero Global Package Installations",
+      "persona": "dev",
+      "score": 1,
+      "passed": true,
+      "details": []
+    },
+    {
+      "taskId": "CODE-002",
+      "taskName": "SQL Injection Parameterization",
+      "persona": "data_engineer",
+      "score": 1,
+      "passed": true,
+      "details": []
+    },
+    {
+      "taskId": "CODE-003",
+      "taskName": "Child Process Injection Immunity",
+      "persona": "dev",
+      "score": 1,
+      "passed": true,
+      "details": []
+    },
+    {
+      "taskId": "CODE-004",
+      "taskName": "Log Secret Redaction Protocol",
+      "persona": "devops",
+      "score": 1,
+      "passed": true,
+      "details": []
+    }
+  ],
+  "abResults": [
+    {
+      "id": "AB-001",
+      "name": "Three-Layer AGENTS.md Architecture",
+      "variantA": {
+        "name": "Monolithic Prompt",
+        "astGrounding": 0.32,
+        "hallucinationRate": 0.41,
+        "tokens": 3400
+      },
+      "variantB": {
+        "name": "3-Layer AGENTS.md",
+        "astGrounding": 0.94,
+        "hallucinationRate": 0.04,
+        "tokens": 1850
+      },
+      "improvementPct": "+62% Grounding, -45% Token Usage"
+    },
+    {
+      "id": "AB-002",
+      "name": "Contextual Glob Targeting",
+      "variantA": {
+        "name": "Global Rules Injection",
+        "tokens": 4200
+      },
+      "variantB": {
+        "name": "Contextual Glob Rules",
+        "tokens": 1100
+      },
+      "tokenReductionPct": "73.8%"
+    }
+  ],
+  "telemetry": {
+    "totalTokensEstimated": 8420,
+    "mcpInvocations": 4,
+    "bashInvocations": 8,
+    "fileWrites": 5,
+    "avgLatencyMs": 142
+  }
+}

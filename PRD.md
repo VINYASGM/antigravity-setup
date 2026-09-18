@@ -1,87 +1,85 @@
 # Product Requirements Document (PRD)
 
-## Project: Antigravity Workspace Safety Guardrails, Memory Substrate, Behavioral Skills & CodeRabbit Review Gates
+## Project: Canonical Antigravity Architecture, Safety Guardrails, Memory Substrate & Continuous Evaluation (`coder-eval`)
 
 ### 1. Overview & Objective
-This project establishes automated lifecycle guardrails, persistent memory substrate, anti-hallucination knowledge injection, a comprehensive 8-skill suite of Matt Pocock behavioral skills, and automated CodeRabbit PR review gates for the agentic development environment within the workspace. By leveraging Antigravity lifecycle hooks (`hooks.json`), Graphify AST extraction, Obsidian Architecture Decision Records (ADRs), Antigravity 2.0 Project Settings, workspace skills (`.agents/skills/`), and CodeRabbit PR review automation, the system automatically enforces:
-1. **Automated Linting & Code Hygiene**: Guarantees that syntax errors and unformatted/invalid code are detected and resolved before completion or commits.
-2. **Branch Protection (Branch Locking)**: Prevents accidental direct commits, merges, checkouts, or destructive pushes to sensitive branches (e.g., `main`, `master`, `release/*`, `production`).
-3. **Shell Action Sandboxing**: Intercepts shell execution requests to protect the developer machine from destructive system commands, disk modifications, and out-of-boundary directory mutations.
-4. **Memory Substrate (Graphify + Obsidian ADRs)**: Prevents agents from ingesting tens of thousands of tokens of raw code by routing codebase context through structured graph topology files (`.antigravity/graph.json`) and linked architectural decision notes (`docs/adr/`, `docs/architecture/`).
-5. **Antigravity Knowledge Injection & Anti-Hallucination Planning**: Mounts `docs/` and `.antigravity/graph.json` as persistent knowledge sources in Antigravity 2.0 Project Settings and lifecycle hooks so that feature planning queries the ground-truth topological graph instead of hallucinating dependency chains.
-6. **Dual-Tier Behavioral Skills Suite**:
-   - **Tier 1 (Workflow & Delivery)**: `to-prd` (requirements formalization), `design-an-interface` (contract-first design), `tdd` (Red-Green-Refactor development), and `git-guardrails` (safe version control).
-   - **Tier 2 (Cognitive Discipline)**: `think-first` (explicit assumptions & trade-offs), `simplify` (de-bloating & de-abstraction), `surgical-edits` (zero collateral damage), and `goal-driven-dev` (autonomous verification loops).
-7. **Automated Review Gates & CodeRabbit Remediation**:
-   - Automatically opens a Pull Request once the `/goal` task queue is exhausted on a feature branch (`open-pr-on-goal.js`).
-   - CodeRabbit automatically audits the PR for cyclomatic complexity (> 10), security vulnerabilities, and logic bugs, posting structured comments (`.coderabbit.yaml`).
-   - Ingests CodeRabbit review links, parses comments into atomic tasks in `prd.json`, and drives an autonomous remediation pass using TDD and surgical edits (`coderabbit-remediate`).
+This project establishes a production-grade, canonical Antigravity agentic workspace scaffolding adhering strictly to Google Antigravity's real configuration discovery paths, enterprise security invariants, and automated quality gates. The environment coordinates:
+1. **Master Directive & Persona Architecture (`AGENTS.md`)**: Implements the Three-Layer Architecture:
+   - **Layer 1: The Directive**: Topology Navigation Discipline, 90% confidence threshold pattern matching, and ambiguity halt gate.
+   - **Layer 2: Orchestration**: Subagent personas (`[id: architect]`, `[id: dev]`, `[id: devops]`, `[id: data_engineer]`) implementing the BMad method.
+   - **Layer 3: Execution**: Immutable boundaries (no global package installs, isolated `.venv`/`package.json`, and autonomous TDD verification loops).
+2. **Context Compaction Resilience (`MEMORY.md`)**: Maintains dense, high-signal structural anchors to survive the Antigravity 135,000-token automated context compaction threshold without context rot.
+3. **Contextual Rule Targeting (`.agent/rules/` & `.agents/rules/`)**: Enforces file-scoped constraints using YAML frontmatter glob arrays (`globs: ["..."]`), preventing token waste and hallucination.
+4. **Progressive Disclosure & Semantic Skills (`.agent/skills/` & `.agents/skills/`)**: Modular capabilities triggered via semantic frontmatter (`name`, `description`, `allow_implicit_invocation: true`), including CI/CD log debugging with secret redaction (`ci-debugger`), live documentation synchronization (`doc-updater`), and static security auditing (`security-auditor`).
+5. **Multi-Step Workflows (`.agent/workflows/` & `.agents/workflows/`)**: Standard operating procedures mapping human intent to sequential execution steps (`/ci-remediate`, `/security-audit`, `/deploy-verify`).
+6. **Model Context Protocol (`mcp_config.json`)**: Preconfigured, modular integrations for GitHub, PostgreSQL, Firebase, Firecrawl, and framework orchestration.
+7. **Hardened Lifecycle Hooks (`.agents/hooks.json`)**:
+   - **`branch-guard.js`**: Fail-closed branch locking preventing direct commits, pushes, or deletions on protected branches (`main`, `master`, `release/*`, `production*`).
+   - **`shell-sandbox.js`**: Fail-closed execution containment blocking destructive filesystem wipes (including PowerShell cmdlets `Remove-Item -Recurse -Force`, `Clear-Disk`), registry wipes, piped executions (`curl|bash`), and unrecoverable git commands (`git clean -fdx`, `git reflog expire`), requiring interactive confirmation for broad staging (`git add .`).
+   - **`lint-enforcer.js`**: Multi-language syntax verification (`.json`, `.js`, `.py`, `.ts`) with pre-commit gating and stop verification.
+   - **`knowledge-injector.js`**: PreInvocation knowledge reminder with mechanical mtime staleness detection for `.antigravity/graph.json`.
+   - **`open-pr-on-goal.js`**: Goal-driven, injection-safe (`spawnSync`) PR dispatcher with dynamic base-branch detection and test verification.
+8. **Memory Substrate (Graphify AST & Obsidian ADRs)**: Codebase topology mapped into `.antigravity/graph.json` and architectural invariants recorded in Obsidian vault `docs/adr/`.
+9. **Continuous Evaluation Infrastructure (`coder-eval`) & CI/CD Quality Gates**:
+   - Declarative benchmark task suites (`evals/tasks/`) for `skill_triggered` semantic routing, code generation accuracy, and prompt A/B experimentation.
+   - Automated quality gates integrated into `.github/workflows/coder-eval.yml`, blocking regressions and model drift.
 
 ---
 
-### 2. User Personas & Problem Statement
-* **Developer / Workspace Owner**: Needs assurance that autonomous agent actions will not overwrite production branches, wipe system drives, execute unvetted destructive shell scripts, or leave syntax-broken code behind. Needs PRs automatically opened and reviewed by CodeRabbit, and needs review findings autonomously remediated without manual back-and-forth.
-* **Agent / Pair Programmer**: Needs fast, deterministic, non-cryptic feedback when an action violates repository policy so it can self-correct immediately. Needs ground-truth AST dependency information when planning features, and explicit runbooks to parse review comments into executable `prd.json` tasks.
+### 2. Functional Requirements
+
+#### FR-1: Master Directive & Persona Architecture (`AGENTS.md`)
+* **FR-1.1**: Mandate pre-flight codebase exploration before generating code. Declare pattern match immutable only when confidence exceeds 90%.
+* **FR-1.2**: Halt and surface clarifying questions whenever user prompts are ambiguous.
+* **FR-1.3**: Provide distinct operational constraints for subagent personas (`architect`, `dev`, `devops`, `data_engineer`).
+* **FR-1.4**: Enforce strict local dependency isolation (no global `npm install -g` or global `pip`).
+
+#### FR-2: Contextual Rule Targeting via Glob Patterns
+* **FR-2.1**: Define rules in `.agent/rules/` and `.agents/rules/` with frontmatter `globs` arrays.
+* **FR-2.2**: Scope frontend React rules, backend database standards, and devops CI constraints exclusively to relevant files.
+
+#### FR-3: Semantic Skills & Progressive Disclosure
+* **FR-3.1**: Every skill directory contains `SKILL.md` with explicit `name`, `description`, and `allow_implicit_invocation: true`.
+* **FR-3.2**: `ci-debugger` enforces a mandatory secret redaction protocol (scrubbing tokens, passwords, private IPs/paths) and `--dry-run` validation.
+* **FR-3.3**: `doc-updater` provides cross-platform documentation fetching (`scripts/update_docs.js`).
+* **FR-3.4**: `security-auditor` scans for injection vulnerabilities, hardcoded credentials, and supply-chain risks.
+
+#### FR-4: Lifecycle Hook Enforcement & Security Hardening
+* **FR-4.1**: Workspace hooks register exclusively in `.agents/hooks.json`.
+* **FR-4.2**: Security hooks (`branch-guard.js`, `shell-sandbox.js`) fail closed (`deny`) on unhandled errors.
+* **FR-4.3**: All shell executions in hook handlers use `spawnSync` with `{ shell: false }` and structured argument arrays to prevent command injection.
+* **FR-4.4**: `shell-sandbox.js` intercepts PowerShell cmdlets (`Remove-Item -Recurse -Force`, `Clear-Disk`, `Remove-Item Env:\`) and Git data loss commands (`git clean -fdx`, `git reflog expire`).
+* **FR-4.5**: Require confirmation (`decision: "ask"`) for `git add .` and `git add -A`.
+* **FR-4.6**: `knowledge-injector.js` mechanically compares `.antigravity/graph.json` mtime against source files and injects a warning if stale.
+
+#### FR-5: Continuous Evaluation Infrastructure (`coder-eval`)
+* **FR-5.1**: Define root configuration in `evals/coder-eval.config.yml` with strict quality thresholds (`min_weighted_score: 0.85`, `require_skill_triggered: true`).
+* **FR-5.2 (skill_triggered)**: Assert that specific natural language prompts match `SKILL.md` frontmatter descriptions and load the intended skills.
+* **FR-5.3 (Weighted Scoring)**: Evaluate accuracy of generated files using continuous 0.0–1.0 scoring based on AST syntax and pattern rubrics.
+* **FR-5.4 (Telemetry Tracking)**: Audit token economics and tool call counts (bash, MCP, file writes) to catch infinite loops or budget waste.
+* **FR-5.5 (A/B Experimentation)**: Benchmark modifications to `AGENTS.md` and rule sets to measure grounding improvements and token reduction.
+* **FR-5.6 (CI/CD Quality Gate)**: Scheduled and PR GitHub Actions workflow (`.github/workflows/coder-eval.yml`) that fails if routing or scoring degrades.
 
 ---
 
-### 3. Functional Requirements
-
-#### FR-1: Linting Enforcement
-* **FR-1.1**: Upon tool executions modifying code (`write_to_file`, `replace_file_content`, `multi_replace_file_content`), track affected files and verify syntax/validity.
-* **FR-1.2**: Intercept `git commit` commands in `PreToolUse`. If tracked files have syntax/lint failures, deny execution with actionable error diagnostics.
-* **FR-1.3**: Intercept agent loop termination (`Stop`). If syntax or lint violations remain unaddressed, instruct the agent loop to continue and fix the issues.
-
-#### FR-2: Sensitive Branch Locking
-* **FR-2.1**: Intercept `run_command` invocations containing Git operations.
-* **FR-2.2**: Inspect target branch names against protected patterns: `main`, `master`, `prod*`, `production*`, `release*`.
-* **FR-2.3**: Deny direct destructive operations (push to protected branches, direct commit on protected branch, deletion or hard reset).
-* **FR-2.4**: Return explicit feedback detailing why the action was blocked and guiding the agent to use a feature branch instead.
-
-#### FR-3: Shell Action Sandboxing
-* **FR-3.1**: Intercept all `run_command` calls before execution (`PreToolUse`).
-* **FR-3.2**: Enforce a strict blacklist of destructive commands (`format`, `rmdir /s /q`, system deletes, privilege escalation).
-* **FR-3.3**: Validate working directories (`Cwd`) against workspace containment.
-* **FR-3.4**: Require interactive confirmation (`decision: "ask"`) for system-wide package modifications.
-
-#### FR-4: Memory Substrate & Context Token Optimization
-* **FR-4.1**: Initialize `docs/adr/` configured as an Obsidian vault to record Architecture Decision Records (ADRs).
-* **FR-4.2**: Extract AST relationships using Graphify, serializing the machine-readable graph to `.antigravity/graph.json`.
-* **FR-4.3**: Export an interactive Obsidian architecture vault with `.canvas` visual maps in `docs/architecture/`.
-* **FR-4.4**: Provide seamless CLI execution through `npx graphify --output .antigravity/graph.json --obsidian docs/architecture`.
-
-#### FR-5: Antigravity Knowledge Injection & Anti-Hallucination Planning
-* **FR-5.1**: Mount `docs/` and `.antigravity/graph.json` as persistent knowledge sources in Antigravity 2.0 Project Settings (`.antigravity/settings.json` and `.agents/settings.json`).
-* **FR-5.2**: Enforce `planningPolicy.requireGraphTopologyQuery = true` and `disallowHallucinatedDependencies = true`.
-* **FR-5.3**: Implement a `PreInvocation` hook (`knowledge-injector.js`) injecting persistent knowledge awareness into agent execution.
-* **FR-5.4**: Establish always-on workspace rules (`.agents/rules/knowledge-substrate.md` and `GEMINI.md`) directing feature planning to ground-truth graph nodes.
-* **FR-5.5**: Mount Knowledge Item (KI) in `<appDataDir>\knowledge\start-codebase-topology` for cross-session IDE recognition.
-
-#### FR-6: Comprehensive Behavioral Skills Suite
-* **FR-6.1**: Install `to-prd`, `design-an-interface`, `tdd`, and `git-guardrails` for Delivery Workflow.
-* **FR-6.2**: Install `think-first`, `simplify`, `surgical-edits`, and `goal-driven-dev` for Cognitive Discipline.
-
-#### FR-7: CodeRabbit Automated Review Gates & Autonomous Remediation Loop
-* **FR-7.1**: Automatically push feature branches and dispatch Pull Requests upon `/goal` queue exhaustion via `open-pr-on-goal.js`.
-* **FR-7.2**: Configure `.coderabbit.yaml` to audit for cyclomatic complexity (> 10), security vulnerabilities, and logic bugs with structured comments (`[CRITICAL]`, `[WARNING]`, `[SUGGESTION]`).
-* **FR-7.3**: Ingest CodeRabbit review links via `parse-coderabbit-review.js`, translating review findings into atomic `REMEDIATION-XXX` tasks in `prd.json`.
-* **FR-7.4**: Execute autonomous remediation passes using `coderabbit-remediate` skill via TDD and surgical edits, committing and pushing fixes back to the PR.
+### 3. Non-Functional Requirements
+* **Continuous Testability**: Agent configuration is an observable, benchmarked software system rather than static text.
+* **Command Injection Immunity**: 100% elimination of unescaped shell string interpolations in security boundaries.
+* **Fail-Safe Integrity**: Fail closed on security boundaries; fail safe with explanatory diagnostic on non-critical metadata parsers.
+* **Cross-Platform Compatibility**: Fully compatible with Windows 11 PowerShell/cmd and Unix-like environments.
+* **Zero External Dependency Bloat**: Core lifecycle hooks and benchmark runner operate natively.
 
 ---
 
-### 4. Non-Functional Requirements
-* **Performance**: Hook handlers must execute within < 200ms. Skills must use progressive disclosure to avoid token bloat.
-* **Zero External Dependencies**: Core hook handlers and skills run natively without requiring third-party `node_modules`.
-* **Cross-Platform Compatibility**: Tuned for Windows (`cmd /c`) and PowerShell while maintaining cross-platform standard schemas.
-* **Robust Fail-Safe**: Fail safely with explanatory diagnostics rather than silently permitting dangerous actions.
-
----
-
-### 5. Success Criteria & Verification
-* [x] Configuration file `.antigravity/hooks.json` conforms to Antigravity hook schema.
-* [x] `docs/adr/` initialized as an Obsidian vault containing ADR-0001 to ADR-0006.
-* [x] Codebase topology extracted into `.antigravity/graph.json` and `docs/architecture/` (144 nodes, 165 edges).
-* [x] Persistent knowledge sources mounted in `.antigravity/settings.json` and `.agents/settings.json`.
-* [x] 8 behavioral skills installed in `.agents/skills/` and registered in `.agents/skills.json`.
-* [x] CodeRabbit configured via `.coderabbit.yaml` and `.github/workflows/coderabbit.yml`.
-* [x] Automated PR dispatch on `/goal` exhaustion and review parser (`parse-coderabbit-review.js`) verified via automated test suite (28/28 tests passing).
+### 4. Verification & Success Criteria
+* [x] Canonical directory structure scaffolded: `AGENTS.md`, `MEMORY.md`, `mcp_config.json`, `.agent/rules/`, `.agent/skills/`, `.agent/workflows/`.
+* [x] Dead duplicate `.antigravity/hooks.json` and inert `settings.json` eliminated.
+* [x] Shell injection vulnerabilities remediated via `spawnSync` `{ shell: false }`.
+* [x] Shell sandbox covers PowerShell cmdlets, Git data loss, and broad staging gating.
+* [x] Knowledge substrate staleness mechanically detected and warned.
+* [x] Multi-language linting (.json, .js, .py, .ts) and flat `eslint.config.mjs` active.
+* [x] Coder-Eval benchmark engine (`scripts/coder-eval-runner.js`) and task suites (`evals/tasks/`) operational.
+* [x] GitHub Actions CI/CD quality gate workflow (`.github/workflows/coder-eval.yml`) configured.
+* [x] ADR-0007 recorded and indexed in `docs/adr/`.
+* [x] 41 / 41 automated verification tests passing (100% pass rate).
+* [x] Codebase topology fresh with 146 AST nodes and 177 edges in `.antigravity/graph.json`.

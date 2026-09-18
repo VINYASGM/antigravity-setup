@@ -8,7 +8,8 @@
   },
   "scripts": {
     "graphify": "node ./scripts/graphify-cli.js",
-    "test": "node ./tests/test-hooks.js"
+    "test": "node ./tests/test-hooks.js",
+    "eval": "node ./scripts/coder-eval-runner.js"
   },
   "keywords": [
     "antigravity",
