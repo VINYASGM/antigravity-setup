@@ -164,11 +164,12 @@ console.log('\n--- 2. Testing shell-sandbox.js ---');
 
 // 11. Block execution outside workspace directory
 {
+  const outsideCwd = process.platform === 'win32' ? 'C:\\Windows\\System32' : '/etc';
   const res = runHook('shell-sandbox.js', [], {
     workspacePaths: [WORKSPACE_DIR],
     toolCall: {
       name: 'run_command',
-      args: { CommandLine: 'dir', Cwd: 'C:\\Windows\\System32' }
+      args: { CommandLine: 'dir', Cwd: outsideCwd }
     }
   });
   assert(res.decision === 'deny', 'Blocks Cwd outside workspace', res);

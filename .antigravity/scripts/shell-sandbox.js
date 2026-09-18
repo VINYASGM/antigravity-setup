@@ -56,6 +56,16 @@ const ASK_CONFIRMATION_PATTERNS = [
 function isPathWithinWorkspace(targetPath, workspacePaths) {
   if (!targetPath || !workspacePaths || !workspacePaths.length) return true;
 
+  // On POSIX, Windows drive-letter paths (e.g. C:\Windows) are inherently foreign/outside
+  if (process.platform !== 'win32' && /^[a-zA-Z]:[\\\/]/.test(targetPath)) {
+    return false;
+  }
+
+  // On Windows, POSIX absolute root paths (e.g. /etc) are outside
+  if (process.platform === 'win32' && /^[\/\\](etc|var|usr|bin|sbin|root|home)\b/i.test(targetPath)) {
+    return false;
+  }
+
   const normalizedTarget = path.resolve(targetPath).toLowerCase();
   return workspacePaths.some(ws => {
     const normalizedWs = path.resolve(ws).toLowerCase();
@@ -73,7 +83,10 @@ function evaluateCommand(commandLine, cwd, workspacePaths) {
     if (!isPathWithinWorkspace(cwd, workspacePaths)) {
       // Allow temp/scratch dirs inside user profile if designated
       const normalizedCwd = path.resolve(cwd).toLowerCase();
-      const isTempOrScratch = normalizedCwd.includes('antigravity-ide\\brain') || normalizedCwd.includes('\\temp\\');
+      const isTempOrScratch = normalizedCwd.includes('antigravity-ide/brain') || 
+                              normalizedCwd.includes('antigravity-ide\\brain') || 
+                              normalizedCwd.includes('/temp/') || 
+                              normalizedCwd.includes('\\temp\\');
       if (!isTempOrScratch) {
         return {
           decision: 'deny',

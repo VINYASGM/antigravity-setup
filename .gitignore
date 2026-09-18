@@ -4,6 +4,7 @@ node_modules/
 # Cache & Build outputs
 .antigravity/.cache/
 graphify-out/
+evals/results/
 tests/temp/
 tests/audit-temp/
 tests/audit-temp-test/

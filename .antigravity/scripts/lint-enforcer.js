@@ -91,6 +91,13 @@ function validateFileSyntax(filePath) {
         shell: false
       });
       if (res.error && res.error.code === 'ENOENT') {
+        res = spawnSync('python3', ['-m', 'py_compile', filePath], {
+          stdio: ['ignore', 'pipe', 'pipe'],
+          timeout: 5000,
+          shell: false
+        });
+      }
+      if (res.error && res.error.code === 'ENOENT') {
         res = spawnSync('py', ['-m', 'py_compile', filePath], {
           stdio: ['ignore', 'pipe', 'pipe'],
           timeout: 5000,
